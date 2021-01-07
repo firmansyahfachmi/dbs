@@ -1,0 +1,88 @@
+body {
+    font-family: if(variable-exists(font_family), $font_default, 'Helvetica, Arial, sans-serif');
+}
+
+@each $value in $align {
+    .text-#{$value} {
+        text-align: #{$value} !important;
+    }
+}
+
+@each $value in $vertical-align {
+    .v-align-#{$value} {
+        vertical-align: #{$value} !important;
+    }
+}
+
+@each $value in $float {
+    .float-#{$value} {
+        float: #{$value} !important;
+    }
+}
+
+@for $i from 1 through 50 {
+    .font-size-#{$i} {
+        font-size: 1px * $i !important;
+    }
+}
+
+@for $i from 1 through 20 {
+    .line-height-#{$i} {
+        line-height: 0.1 * $i !important;
+    }
+}
+
+
+// OFFSET //
+$offset: 20;
+
+/* Width */
+.width-full {
+    width: 100% !important;
+}
+
+@for $i from 1 through $offset {
+    .width-#{25 * $i} {
+        width: 25px * $i !important;
+    }
+}
+
+@for $i from 1 through $offset {
+    .width-p-#{5 * $i} {
+        width: 5% * $i !important;
+    }
+}
+
+/* Margin */
+.no-margin {
+    margin: 0 !important;
+}
+
+@for $i from 0 through $offset {
+    .margin-#{5 * $i} {
+        margin: 5px * $i !important;
+    }
+
+    @each $value in $position {
+        .margin-#{$value}-#{5 * $i} {
+            margin-#{$value}: 5px * $i !important;
+        }
+    }
+}
+
+/* Padding */
+.no-padding {
+    padding: 0 !important;
+}
+
+@for $i from 0 through $offset {
+    .padding-#{5 * $i} {
+        padding: 5px * $i !important;
+    }
+
+    @each $value in $position {
+        .padding-#{$value}-#{5 * $i} {
+            padding-#{$value}: 5px * $i !important;
+        }
+    }
+}

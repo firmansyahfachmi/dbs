@@ -1,0 +1,36 @@
+
+.db-header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	padding: 10px 25px;
+	background: #000;
+	overflow: hidden;
+	z-index: 88;
+}
+
+a {
+
+	&.dbs-logo {
+		&, &:focus, &:visited {
+			float: left;
+			margin-top: 5px;
+		}
+	}
+
+	&.site-menu {
+		&, &:focus, &:visited {
+			float: right;
+			color: white;
+			background: red;
+			padding: 7px 11px;
+		    font-size: 25px;
+		    line-height: 1;
+		}
+
+		&:hover {
+			background: darken(#cc0000, 2%);
+		}
+	}
+
+}

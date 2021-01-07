@@ -1,0 +1,49 @@
+
+
+a {
+
+	&.footer-btn {
+
+		&, &:focus, &:visited {
+			display: inline-block;
+			width: 35px;height: 35px;
+			position: absolute;
+			background: black;
+			color: white;
+			text-align: center;
+			line-height: 27px;
+			border: 4px #1b1b1b solid;
+			border-radius: 50%;
+			z-index: 88;
+		}
+
+		&:hover {
+			background: #1b1b1b;
+		}
+
+	}
+
+	&.footer-sound {
+		&, &:focus, &:visited {
+			bottom: 60px;right: 90px;
+		}
+	}
+
+	&.footer-help {
+		&, &:focus, &:visited {
+			bottom: 60px;right: 40px;
+			font-size: 20px;
+		}
+	}
+
+}
+
+.copyright {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;left: 0;right: 0;
+	text-align: center;
+	color: white;
+	font-size: 8px;
+	text-transform: uppercase;
+}

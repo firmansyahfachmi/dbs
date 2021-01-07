@@ -1,0 +1,70 @@
+@import "bourbon";
+
+/* ABSTRACTS */
+@import
+    '../Abstracts/variables',
+    '../Abstracts/functions',
+    '../Abstracts/mixins'; 
+
+
+.homepage {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;height: 100%;
+	background: url(../../images/homepage-bg.jpg) center center no-repeat;
+	background-size: cover;
+
+	.content-wrapper {
+
+		position: absolute;
+		top: 50%;left: 50%;
+		transform: translate(-50%,-35%);
+		text-align: center;
+
+		h2 {
+			display: inline-block;
+			background: red;
+			font-family: 'DIN-Eng';
+			font-size: 30px;
+			text-transform: uppercase;
+			color: white;
+			line-height: 1;
+			padding: 8px 10px 6px 10px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-family: 'Gotham-Black';
+			font-size: 16px;
+			color: #cc0000;
+			text-transform: uppercase;
+			text-shadow: -2px 2px 5px rgba(0,0,0,0.9);
+			padding-bottom: 70px;
+			position: relative;
+			margin-top: 20px;
+
+			&:after {
+				content: "";
+				width: 1px;height: 40px;
+				background: white;
+				position: absolute;
+				left: 0;right: 0;bottom: 10px;
+				margin: auto;
+			}
+
+			span {
+				display: block;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+
+			strong {
+				font-size: 30px;
+			}
+		}
+
+	}
+
+}
+

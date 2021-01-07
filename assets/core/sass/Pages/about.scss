@@ -1,0 +1,274 @@
+@import "bourbon";
+
+/* ABSTRACTS */
+@import
+    '../Abstracts/variables',
+    '../Abstracts/functions',
+    '../Abstracts/mixins';
+
+
+.slick-slide, .slick-slide *{ outline: none !important; }
+
+
+.about-us {
+	position: absolute;
+	width: 100%;height: 100%;
+
+	.content-wrapper {
+		width: 100%;height: 100%;
+
+		.about-title {
+			padding: 20px 30px;
+			overflow: hidden;
+
+			h3 {
+				font-family: 'Montserrat-Regular';
+				font-size: 20px;
+				color: #000000;
+				text-transform: uppercase;
+				margin: 0;
+				position: relative;
+
+				&:after {
+					width: 50px;height: 0;
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -15px;left: 0;
+					border-bottom: 4px #000000 solid;
+				}
+
+				span {
+					font-size: 14px;
+					color: #7d7d7d;
+					text-transform: capitalize;
+				}
+
+			}
+		}
+
+		.about-body {
+			padding: 0px 30px;
+			position: relative;
+			height: calc( 100% - 106px );
+			overflow: hidden;
+
+			.floor-warden-slide {
+				margin-bottom: 70px;
+			}
+
+			.noted {
+				position: absolute;
+				top: 50%;left: 0px;
+				transform: rotate(-90deg) translate(-50%,0);
+				transform-origin: left top 0;
+
+				span {
+					font-family: 'Montserrat-Bold';
+					font-size: 14px;
+					color: #000000;
+					text-transform: uppercase;
+				}
+			}
+
+			.body-content {
+				position: relative;
+				width: calc( 100% - 60px );
+				//height: 100%;
+
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding: 0 20px;
+				margin-left: 30px;
+
+    			&.full-body {
+    				width: 100%;
+    				margin: 0;
+    			}
+
+    			&.half-body {
+    				max-width: 800px;
+    			}
+
+    			&.about-main-banner {
+
+    				> img {
+	    				width: 101.8%;
+	    				margin-left: -1.8%;
+	    				margin-bottom: 30px;
+	    			}
+
+	    			p {
+	    				padding-right: 20%;
+	    			}
+
+	    			.div-scroll {
+	    				position: relative;
+
+	    				.scroll {
+	    					height: 14px;
+	    					position: absolute;
+	    					right: 15px;
+	    					top: 0;bottom: 0;
+	    					margin: auto;
+
+	    					.arrow {
+	    						position: absolute;
+	    						right: -25px;
+    							top: -10px;
+    							animation: scroll 0.8s ease-out alternate infinite;
+	    					}
+	    				}
+	    			}
+    			}
+
+				h2 {
+					font-family: 'Montserrat-Regular';
+					font-size: 36px;
+					color: #000000;
+					margin: 0;
+					margin-bottom: 30px;
+    				line-height: 1.3;
+    				text-transform: uppercase;
+    				position: relative;
+
+    				&:after {
+    					content: "";
+    					width: 162px;
+					    height: 5px;
+					    background-color: #cc0000;
+					    position: absolute;
+					    left: 0%;
+					    bottom: -5px;
+    				}
+				}
+
+				p {
+					font-family: 'Montserrat-Regular';
+					font-size: 16px;
+					color: #5a5a5a;
+					margin: 0;
+					margin-bottom: 15px;
+    				line-height: 1.5;
+
+    				strong {
+    					color: #cc0000;
+    					font-weight: normal;
+    				}
+				}
+
+				ul {
+					list-style: none;
+					li {
+						list-style: none;
+						font-family: 'Montserrat-Regular';
+						font-size: 16px;
+						color: #5a5a5a;
+						margin: 0;
+						margin-bottom: 15px;
+	    				line-height: 1.5;
+	    				position: relative;
+	    				padding-left: 20px;
+
+	    				&:before {
+	    					content: "\f111";
+    						font-family: FontAwesome;
+    						font-size: 10px;
+	    					position: absolute;
+	    					top: 4px;left: 3px;
+	    					color: #cc0000;
+	    				}
+					}
+				}
+
+
+			}
+
+		}
+
+		.aboutus-page {
+			&,
+			.slick-list,
+			.slick-track,
+			.slick-slide {
+				height: 100% !important;
+			}
+
+			.slick-slide {
+				position: relative;
+                          overflow: auto;
+
+				.body-content {
+					position: relative;
+					//top: 50%;
+					//transform: translate(0,-50%);
+					font-size: 0px;
+					width: 100%;
+					padding: 0 50px;
+					margin: 0;
+
+					.column-content {
+						display: inline-block;
+						width: 45%;
+						margin-left: 5%;
+						vertical-align: middle;
+					}
+
+					.column-image {
+						display: inline-block;
+						width: 45%;
+						margin-left: 5%;
+						vertical-align: middle;
+						text-align: center;
+
+						img {
+							max-width: 100%;
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+
+	.about-footer {
+
+		font-family: 'Montserrat-Regular';
+		font-size: 12px;
+		color: white;
+		text-align: right;
+		width: 100%;height: 44px;
+		line-height: 44px;
+		position: absolute;
+		bottom: 0;left: 0;
+		padding-right: 135px;
+		background: red url(../../images/dbs-footer.png) 20px 0px no-repeat;
+
+		.footer-logo {
+			position: absolute;
+			right: 0;top: 0;
+			width: 110px;height: 44px;
+			background: #231f20;
+			text-align: center;
+
+			img {
+				width: 55%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+	}
+
+}
+
+@keyframes scroll {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+

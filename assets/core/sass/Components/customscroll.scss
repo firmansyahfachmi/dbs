@@ -1,0 +1,17 @@
+
+
+.mCSB_scrollTools {
+	.mCSB_draggerContainer {
+		margin-top: 43px;
+	}
+	.mCSB_draggerRail {
+		background: #414141;
+	}
+	.mCSB_dragger {
+		&.mCSB_dragger_onDrag .mCSB_dragger_bar,
+		.mCSB_dragger_bar {
+			border-radius: 0;
+			background: #6d0209;
+		}
+	}
+}

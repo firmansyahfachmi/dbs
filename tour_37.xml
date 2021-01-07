@@ -1,0 +1,1274 @@
+﻿<krpano version="1.20.7" title="Virtual Tour" logkey="false" showerrors="false">
+
+	<!-- <include url="skin/vtourskin.xml" /> -->
+	<!-- <include url="%SWFPATH%/plugins/fps.xml" /> -->
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               webvr_gyro_keeplookingdirection="false"
+	               webvr_prev_next_hotspots="true"
+	               littleplanetintro="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	<include url="skin/vtourskin_design_dbs.xml" if="device.desktop"    />
+	<include url="skin/vtourskin_design_dbs_mobile.xml" if="device.mobile"   />
+
+
+
+
+	<!-- ////////////////////////////////////////////////////////
+	////////////////////////////// FLOOR 37 START -->
+
+	<scene name="scene_37_01" title="37_01" onstart="setmap(37, 01, 190.22)" thumburl="panos/37_01.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="260.016" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_01.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_01.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="81.760" atv="4.831" linkedscene="scene_37_02_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-97.820" atv="7.640" linkedscene="scene_37_09_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="171.359" atv="6.417" linkedscene="scene_37_15_b" />
+
+	</scene>
+
+	<scene name="scene_37_01_a" title="37_01_a" onstart="setmap(37, 01, 190.22)" thumburl="panos/37_01.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="80.016" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_01.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_01.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="81.760" atv="4.831" linkedscene="scene_37_02_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-97.820" atv="7.640" linkedscene="scene_37_09_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="171.359" atv="6.417" linkedscene="scene_37_15_b" />
+
+	</scene>
+	<scene name="scene_37_01_b" title="37_01_b" onstart="setmap(37, 01, 190.22)" thumburl="panos/37_01.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.016" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_01.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_01.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="81.760" atv="4.831" linkedscene="scene_37_02_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-97.820" atv="7.640" linkedscene="scene_37_09_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="171.359" atv="6.417" linkedscene="scene_37_15_b" />
+
+	</scene>
+
+	<scene name="scene_37_02" title="37_02" onstart="setmap(37, 02, 10.22)" thumburl="panos/37_02.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-20.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_02.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_02.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="77.104" atv="6.205" linkedscene="scene_37_01" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-102.107" atv="15.873" linkedscene="scene_37_05" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-163.454" atv="27.053" linkedscene="scene_37_14_a" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-10.679" atv="11.935" linkedscene="scene_37_17_b" />
+
+	</scene>
+	<scene name="scene_37_02_a" title="37_02_a" onstart="setmap(37, 02, 10.22)" thumburl="panos/37_02.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-100.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_02.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_02.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="77.104" atv="6.205" linkedscene="scene_37_01" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-102.107" atv="15.873" linkedscene="scene_37_05" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-163.454" atv="27.053" linkedscene="scene_37_14_a" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-10.679" atv="11.935" linkedscene="scene_37_17_b" />
+
+	</scene>
+	<scene name="scene_37_02_b" title="37_02_b" onstart="setmap(37, 02, 10.22)" thumburl="panos/37_02.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_02.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_02.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="77.104" atv="6.205" linkedscene="scene_37_01" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-102.107" atv="15.873" linkedscene="scene_37_05" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-163.454" atv="27.053" linkedscene="scene_37_14_a" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-10.679" atv="11.935" linkedscene="scene_37_17_b" />
+
+	</scene>
+	<scene name="scene_37_02_c" title="37_02_c" onstart="setmap(37, 02, 10.22)" thumburl="panos/37_02.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="80.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_02.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_02.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="77.104" atv="6.205" linkedscene="scene_37_01" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-102.107" atv="15.873" linkedscene="scene_37_05" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-163.454" atv="27.053" linkedscene="scene_37_14_a" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-10.679" atv="11.935" linkedscene="scene_37_17_b" />
+
+	</scene>
+
+	<scene name="scene_37_03" title="37_03" onstart="" thumburl="panos/37_03.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_03.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_03.tiles/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_37_04" title="37_04" onstart="setmap(37, 04, 90.22)" thumburl="panos/37_04.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_04.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_04.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-5.001" atv="8.465" linkedscene="scene_37_05_a" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-45.000" atv="25.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_04', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_05" title="37_05" onstart="setmap(37, 05, 180.22)" thumburl="panos/37_05.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_05.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_05.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-80.611" atv="19.140" linkedscene="scene_37_02_c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="100.831" atv="11.744" linkedscene="scene_37_04" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="11.166" atv="18.517" linkedscene="scene_37_08" />
+
+	</scene>
+
+	<scene name="scene_37_05_a" title="37_05_a" onstart="setmap(37, 05, 180.22)" thumburl="panos/37_05.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="280.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_05.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_05.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-80.611" atv="19.140" linkedscene="scene_37_02_c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="100.831" atv="11.744" linkedscene="scene_37_04" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="11.166" atv="18.517" linkedscene="scene_37_08" />
+
+	</scene>
+	<scene name="scene_37_05_b" title="37_05_b" onstart="setmap(37, 05, 180.22)" thumburl="panos/37_05.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="200.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_05.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_05.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-80.611" atv="19.140" linkedscene="scene_37_02_c" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="100.831" atv="11.744" linkedscene="scene_37_04" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="11.166" atv="18.517" linkedscene="scene_37_08" />
+
+	</scene>
+
+	<scene name="scene_37_06" title="37_06" onstart="setmap(37, 06, 0.22)" thumburl="panos/37_06.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_06.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_06.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.775" atv="24.461" linkedscene="scene_37_08_a" />
+
+	</scene>
+
+	<scene name="scene_37_07" title="37_07" onstart="setmap(37, 07, 90.22)" thumburl="panos/37_07.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_07.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_07.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.856" atv="18.127" linkedscene="scene_37_08_b" />
+
+	</scene>
+
+	<scene name="scene_37_08" title="37_08" onstart="setmap(37, 08, 180.22)" thumburl="panos/37_08.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_08.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_08.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="157.706" atv="20.260" linkedscene="scene_37_05_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.016" atv="11.449" linkedscene="scene_37_07" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-12.557" atv="22.829" linkedscene="scene_37_06" />
+
+	</scene>
+	<scene name="scene_37_08_a" title="37_08_a" onstart="setmap(37, 08, 180.22)" thumburl="panos/37_08.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_08.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_08.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="157.706" atv="20.260" linkedscene="scene_37_05_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.016" atv="11.449" linkedscene="scene_37_07" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-12.557" atv="22.829" linkedscene="scene_37_06" />
+
+	</scene>
+	<scene name="scene_37_08_b" title="37_08_b" onstart="setmap(37, 08, 180.22)" thumburl="panos/37_08.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_08.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_08.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="157.706" atv="20.260" linkedscene="scene_37_05_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.016" atv="11.449" linkedscene="scene_37_07" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-12.557" atv="22.829" linkedscene="scene_37_06" />
+
+	</scene>
+
+	<scene name="scene_37_09" title="37_09" onstart="setmap(37, 09, -30.22)" thumburl="panos/37_09.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="30.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_09.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_09.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-58.911" atv="6.010" linkedscene="scene_37_01_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-28.944" atv="25.743" linkedscene="scene_37_22" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-152.143" atv="19.387" linkedscene="scene_37_10_b" />
+
+		<hotspot name="q-1" style="pin-topright" ath="5.000" atv="17.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-topright" ath="18.000" atv="20.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_09_a" title="37_09_a" onstart="setmap(37, 09, -30.22)" thumburl="panos/37_09.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="130.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_09.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_09.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-58.911" atv="6.010" linkedscene="scene_37_01_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-28.944" atv="25.743" linkedscene="scene_37_22" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-152.143" atv="19.387" linkedscene="scene_37_10_b" />
+
+		<hotspot name="q-1" style="pin-topright" ath="5.000" atv="17.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-topright" ath="18.000" atv="20.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_09_b" title="37_09_b" onstart="setmap(37, 09, -30.22)" thumburl="panos/37_09.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="200.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_09.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_09.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-58.911" atv="6.010" linkedscene="scene_37_01_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-28.944" atv="25.743" linkedscene="scene_37_22" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-152.143" atv="19.387" linkedscene="scene_37_10_b" />
+
+		<hotspot name="q-1" style="pin-topright" ath="5.000" atv="17.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-topright" ath="18.000" atv="20.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_10" title="37_10" onstart="setmap(37, 10, 10.22)" thumburl="panos/37_10.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_10.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_10.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.669" atv="19.195" linkedscene="scene_37_09" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="83.882" atv="6.894" linkedscene="scene_37_11" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-91.338" atv="6.780" linkedscene="scene_37_13" />
+
+		<hotspot name="q-1" style="pin-topright" ath="63.000" atv="5.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_10', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-bottomright" ath="5.000" atv="-10.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_10', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-3" style="pin-topright" ath="173.000" atv="15.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_10', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_10_a" title="37_10_a" onstart="setmap(37, 10, 10.22)" thumburl="panos/37_10.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-270.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_10.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_10.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.669" atv="19.195" linkedscene="scene_37_09" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="83.882" atv="6.894" linkedscene="scene_37_11" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-91.338" atv="6.780" linkedscene="scene_37_13" />
+
+		<hotspot name="q-1" style="pin-topright" ath="63.000" atv="5.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_10', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-bottomright" ath="5.000" atv="-10.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_10', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-3" style="pin-topright" ath="173.000" atv="15.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_10', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_10_b" title="37_10_b" onstart="setmap(37, 10, 10.22)" thumburl="panos/37_10.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_10.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_10.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.669" atv="19.195" linkedscene="scene_37_09" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="83.882" atv="6.894" linkedscene="scene_37_11" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-91.338" atv="6.780" linkedscene="scene_37_13" />
+
+		<hotspot name="q-1" style="pin-topright" ath="63.000" atv="5.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_10', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-bottomright" ath="5.000" atv="-10.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_10', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-3" style="pin-topright" ath="173.000" atv="15.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_10', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_11" title="37_11" onstart="setmap(37, 11, -80.22)" thumburl="panos/37_11.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_11.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_11.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-7.593" atv="9.554" linkedscene="scene_37_10" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="80.699" atv="1.396" linkedscene="scene_37_12" />
+
+		<hotspot name="q-1" style="pin-topleft" ath="170.000" atv="30.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '37_11', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_11_a" title="37_11_a" onstart="setmap(37, 11, -80.22)" thumburl="panos/37_11.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="270.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_11.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_11.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-8.009" atv="9.294" linkedscene="scene_37_10" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="80.537" atv="1.296" linkedscene="scene_37_12" />
+
+		<hotspot name="q-1" style="pin-topleft" ath="170.000" atv="30.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '37_11', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_12" title="37_12" onstart="setmap(37, 12, -80.22)" thumburl="panos/37_12.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_12.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_12.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-103.254" atv="4.822" linkedscene="scene_37_11_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-12.357" atv="7.557" linkedscene="scene_37_16" />
+
+		<hotspot name="q-1" style="pin-bottomright" ath="80.000" atv="-15.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_12', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-bottomright" ath="-1.000" atv="-12.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_12', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topright" ath="-70.000" atv="12.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_12', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_12_a" title="37_12" onstart="setmap(37, 12, -80.22)" thumburl="panos/37_12.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="170.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_12.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_12.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-103.549" atv="5.884" linkedscene="scene_37_11_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-12.525" atv="6.797" linkedscene="scene_37_16" />
+
+		<hotspot name="q-1" style="pin-bottomright" ath="80.000" atv="-15.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_12', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-bottomright" ath="-1.000" atv="-12.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_12', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topright" ath="-70.000" atv="12.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_12', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_13" title="37_13" onstart="setmap(37, 13, 0.22)" thumburl="panos/37_13.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="270.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_13.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_13.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="95.283" atv="4.055" linkedscene="scene_37_10_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-86.848" atv="7.852" linkedscene="scene_37_14" />
+
+		<hotspot name="q-1" style="pin-bottomright" ath="110.000" atv="-20.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_13', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+	</scene>
+	<scene name="scene_37_13_a" title="37_13_a" onstart="setmap(37, 13, 0.22)" thumburl="panos/37_13.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_13.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_13.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="95.533" atv="3.459" linkedscene="scene_37_10_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-87.460" atv="7.115" linkedscene="scene_37_14" />
+
+		<hotspot name="q-1" style="pin-bottomright" ath="110.000" atv="-20.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '37_13', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+	</scene>
+
+	<scene name="scene_37_14" title="37_14" onstart="setmap(37, 14, 180.22)" thumburl="panos/37_14.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_14.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_14.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-169.149" atv="25.668" linkedscene="scene_37_02" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-93.721" atv="7.909" linkedscene="scene_37_13_a" />
+
+	</scene>
+	<scene name="scene_37_14_a" title="37_14_a" onstart="setmap(37, 14, 180.22)" thumburl="panos/37_14.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="360.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_14.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_14.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-169.149" atv="25.668" linkedscene="scene_37_02" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-94.744" atv="10.356" linkedscene="scene_37_13_a" />
+
+	</scene>
+	<scene name="scene_37_14_b" title="37_14_b" onstart="setmap(37, 14, 180.22)" thumburl="panos/37_14.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_14.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_14.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-169.149" atv="25.668" linkedscene="scene_37_02" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-94.744" atv="10.356" linkedscene="scene_37_13_a" />
+
+	</scene>
+
+	<scene name="scene_37_15" title="37_15" onstart="setmap(37, 15, 180.22)" thumburl="panos/37_15.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="90.982" vlookat="0.131" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_15.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_15.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="4.392" atv="4.566" linkedscene="scene_37_01_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-85.940" atv="8.394" linkedscene="scene_37_16_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="94.344" atv="6.159" linkedscene="scene_37_17" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-13.000" atv="1.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_15', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-topright" ath="190.000" atv="25.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_15', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_15_a" title="37_15_a" onstart="setmap(37, 15, 180.22)" thumburl="panos/37_15.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="270.982" vlookat="0.131" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_15.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_15.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="4.392" atv="4.566" linkedscene="scene_37_01_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-85.940" atv="8.394" linkedscene="scene_37_16_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="94.344" atv="6.159" linkedscene="scene_37_17" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-13.000" atv="1.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_15', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-topright" ath="190.000" atv="25.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_15', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_15_b" title="37_15_b" onstart="setmap(37, 15, 180.22)" thumburl="panos/37_15.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.982" vlookat="0.131" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_15.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_15.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="4.392" atv="4.566" linkedscene="scene_37_01_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-85.940" atv="8.394" linkedscene="scene_37_16_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="94.344" atv="6.159" linkedscene="scene_37_17" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-13.000" atv="1.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_15', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-2" style="pin-topright" ath="190.000" atv="25.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_15', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_16" title="37_16" onstart="setmap(37, 16, 180.22)" thumburl="panos/37_16.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_16.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_16.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="101.031" atv="6.855" linkedscene="scene_37_15" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="15.934" atv="22.363" linkedscene="scene_37_22_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-77.176" atv="6.254" linkedscene="scene_37_12_a" />
+
+		<hotspot name="q-1" style="pin-topright" ath="55.000" atv="-1.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_16', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_16_a" title="37_16_a" onstart="setmap(37, 16, 180.22)" thumburl="panos/37_16.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="280.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_16.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_16.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="101.031" atv="6.855" linkedscene="scene_37_15" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="15.934" atv="22.363" linkedscene="scene_37_22_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-77.176" atv="6.254" linkedscene="scene_37_12_a" />
+
+		<hotspot name="q-1" style="pin-topright" ath="55.000" atv="-1.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_16', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_16_b" title="37_16_b" onstart="setmap(37, 16, 180.22)" thumburl="panos/37_16.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_16.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_16.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="101.031" atv="6.855" linkedscene="scene_37_15" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="15.934" atv="22.363" linkedscene="scene_37_22_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-77.176" atv="6.254" linkedscene="scene_37_12_a" />
+
+		<hotspot name="q-1" style="pin-topright" ath="55.000" atv="-1.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_16', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_17" title="37_17" onstart="setmap(37, 17, 280.22)" thumburl="panos/37_17.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_17.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_17.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-5.011" atv="11.807" linkedscene="scene_37_18" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="174.487" atv="7.992" linkedscene="scene_37_15_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-95.903" atv="16.036" linkedscene="scene_37_02_b" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-105.000" atv="15.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_17_a" title="37_17_a" onstart="setmap(37, 17, 280.22)" thumburl="panos/37_17.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_17.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_17.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-5.011" atv="11.807" linkedscene="scene_37_18" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="174.487" atv="7.992" linkedscene="scene_37_15_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-95.903" atv="16.036" linkedscene="scene_37_02_b" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-105.000" atv="15.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_17_b" title="37_17_b" onstart="setmap(37, 17, 280.22)" thumburl="panos/37_17.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="80.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_17.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_17.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-5.011" atv="11.807" linkedscene="scene_37_18" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="174.487" atv="7.992" linkedscene="scene_37_15_a" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-95.903" atv="16.036" linkedscene="scene_37_02_b" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-105.000" atv="15.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_18" title="37_18" onstart="setmap(37, 18, 180.22)" thumburl="panos/37_18.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="80.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_18.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_18.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-99.289" atv="12.316" linkedscene="scene_37_17_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-14.325" atv="25.647" linkedscene="scene_37_wx" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="169.735" atv="11.985" linkedscene="scene_37_19" />
+
+		
+		<hotspot name="q-2" style="pin-topright" ath="-68.000" atv="6.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topleft" ath="-87.000" atv="6.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-40.000" atv="3.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_16', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_18_a" title="37_18_a" onstart="setmap(37, 18, 180.22)" thumburl="panos/37_18.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-10.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_18.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_18.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-98.850" atv="12.572" linkedscene="scene_37_17_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-14.325" atv="25.647" linkedscene="scene_37_wx" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="168.486" atv="10.655" linkedscene="scene_37_19" />
+
+		<hotspot name="q-2" style="pin-topright" ath="-68.000" atv="6.000"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_09', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topleft" ath="-87.000" atv="6.000"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '37_09', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-40.000" atv="3.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_16', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_37_19" title="37_19" onstart="setmap(37, 19, 180.22)" thumburl="panos/37_19.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_19.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_19.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="2.721" atv="14.465" linkedscene="scene_37_18_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="89.991" atv="7.048" linkedscene="scene_37_20" />
+
+	</scene>
+	<scene name="scene_37_19_a" title="37_19_a" onstart="setmap(37, 19, 180.22)" thumburl="panos/37_19.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="270.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_19.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_19.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.226" atv="14.119" linkedscene="scene_37_18_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="89.984" atv="8.465" linkedscene="scene_37_20" />
+
+	</scene>
+
+	<scene name="scene_37_20" title="37_20" onstart="setmap(37, 20, 100.22)" thumburl="panos/37_20.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_20.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_20.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.787" atv="6.853" linkedscene="scene_37_19_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="88.049" atv="5.082" linkedscene="scene_37_21" />
+
+
+	</scene>
+	<scene name="scene_37_20_a" title="37_20_a" onstart="setmap(37, 20, 100.22)" thumburl="panos/37_20.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-80.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_20.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_20.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.857" atv="7.253" linkedscene="scene_37_19_a" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="87.779" atv="4.020" linkedscene="scene_37_21" />
+
+
+	</scene>
+
+	<scene name="scene_37_21" title="37_21" onstart="setmap(37, 21, 20.22)" thumburl="panos/37_21.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_21.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_21.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-12.277" atv="6.034" linkedscene="scene_37_20_a" />
+
+	</scene>
+
+	<scene name="scene_37_22" title="37_22" onstart="setmap(37, 22, -90.22)" thumburl="panos/37_22.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_22.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_22.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="86.880" atv="12.663" linkedscene="scene_37_16_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-91.482" atv="9.385" linkedscene="scene_37_09_b" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-9.441" atv="32.389" linkedscene="scene_37_ex" />
+
+
+	</scene>
+	<scene name="scene_37_22_a" title="37_22_a" onstart="setmap(37, 22, -90.22)" thumburl="panos/37_22.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_22.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/37_22.tiles/pano_%s.jpg" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="86.880" atv="12.663" linkedscene="scene_37_16_b" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-91.482" atv="9.385" linkedscene="scene_37_09_b" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-9.441" atv="32.389" linkedscene="scene_37_ex" />
+
+
+	</scene>
+
+	<scene name="scene_37_ex" title="37_ex" onstart="setmap(37, ex, 0.22)" havevrimage="true" thumburl="panos/37_ex.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180.0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_ex.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/37_ex.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/37_ex.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/37_ex.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="167.282" atv="37.780" onclick="js(showRefugeMsg('scene_re_wx'))" />
+
+		<hotspot name="q-x" style="pin-topright" ath="130.000" atv="20.000"/>
+		<layer parent="hotspot[q-x]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_ex', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+	<scene name="scene_37_wx" title="37_wx" onstart="setmap(37, wx, -80.22)" havevrimage="true" thumburl="panos/37_wx.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="180" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/37_wx.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/37_wx.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/37_wx.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/37_wx.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="167.282" atv="37.780" onclick="js(showRefugeMsg('scene_re_wx'))" />
+
+		<hotspot name="q-x" style="pin-topright" ath="130.000" atv="20.000"/>
+		<layer parent="hotspot[q-x]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '37_ex', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<!-- ////////////////////////////////////////////////////////
+	////////////////////////////// FLOOR 37 END -->
+
+
+	<!-- FLOOR REFUGE START -->
+	<scene name="scene_re_ex" title="re_ex" onstart="setmap(re, ex, 724.70)" havevrimage="true" thumburl="panos/re_ex.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<events onloadcomplete="js(visitRefuge())"/>
+
+	  <view hlookat="-110" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+	  <preview url="panos/re_ex.tiles/preview.jpg" />
+
+	  <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+	   <level tiledimagewidth="1664" tiledimageheight="1664">
+		<cube url="panos/re_ex.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+	   </level>
+	   <level tiledimagewidth="768" tiledimageheight="768">
+		<cube url="panos/re_ex.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+	   </level>
+	  </image>
+
+	  <image if="webvr.isenabled">
+	   <cube url="panos/re_ex.tiles/vr/pano_%s.jpg" />
+	  </image>
+
+	  
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="78.554" atv="19.820" linkedscene="scene_re_wx" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-52.984" atv="21.051" linkedscene="scene_ex_0" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-170.000" atv="5.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: 'scene_re_ex', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	 </scene>
+
+	 <scene name="scene_re_wx" title="re_wx" onstart="setmap(re, wx, 899.95)" havevrimage="true" thumburl="panos/re_wx.tiles/thumb.jpg" lat="" lng="" heading="">
+
+	 	<events onloadcomplete="js(visitRefuge())"/>
+
+	  <view hlookat="-120" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+	  <preview url="panos/re_wx.tiles/preview.jpg" />
+
+	  <image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+	   <level tiledimagewidth="1664" tiledimageheight="1664">
+		<cube url="panos/re_wx.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+	   </level>
+	   <level tiledimagewidth="768" tiledimageheight="768">
+		<cube url="panos/re_wx.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+	   </level>
+	  </image>
+
+	  <image if="webvr.isenabled">
+	   <cube url="panos/re_wx.tiles/vr/pano_%s.jpg" />
+	  </image>
+
+	  
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="88.192" atv="9.761" linkedscene="scene_re_ex" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-0.684" atv="27.270" linkedscene="scene_wx_0" />
+
+
+		<hotspot name="q-1" style="pin-topright" ath="190.000" atv="10.000"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: 'scene_re_wx', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	 </scene>
+	<!-- FLOOR REFUGE END -->
+	
+	<!-- FLOOR EAST EXIT START -->
+	<scene name="scene_ex_0" title="ex_0" onstart="setmap(ex, 0, 728.12)" havevrimage="true" thumburl="panos/ex_0.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ex_0.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/ex_0.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/ex_0.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/ex_0.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-53.872" atv="29.338" linkedscene="scene_ex_1" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-68.678" atv="5.933"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: 'wx-2', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_ex_1" title="ex_1" onstart="setmap(ex, 1, 726.19)" havevrimage="true" thumburl="panos/ex_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-180" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ex_1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/ex_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/ex_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/ex_1.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="172.926" atv="11.793" linkedscene="scene_ex_2" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-155.678" atv="15.933"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: 'wx-4', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<scene name="scene_ex_2" title="ex_2" onstart="setmap(ex, 2, 816.89)" havevrimage="true" thumburl="panos/ex_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ex_2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/ex_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/ex_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/ex_2.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="21.027" atv="12.645" linkedscene="scene_meeting_point" />
+
+	</scene>
+	<!-- FLOOR EAST EXIT END -->
+
+	
+	<!-- FLOOR WEST EXIT START -->
+	<scene name="scene_wx_0" title="wx_0" onstart="setmap(wx, 0, 902.91)" havevrimage="true" thumburl="panos/wx_0.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wx_0.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/wx_0.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/wx_0.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/wx_0.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-41.441" atv="32.562" linkedscene="scene_wx_1" />
+
+	</scene>
+
+	<scene name="scene_wx_1" title="wx_1" onstart="setmap(wx, 1, 718.70)" havevrimage="true" thumburl="panos/wx_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wx_1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/wx_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/wx_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/wx_1.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-3.435" atv="18.653" linkedscene="scene_wx_2" />
+
+	</scene>
+
+	<scene name="scene_wx_2" title="wx_2" onstart="setmap(wx, 2, 86.70)" havevrimage="true" thumburl="panos/wx_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wx_2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/wx_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/wx_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/wx_2.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="20.782" atv="33.691" linkedscene="scene_wx_3" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-8.678" atv="5.933"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: 'wx-2', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+	</scene>
+
+	<scene name="scene_wx_3" title="wx_3" onstart="setmap(wx, 3, 221.96)" havevrimage="true" thumburl="panos/wx_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-60" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wx_3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/wx_3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/wx_3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/wx_3.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-61.849" atv="25.995" linkedscene="scene_wx_4" />
+
+	</scene>
+
+	<scene name="scene_wx_4" title="wx_4" onstart="setmap(wx, 4, 700.19)" havevrimage="true" thumburl="panos/wx_4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="200.0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/wx_4.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/wx_4.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/wx_4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/wx_4.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+		
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-150.237" atv="17.353" linkedscene="scene_meeting_point" />
+
+		<hotspot name="q-1" style="pin-topright" ath="-115.678" atv="5.933"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: 'wx-4', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+
+	</scene>
+
+	<!-- FLOOR WEST EXIT END -->
+
+	<!-- FLOOR MEETING POINT START -->
+
+	<scene name="scene_meeting_point" title="meeting_point" onstart="" havevrimage="true" thumburl="panos/meeting_point.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<events onloadcomplete="lastScene()"/>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="130" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/meeting_point.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/meeting_point.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/meeting_point.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/meeting_point.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		
+
+	</scene>
+
+	<!-- FLOOR MEETING POINT END -->
+
+</krpano>
