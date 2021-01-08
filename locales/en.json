@@ -1,0 +1,30 @@
+{
+    "head": {
+      "title": "Multiple Language"
+    },
+    "#landing-index": {
+      "demo": "Demo:"
+    },
+    "#btn-experience": {
+        "experience": "Experience Now"
+    },
+    "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "experience-now": "EXPERIENCE NOW",
+        "escape-guide": "ESCAPE GUIDE",
+        "leader-board": "LEADER BOARD"
+    },
+    "#begin-section-top": {
+        "desc-navigate": "NAVIGATE THE BUILDING, ANSWER QUIZZES & EARN POINTS!"
+    },
+    "#begin-section-btn": {
+        "begin": "BEGIN"
+    },
+    ".box-content": {
+      "title": "LET'S TEST YOUR KNOWLEDGE"
+    },
+    ".instruction-box": {
+        "slug": "Instructions"
+    }
+  }

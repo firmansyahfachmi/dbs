@@ -1,0 +1,30 @@
+{
+    "head": {
+      "title": "Multiple Language"
+    },
+    "#landing-index": {
+      "demo": "Demo:"
+    },
+    "#btn-experience": {
+        "experience": "Mulai Pengalaman"
+    },
+    "nav": {
+      "home": "HOME",
+      "about": "TENTANG",
+      "experience-now": "MULAI PENGALAMAN",
+      "escape-guide": "PANDUAN MELARIKAN DIRI",
+      "leader-board": "PAPAN SKOR"
+    },
+    "#begin-section-top": {
+      "desc-navigate": "JELAJAHI BANGUNAN, JAWAB KUIS & DAPATKAN POIN!"
+    },
+    "#begin-section-btn": {
+      "begin": "MULAI"
+    },
+    ".box-content": {
+      "title": "AYO UJI PENGETAHUAN ANDA"
+    },
+    ".instruction-box": {
+      "slug": "Instruksi"
+    }
+  }

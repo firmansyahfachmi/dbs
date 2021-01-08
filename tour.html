@@ -107,9 +107,9 @@
 		<div class="popup-global start">
 			<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
 			<div class="box-content">
-				<div class="title-popup">LET'S TEST YOUR KNOWLEDGE</div>
+				<div class="title-popup" key="title">LET'S TEST YOUR KNOWLEDGE</div>
 				<div class="instruction-box">
-					<div class="instruction-box__slug">Instructions</div>
+					<div class="instruction-box__slug" key="slug">Instructions</div>
 					<div class="instruction-box__content">
 						<div class="part-instruction">
 							
@@ -224,7 +224,7 @@
 					<div class="row rowed">
 
 						<div class="box-begin">
-							<div class="box-begin__top">
+							<div class="box-begin__top" id="begin-section-top">
 								<div class="top-1">
 									<h4>Virtual Firedrill</h4>
 									<h4 class="red-title">360°</h4>
@@ -232,12 +232,12 @@
 								<div class="top-2">
 									ESCAPE
 								</div>
-								<div class="top-3">
+								<div class="top-3" key="desc-navigate">
 									NAVIGATE THE BUILDING, ANSWER QUIZZES & EARN POINTS!
 								</div>
 							</div>
-							<div class="box-begin__bottom">
-								<button class="btn-begin" onclick="startGame()"><span>BEGIN</span> <img src="./assets/images/back-arrow.png" alt=""></button>
+							<div class="box-begin__bottom" >
+								<button class="btn-begin" onclick="startGame()" id="begin-section-btn"><span key="begin">BEGIN</span> <img src="./assets/images/back-arrow.png" alt=""></button>
 							</div>
 						</div>
 						<!-- <div class="col-sm-12">
@@ -263,10 +263,10 @@
 	<div class="popup-wrapper solid-white">
 		<div class="popup-help start">
 			<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
-			<div class="box-content">
-				<div class="title-popup">LET'S TEST YOUR KNOWLEDGE</div>
+			<div class="box-content" id="instruct-box-2">
+				<div class="title-popup" key="title"><span>LET'S TEST YOUR KNOWLEDGE</span></div>
 				<div class="instruction-box">
-					<div class="instruction-box__slug">Instructions</div>
+					<div class="instruction-box__slug" key="slug">Instructions</div>
 					<div class="instruction-box__content">
 						<div class="part-instruction">
 							
@@ -353,6 +353,7 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js?v=9"></script>
 	<script src="assets/js/Includes/gameengine.js?v=9"></script>
+	<script src="assets/js/jquery.MultiLanguage.js"></script>
 	<script>
 		$(function() {
 			$("#guide-1").hover(

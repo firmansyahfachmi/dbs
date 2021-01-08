@@ -36,21 +36,22 @@
 </div>
 
 <div class="homepage">
-	<div class="content-wrapper">
+	<div class="content-wrapper" id="landing-index">
 		
-		<h2>I KNOW</h2>
+		<h2 key="iknow">I KNOW</h2>
 		<img src="assets/images/homepage-text.png" alt="I know how to escape" />
 		<p>
 			building emergency evacuation
 			<span>with <strong>360°</strong> experience</span>
 		</p>
-		<a href="tour.html" class="animate-btn"><span>EXPERIENCE<br />NOW</span></a> 
+		<a href="tour.html" class="animate-btn" id="btn-experience"><span key="experience">Experience Now</span></a> 
 
 	</div>
 </div>
 
 <!-- <a href="javascript:void(0);" class="footer-btn footer-sound"><i class="fa fa-volume-up" aria-hidden="true"></i></a> -->
 <a href="javascript:void(0);" class="footer-btn footer-help" onclick="showHelp()"><i class="fa fa-question" aria-hidden="true"></i></a>
+<a href="javascript:void(0);" class="footer-btn footer-sound" onclick="setLanguage()">EN</a>
 
 <div class="copyright">&copy;2020 Copyright PT Bank DBS Indonesia</div>
 
@@ -63,11 +64,11 @@
 				<div class="body-content">
 
 					<nav>
-						<a href="/" class="active">HOME</a>
-						<a href="about.html">ABOUT</a>
-						<a href="tour.html">EXPERIENCE NOW</a>
-						<a href="javascript:void(0);"  onclick="showHelp()">ESCAPE GUIDE</a>
-						<a href="leader-board.html">LEADER BOARD</a>
+						<a key="home" href="/" class="active">HOME</a>
+						<a key="about" href="about.html">ABOUT</a>
+						<a key="experience-now" href="tour.html">EXPERIENCE NOW</a>
+						<a key="escape-guide" href="javascript:void(0);"  onclick="showHelp()">ESCAPE GUIDE</a>
+						<a key="leader-board" href="leader-board.html">LEADER BOARD</a>
 					</nav>
 
 				</div>
@@ -119,6 +120,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/app.min.js?v=9"></script>
+	<script src="assets/js/app.min.js?v=9"></script>
+	<script src="assets/js/jquery.MultiLanguage.js"></script>
   </body>
 </html>
