@@ -2,8 +2,9 @@
     "head": {
       "title": "Multiple Language"
     },
-    "#landing-index": {
-      "demo": "Demo:"
+    "#landing-desc": {
+      "desc1": "building emergency evacuation",
+      "desc2": "with 360° experience"
     },
     "#btn-experience": {
         "experience": "Experience Now"
@@ -26,5 +27,38 @@
     },
     ".instruction-box": {
         "slug": "Instructions"
+    },
+    ".part-instruction__img-box":{
+      "arahkan": "Hover Me!"
+    },
+    ".part-instruction__bottom":{
+      "head-1": "Explore Each Room",
+      "desc-1": "Experience Virtual 360° Space",
+      "head-2": "Look for DBS Pin",
+      "desc-2": "Answer Quiz to collect Points",
+      "head-3": "Exit the Building",
+      "desc-3": "Find the route to the outside of the building"
+      
+    },
+    ".guide-instruction": {
+      "guide-1": "Click and Drag to look around" ,
+      "guide-2": "Click at the DBS Pin to see more" ,
+      "guide-3": "Click at the Arrow Pin to move" 
+    },
+    ".labels" : {
+      "title-choose" : "CHOOS FLOOR",
+      "choose-warn" : "*choose your floor"
+    },
+    "#choosed": {
+      "lantai": "Floor"
+    },
+    ".f-translate": {
+      "lantai" : "Floor"
+    },
+    ".box-btn-start": {
+      "mulai-sekarang": "START NOW"
+    },
+    ".btn-resume": {
+      "resume": "RESUME"
     }
   }

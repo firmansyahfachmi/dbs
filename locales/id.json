@@ -2,8 +2,9 @@
     "head": {
       "title": "Multiple Language"
     },
-    "#landing-index": {
-      "demo": "Demo:"
+    "#landing-desc": {
+      "desc1": "evakuasi darurat gedung",
+      "desc2": "dengan pengalaman 360°"
     },
     "#btn-experience": {
         "experience": "Mulai Pengalaman"
@@ -26,5 +27,38 @@
     },
     ".instruction-box": {
       "slug": "Instruksi"
+    },
+    ".part-instruction__img-box":{
+      "arahkan": "Arahkan!"
+    },
+    ".part-instruction__bottom":{
+      "head-1": "Jelajahi Setiap Ruangan",
+      "desc-1": "Rasakan Virtual 360 ° Space",
+      "head-2": "Cari Pin DBS",
+      "desc-2": "Jawab Kuis untuk mengumpulkan Poin",
+      "head-3": "Keluar dari Gedung",
+      "desc-3": "Temukan rute ke luar gedung"
+      
+    },
+    ".guide-instruction": {
+      "guide-1": "Klik dan Tarik untuk melihat sekeliling" ,
+      "guide-2": "Klik di Pin DBS untuk melihat lebih banyak" ,
+      "guide-3": "Klik di Pin Panah untuk memindahkan" 
+    },
+    ".labels" : {
+      "title-choose" : "PILIH LANTAI",
+      "choose-warn" : "*pilih lantai anda"
+    },
+    "#choosed": {
+      "lantai": "Lantai"
+    },
+    ".f-translate": {
+      "lantai" : "Lantai"
+    },
+    ".box-btn-start": {
+      "mulai-sekarang": "MULAI SEKARANG"
+    },
+    ".btn-resume": {
+      "resume": "LANJUTKAN"
     }
   }
