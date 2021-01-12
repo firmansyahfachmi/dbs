@@ -39,20 +39,20 @@
 <div class="leaderboard"> 
 	<div class="content-wrapper">
 		
-		<h1>LEADER BOARD</h1>
+		<h1 key="papan-skor">LEADER BOARD</h1>
 
 		<div class="leaderboard-content">
 
 		  <!-- Nav tabs -->
 		  <ul class="nav nav-tabs" role="tablist">
-		    <li role="presentation" class="active">
-		    	<a onclick="getResponse('all')" aria-controls="all" role="tab" data-toggle="tab">All</a>
+		    <li role="presentation" class="active tab-board">
+		    	<a onclick="getResponse('all')" aria-controls="all" role="tab" data-toggle="tab" key="all">All</a>
 		    </li>
-		    <li role="presentation">
-		    	<a onclick="getResponse('week')" aria-controls="weekly" role="tab" data-toggle="tab">Weekly Winner</a>
+		    <li role="presentation" class="tab-board">
+		    	<a onclick="getResponse('week')" aria-controls="weekly" role="tab" data-toggle="tab" key="week">Weekly Winner</a>
 		    </li>
-		    <li role="presentation">
-		    	<a onclick="getResponse('month')" aria-controls="main" role="tab" data-toggle="tab">Monthly Winner</a>
+		    <li role="presentation" class="tab-board">
+		    	<a onclick="getResponse('month')" aria-controls="main" role="tab" data-toggle="tab" key="month">Monthly Winner</a>
 		    </li>
 		  </ul>
 		  
@@ -70,9 +70,9 @@
 				<div class="board-head">
 					<div class="winner-list">
 						<div class="list-row">
-							<div class="list-cell">RANK</div>
-							<div class="list-cell">NAME</div>
-							<div class="list-cell">SCORE</div>
+							<div class="list-cell" key="rank">RANK</div>
+							<div class="list-cell" key="name">NAME</div>
+							<div class="list-cell" key="skor">SCORE</div>
 						</div>
 					</div>
 				</div>
@@ -93,8 +93,8 @@
 	</div>
 </div>
 
-<a href="javascript:void(0);" class="footer-btn footer-sound"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
-<a href="javascript:void(0);" class="footer-btn footer-help" onclick="showHelp()"><i class="fa fa-question" aria-hidden="true"></i></a>
+<!-- <a href="javascript:void(0);" class="footer-btn footer-sound" onclick="setLanguage()">EN</a> -->
+<!-- <a href="javascript:void(0);" class="footer-btn footer-help" onclick="showHelp()"><i class="fa fa-question" aria-hidden="true"></i></a> -->
 
 <div class="copyright">&copy;2020 Copyright PT Bank DBS Indonesia</div>
 
@@ -107,11 +107,11 @@
 				<div class="body-content">
 
 					<nav>
-						<a href="/" class="active">HOME</a>
-						<a href="about.html">ABOUT</a>
-						<a href="tour.html">EXPERIENCE NOW</a>
-						<a href="javascript:void(0);"  onclick="showHelp()">ESCAPE GUIDE</a>
-						<a href="leader-board.html">LEADER BOARD</a>
+						<a key="home" href="/" class="active">HOME</a>
+						<a key="about" href="about.html">ABOUT</a>
+						<a key="experience-now" href="tour.html">EXPERIENCE NOW</a>
+						<a key="escape-guide" href="javascript:void(0);"  onclick="showHelp()">ESCAPE GUIDE</a>
+						<a key="leader-board" href="leader-board.html">LEADER BOARD</a>
 					</nav>
 
 				</div>
@@ -163,7 +163,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/app.min.js?v=9"></script>
+	<script src="assets/js/app.min.js?v=9"></script>
+	<script src="assets/js/jquery.MultiLanguage.js"></script>
   </body>
 </html>
 
