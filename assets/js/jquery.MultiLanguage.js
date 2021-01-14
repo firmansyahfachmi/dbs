@@ -1,20 +1,18 @@
 // Language JSON File Location
-// localStorage.setItem('language', 'en');
+localStorage.setItem('language', 'en');
 var language = localStorage.getItem('language');
 // Default Language
 var default_lang = 'en';
-let lang = localStorage.getItem('language');
+// let lang = localStorage.getItem('language');
 // Set Selected Language
 function setLanguage() {
     
-    if(lang == 'en'){
-        lang = 'id'
-    } else if(lang == 'id'){
-        lang = 'en'
-    } else {
-        lang = 'en'
-    }
-    localStorage.setItem('language', lang);
+    if(language == 'en'){
+        language = 'id'
+    } else if(language == 'id'){
+        language = 'en'
+    } 
+    localStorage.setItem('language', language);
     language = localStorage.getItem('language');
     // Run Multi Language Plugin
     getLanguage()
@@ -24,7 +22,6 @@ function setLanguage() {
 function getLanguage() {
     // Language on user preference
     (language == null) ? setLanguage(default_lang) : false;
-    console.log('s', language)
     // Load data of selected language
     $.ajax({
         url: 'http://139.59.254.53/dbs-vr-website/locales/' + language + '.json',
