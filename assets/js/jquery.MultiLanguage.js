@@ -11,6 +11,8 @@ function setLanguage() {
         lang = 'id'
     } else if(lang == 'id'){
         lang = 'en'
+    } else {
+        lang = 'en'
     }
     localStorage.setItem('language', lang);
     language = localStorage.getItem('language');
