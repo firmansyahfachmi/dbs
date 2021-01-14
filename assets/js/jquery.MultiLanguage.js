@@ -22,6 +22,7 @@ function setLanguage() {
 function getLanguage() {
     // Language on user preference
     (language == null) ? setLanguage(default_lang) : false;
+    console.log('s', language)
     // Load data of selected language
     $.ajax({
         url: 'http://139.59.254.53/dbs-vr-website/locales/' + language + '.json',
