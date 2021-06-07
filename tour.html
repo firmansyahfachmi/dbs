@@ -1,53 +1,71 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
   <head>
     <title>DBS - Escape Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <!-- <base href="http://localhost:53996" /> -->
     <style>
-      @-ms-viewport { width:device-width; }
-      @media only screen and (min-device-width:800px) { html { overflow:hidden; } }
-      html { height:100%; }
-      body { height:100%; overflow:hidden; margin:0; padding:0; font-size:16px; color:#FFFFFF; background-color:#000000;
-	   }
-	   .body-quisioner{
-		margin-top: 50px;}
-		.warn-label{
-			color: red !important;
-			visibility: hidden;
-			transition: all 0.2s;
-			margin-left: 20px;
-		}
-		.warn-submit{
-			color: red !important;
-			visibility: hidden;
-			transition: all 0.2s;
-			/* margin-left: 20px; */
-		}
-		.solid-white{
-			background: #FFFFFF !important;
-		}
-		.btn-resume{
-			width: 100% !important;
-		}
-		
-
+      @-ms-viewport {
+        /* width: device-width; */
+      }
+      @media only screen and (min-device-width: 800px) {
+        html {
+          overflow: hidden;
+        }
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #000000;
+      }
+      .body-quisioner {
+        margin-top: 50px;
+      }
+      .warn-label {
+        color: red !important;
+        visibility: hidden;
+        transition: all 0.2s;
+        margin-left: 20px;
+      }
+      .warn-submit {
+        color: red !important;
+        visibility: hidden;
+        transition: all 0.2s;
+        /* margin-left: 20px; */
+      }
+      .solid-white {
+        background: #ffffff !important;
+      }
+      .btn-resume {
+        width: 100% !important;
+      }
     </style>
 
     <!-- Bootstrap -->
-    <link href="assets/css/vendor.min.css" rel="stylesheet"> 
-    <link href="assets/css/plugins.min.css" rel="stylesheet"> 
-    <link href="assets/css/main.css?v=1" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/vendor.min.css" rel="stylesheet" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css?v=1" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,134 +76,196 @@
     <![endif]-->
   </head>
   <body>
-	<script src="tour.js"></script>
-	<input type="hidden" id="baseUrlCms" value="https://www.evacuationdrill.id:8001">
-	
+    <script src="tour.js"></script>
+    <input
+      type="hidden"
+      id="baseUrlCms"
+      value="https://www.evacuationdrill.id:8001"
+    />
 
-<div class="tour-wrap">
-	<div class="information">
-	    <div id="poin" class="info-poin"><span key="poin-saya" style="font-size: 10px;">MY POINTS</span><span>0</span></div>
-	    <div id="time" class="info-time">00 : 00 : 00</div>
-	</div>
+    <div class="tour-wrap">
+      <div class="information">
+        <div id="poin" class="info-poin">
+          <span key="poin-saya" style="font-size: 10px">MY POINTS</span
+          ><span>0</span>
+        </div>
+        <div id="time" class="info-time">00 : 00 : 00</div>
+      </div>
 
-	<div id="pano" style="">
-	    <noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
-	</div>
-</div>
+      <div id="pano" style="">
+        <noscript
+          ><table style="width: 100%; height: 100%">
+            <tr style="vertical-align: middle">
+              <td>
+                <div style="text-align: center">
+                  ERROR:<br /><br />Javascript not activated<br /><br />
+                </div>
+              </td>
+            </tr></table
+        ></noscript>
+      </div>
+    </div>
 
-<div class="popup-wrapper">
-	<div class="popup-global-q start">
-		<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
-		<div class="popup-title"><h3></h3></div>
-		<div class="popup-body-q">
-				
-			<div class="noted"><span></span></div>
-			<div class="body-quisioner">
-			</div>
-			<div class="body-content">
-			</div>
+    <div class="popup-wrapper">
+      <div class="popup-global-q start">
+        <a
+          href="javascript:void(0);"
+          onclick="closePopup(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="popup-title"><h3></h3></div>
+        <div class="popup-body-q">
+          <div class="noted"><span></span></div>
+          <div class="body-quisioner"></div>
+          <div class="body-content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-wrapper">
+      <div class="popup-global-re start">
+        <a
+          href="javascript:void(0);"
+          onclick="closePopup(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="popup-title"><h3></h3></div>
+        <div class="popup-body-re">
+          <div class="noted"><span></span></div>
+          <div class="body-content"></div>
+        </div>
+      </div>
+    </div>
 
-		</div>
-	</div>
-</div>
-<div class="popup-wrapper">
-	<div class="popup-global-re start">
-		<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
-		<div class="popup-title"><h3></h3></div>
-		<div class="popup-body-re">
-				
-			<div class="noted"><span></span></div>
-			<div class="body-content">
-			</div>
-
-		</div>
-	</div>
-</div>
-
-
-	<div class="popup-wrapper">
-		<div class="popup-global start">
-			<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
-			<div class="box-content">
-				<div class="title-popup" key="title">LET'S TEST YOUR KNOWLEDGE</div>
-				<div class="instruction-box">
-					<div class="instruction-box__slug" key="slug">Instructions</div>
-					<div class="instruction-box__content">
-						<div class="part-instruction">
-							
-							<div class="part-instruction__img-box">
-								<div class="instruction-number">1</div>
-								<img src="./assets/images/explore_1.png" id="guide-1" alt="">
-								<div class="hover-me" key="arahkan">Hover me!</div>
-							</div>
-							<div class="part-instruction__bottom">
-								<h4 key="head-1">Explore Each Room</h4>
-								<p key="desc-1">Experience Virtual 360° Space</p>
-								<div class="guide-instruction">
-									<img src="./assets/images/move-arrows 1.png" alt="">
-									<span key="guide-1">Click and Drag to look around</span>
-								</div>
-							</div>
-						</div>
-						<div class="part-instruction">
-							
-							<div class="part-instruction__img-box">
-								<div class="instruction-number">2</div>
-								<img src="./assets/images/explore_2.png" id="guide-2" alt="">
-								<div class="hover-me" key="arahkan">Hover me!</div>
-							</div>
-							<div class="part-instruction__bottom">
-								<h4 key="head-2">Look for DBS Pin </h4>
-								<p key="desc-2">Answer Quiz to collect Points</p>
-								<div class="guide-instruction">
-									<img src="./assets/images/click 2.png" alt="">
-									<span key="guide-2">Click at the DBS Pin to see more</span>
-								</div>
-							</div>
-						</div>
-						<div class="part-instruction">
-							
-							<div class="part-instruction__img-box">
-								<div class="instruction-number">3</div>
-								<img src="./assets/images/explore_3.png" id="guide-3" alt="">
-								<div class="hover-me" key="arahkan">Hover me!</div>
-							</div>
-							<div class="part-instruction__bottom">
-								<h4 key="head-3">Exit the Building</h4>
-								<p key="desc-3">Find the route to the outside of the building</p>
-								<div class="guide-instruction">
-									<img src="./assets/images/click 2.png" alt="">
-									<span key="guide-3">Click at the Arrow Pin to move </span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="box-content__bottom">
-					<div class="selection-floor">
-						<div class="labels">
-							<label for="" key="title-choose">CHOOSE FLOOR</label><label class="warn-label" key="choose-warn">*choose your floor</label>
-						</div>
-						<div class="dropdown-floor" id="open-drop">
-							<h3 id="choosed"><span key="lantai" style="color: #1a1a1a;">Floor</span> <span id="floor-choosen">31</span></h3>
-							<div class="dropdown-floor__expand" id="f-expand">
-								<button onclick="choose_floor(31)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>31</span></button>
-								<button onclick="choose_floor(32)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>32</span></button>
-								<button onclick="choose_floor(33)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>33</span></button>
-								<button onclick="choose_floor(34)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>34</span></button>
-								<button onclick="choose_floor(35)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>35</span></button>
-								<button onclick="choose_floor(36)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>36</span></button>
-								<button onclick="choose_floor(37)" class="f-translate"><span key="lantai" style="color:#000">Floor</span> <span>37</span></button>
-							</div>
-						</div>
-						
-					</div>
-					<div class="box-btn-start">
-						<button class="box-btn-start__btn" onclick="$.letsGo(this)" key="mulai-sekarang">START NOW</button>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="popup-title"><h3></h3></div>
+    <div class="popup-wrapper">
+      <div class="popup-global start">
+        <a
+          href="javascript:void(0);"
+          onclick="closePopup(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="box-content">
+          <div class="title-popup" key="title">LET'S TEST YOUR KNOWLEDGE</div>
+          <div class="instruction-box">
+            <div class="instruction-box__slug" key="slug">Instructions</div>
+            <div class="instruction-box__content">
+              <div class="part-instruction">
+                <div class="part-instruction__img-box">
+                  <div class="instruction-number">1</div>
+                  <img
+                    src="./assets/images/explore_1.png"
+                    id="guide-1"
+                    alt=""
+                  />
+                  <div class="hover-me" key="arahkan">Hover me!</div>
+                </div>
+                <div class="part-instruction__bottom">
+                  <h4 key="head-1">Explore Each Room</h4>
+                  <p key="desc-1">Experience Virtual 360° Space</p>
+                  <div class="guide-instruction">
+                    <img src="./assets/images/move-arrows 1.png" alt="" />
+                    <span key="guide-1">Click and Drag to look around</span>
+                  </div>
+                </div>
+              </div>
+              <div class="part-instruction">
+                <div class="part-instruction__img-box">
+                  <div class="instruction-number">2</div>
+                  <img
+                    src="./assets/images/explore_2.png"
+                    id="guide-2"
+                    alt=""
+                  />
+                  <div class="hover-me" key="arahkan">Hover me!</div>
+                </div>
+                <div class="part-instruction__bottom">
+                  <h4 key="head-2">Look for DBS Pin</h4>
+                  <p key="desc-2">Answer Quiz to collect Points</p>
+                  <div class="guide-instruction">
+                    <img src="./assets/images/click 2.png" alt="" />
+                    <span key="guide-2">Click at the DBS Pin to see more</span>
+                  </div>
+                </div>
+              </div>
+              <div class="part-instruction">
+                <div class="part-instruction__img-box">
+                  <div class="instruction-number">3</div>
+                  <img
+                    src="./assets/images/explore_3.png"
+                    id="guide-3"
+                    alt=""
+                  />
+                  <div class="hover-me" key="arahkan">Hover me!</div>
+                </div>
+                <div class="part-instruction__bottom">
+                  <h4 key="head-3">Exit the Building</h4>
+                  <p key="desc-3">
+                    Find the route to the outside of the building
+                  </p>
+                  <div class="guide-instruction">
+                    <img src="./assets/images/click 2.png" alt="" />
+                    <span key="guide-3">Click at the Arrow Pin to move </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-content__bottom">
+            <div class="selection-floor">
+              <div class="labels">
+                <label for="" key="title-choose">CHOOSE FLOOR</label
+                ><label class="warn-label" key="choose-warn"
+                  >*choose your floor</label
+                >
+              </div>
+              <div class="dropdown-floor" id="open-drop">
+                <h3 id="choosed">
+                  <span key="lantai" style="color: #1a1a1a">Floor</span>
+                  <span id="floor-choosen">31</span>
+                </h3>
+                <div class="dropdown-floor__expand" id="f-expand">
+                  <button onclick="choose_floor(31)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>31</span>
+                  </button>
+                  <button onclick="choose_floor(32)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>32</span>
+                  </button>
+                  <button onclick="choose_floor(33)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>33</span>
+                  </button>
+                  <button onclick="choose_floor(34)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>34</span>
+                  </button>
+                  <button onclick="choose_floor(35)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>35</span>
+                  </button>
+                  <button onclick="choose_floor(36)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>36</span>
+                  </button>
+                  <button onclick="choose_floor(37)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>37</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box-btn-start">
+              <button
+                class="box-btn-start__btn"
+                onclick="$.letsGo(this)"
+                key="mulai-sekarang"
+              >
+                START NOW
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="popup-title"><h3></h3></div>
 			<div class="popup-body">
 				
 				<div class="noted"><span></span></div>
@@ -195,52 +275,60 @@
 				</div>
 
 			</div> -->
-		</div>
-	</div>
-	
-	<div class="popup-wrapper">
-		<div class="popup-re start">
-			<a href="javascript:void(0);" onclick="closeRefugeMsg(this);" class="btn popup-close"></a>
-			<div class="popup-title"><h3>REST AREA</h3></div>
-			<div class="popup-body">
-				
-				<div class="noted"><span></span></div>
-				<div class="body-content">
-					<h5 key="title-rest">You are entering rest area</h5>
-					<p key="desc-rest" class="black">
-						This area is used as a temporary resting place.<br/>Whereby senior citizen, pregnant, impaired / handicapped persons can wait for floor warden assistance to be evacuated toward exit way from the building.
-					</p>
-				</div>
+      </div>
+    </div>
 
-			</div>
-		</div>
-	</div>
+    <div class="popup-wrapper">
+      <div class="popup-re start">
+        <a
+          href="javascript:void(0);"
+          onclick="closeRefugeMsg(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="popup-title"><h3>REST AREA</h3></div>
+        <div class="popup-body">
+          <div class="noted"><span></span></div>
+          <div class="body-content">
+            <h5 key="title-rest">You are entering rest area</h5>
+            <p key="desc-rest" class="black">
+              This area is used as a temporary resting place.<br />Whereby
+              senior citizen, pregnant, impaired / handicapped persons can wait
+              for floor warden assistance to be evacuated toward exit way from
+              the building.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<div class="popup-wrapper">
-		<div class="popup-intro">
-			<div class="popup-body">
-				
-				<div class="container">
-					<div class="row rowed">
-
-						<div class="box-begin">
-							<div class="box-begin__top" id="begin-section-top">
-								<div class="top-1">
-									<h4>Virtual Firedrill</h4>
-									<h4 class="red-title">360°</h4>
-								</div>
-								<div class="top-2">
-									ESCAPE
-								</div>
-								<div class="top-3" key="desc-navigate">
-									NAVIGATE THE BUILDING, ANSWER QUIZZES & EARN POINTS!
-								</div>
-							</div>
-							<div class="box-begin__bottom" >
-								<button class="btn-begin" onclick="startGame()" id="begin-section-btn"><span key="begin">BEGIN</span> <img src="./assets/images/back-arrow.png" alt=""></button>
-							</div>
-						</div>
-						<!-- <div class="col-sm-12">
+    <div class="popup-wrapper">
+      <div class="popup-intro">
+        <div class="popup-body">
+          <div class="container">
+            <div class="row rowed">
+              <div class="box-begin">
+                <div class="box-begin__top" id="begin-section-top">
+                  <div class="top-1">
+                    <h4>Virtual Firedrill</h4>
+                    <h4 class="red-title">360°</h4>
+                  </div>
+                  <div class="top-2">ESCAPE</div>
+                  <div class="top-3" key="desc-navigate">
+                    NAVIGATE THE BUILDING, ANSWER QUIZZES & EARN POINTS!
+                  </div>
+                </div>
+                <div class="box-begin__bottom">
+                  <button
+                    class="btn-begin"
+                    onclick="startGame()"
+                    id="begin-section-btn"
+                  >
+                    <span key="begin">BEGIN</span>
+                    <img src="./assets/images/back-arrow.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="col-sm-12">
 						
 
 							<h3 class="red-title">DO YOU KNOW</h3><br />
@@ -253,78 +341,88 @@
 							</nav>
 
 						</div>-->
-					</div>
-				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			</div>
-		</div>
-	</div> 
-
-	<div class="popup-wrapper solid-white">
-		<div class="popup-help start">
-			<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
-			<div class="box-content" id="instruct-box-2">
-				<div class="title-popup" key="title"><span>LET'S TEST YOUR KNOWLEDGE</span></div>
-				<div class="instruction-box">
-					<div class="instruction-box__slug" key="slug">Instructions</div>
-					<div class="instruction-box__content">
-						<div class="part-instruction">
-							
-							<div class="part-instruction__img-box">
-								<div class="instruction-number">1</div>
-								<img src="./assets/images/explore_1.png" id="help-1" alt="">
-								<div class="hover-me" key="arahkan">Hover me!</div>
-							</div>
-							<div class="part-instruction__bottom">
-								<h4 key="head-1">Explore Each Room</h4>
-								<p key="desc-1">Experience Virtual 360° Space</p>
-								<div class="guide-instruction">
-									<img src="./assets/images/move-arrows 1.png" alt="">
-									<span key="guide-1">Click and Drag to look around</span>
-								</div>
-							</div>
-						</div>
-						<div class="part-instruction">
-							
-							<div class="part-instruction__img-box">
-								<div class="instruction-number">2</div>
-								<img src="./assets/images/explore_2.png" id="help-2" alt="">
-								<div class="hover-me" key="arahkan">Hover me!</div>
-							</div>
-							<div class="part-instruction__bottom">
-								<h4 key="head-2">Look for DBS Pin </h4>
-								<p key="desc-2">Answer Quiz to collect Points</p>
-								<div class="guide-instruction">
-									<img src="./assets/images/click 2.png" alt="">
-									<span key="guide-2">Click at the DBS Pin to see more</span>
-								</div>
-							</div>
-						</div>
-						<div class="part-instruction">
-							
-							<div class="part-instruction__img-box">
-								<div class="instruction-number">3</div>
-								<img src="./assets/images/explore_3.png" id="help-3" alt="">
-								<div class="hover-me" key="arahkan">Hover me!</div>
-							</div>
-							<div class="part-instruction__bottom">
-								<h4 key="head-3">Exit the Building</h4>
-								<p key="desc-3">Find the route to the outside of the building</p>
-								<div class="guide-instruction">
-									<img src="./assets/images/click 2.png" alt="">
-									<span key="guide-3">Click at the Arrow Pin to move </span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="box-content__bottom">
-					<div class="box-btn-start btn-resume">
-						<button class="box-btn-start__btn" onclick="closePopup(this);" key="resume">RESUME</button>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="popup-body">
+    <div class="popup-wrapper solid-white">
+      <div class="popup-help start">
+        <a
+          href="javascript:void(0);"
+          onclick="closePopup(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="box-content" id="instruct-box-2">
+          <div class="title-popup" key="title">
+            <span>LET'S TEST YOUR KNOWLEDGE</span>
+          </div>
+          <div class="instruction-box">
+            <div class="instruction-box__slug" key="slug">Instructions</div>
+            <div class="instruction-box__content">
+              <div class="part-instruction">
+                <div class="part-instruction__img-box">
+                  <div class="instruction-number">1</div>
+                  <img src="./assets/images/explore_1.png" id="help-1" alt="" />
+                  <div class="hover-me" key="arahkan">Hover me!</div>
+                </div>
+                <div class="part-instruction__bottom">
+                  <h4 key="head-1">Explore Each Room</h4>
+                  <p key="desc-1">Experience Virtual 360° Space</p>
+                  <div class="guide-instruction">
+                    <img src="./assets/images/move-arrows 1.png" alt="" />
+                    <span key="guide-1">Click and Drag to look around</span>
+                  </div>
+                </div>
+              </div>
+              <div class="part-instruction">
+                <div class="part-instruction__img-box">
+                  <div class="instruction-number">2</div>
+                  <img src="./assets/images/explore_2.png" id="help-2" alt="" />
+                  <div class="hover-me" key="arahkan">Hover me!</div>
+                </div>
+                <div class="part-instruction__bottom">
+                  <h4 key="head-2">Look for DBS Pin</h4>
+                  <p key="desc-2">Answer Quiz to collect Points</p>
+                  <div class="guide-instruction">
+                    <img src="./assets/images/click 2.png" alt="" />
+                    <span key="guide-2">Click at the DBS Pin to see more</span>
+                  </div>
+                </div>
+              </div>
+              <div class="part-instruction">
+                <div class="part-instruction__img-box">
+                  <div class="instruction-number">3</div>
+                  <img src="./assets/images/explore_3.png" id="help-3" alt="" />
+                  <div class="hover-me" key="arahkan">Hover me!</div>
+                </div>
+                <div class="part-instruction__bottom">
+                  <h4 key="head-3">Exit the Building</h4>
+                  <p key="desc-3">
+                    Find the route to the outside of the building
+                  </p>
+                  <div class="guide-instruction">
+                    <img src="./assets/images/click 2.png" alt="" />
+                    <span key="guide-3">Click at the Arrow Pin to move </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-content__bottom">
+            <div class="box-btn-start btn-resume">
+              <button
+                class="box-btn-start__btn"
+                onclick="closePopup(this);"
+                key="resume"
+              >
+                RESUME
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="popup-body">
 				
 				<div class="container">
 					<div class="row">
@@ -344,94 +442,89 @@
 				</div>
 
 			</div> -->
-		</div>
-	</div>
-
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js?v=9"></script>
-	<script src="assets/js/Includes/gameengine.js?v=9"></script>
-	<script src="assets/js/jquery.MultiLanguage.js"></script>
-	<script>
-		$(function() {
-			$("#guide-1").hover(
-				function() {
-					$(this).attr("src", "./assets/images/step1.gif");
-				},
-				function() {
-					$(this).attr("src", "./assets/images/explore_1.png");
-				}                         
-			);                  
-			                                
-		});
+    <script src="assets/js/Includes/gameengine.js?v=9"></script>
+    <script src="assets/js/jquery.MultiLanguage.js"></script>
+    <script>
+      $(function () {
+        $("#guide-1").hover(
+          function () {
+            $(this).attr("src", "./assets/images/step1.gif")
+          },
+          function () {
+            $(this).attr("src", "./assets/images/explore_1.png")
+          }
+        )
+      })
 
-		$(function() {
-			$("#guide-2").hover(
-				function() {
-					$(this).attr("src", "./assets/images/step2.gif");
-				},
-				function() {
-					$(this).attr("src", "./assets/images/explore_2.png");
-				}                         
-			); 
-		});
-		$(function() {
-			$("#guide-3").hover(
-				function() {
-					$(this).attr("src", "./assets/images/step3.gif");
-				},
-				function() {
-					$(this).attr("src", "./assets/images/explore_3.png");
-				}                         
-			);  
-		});
-		$(function() {
-			$("#help-1").hover(
-				function() {
-					$(this).attr("src", "./assets/images/step1.gif");
-				},
-				function() {
-					$(this).attr("src", "./assets/images/explore_1.png");
-				}                         
-			);                  
-			                                
-		});
+      $(function () {
+        $("#guide-2").hover(
+          function () {
+            $(this).attr("src", "./assets/images/step2.gif")
+          },
+          function () {
+            $(this).attr("src", "./assets/images/explore_2.png")
+          }
+        )
+      })
+      $(function () {
+        $("#guide-3").hover(
+          function () {
+            $(this).attr("src", "./assets/images/step3.gif")
+          },
+          function () {
+            $(this).attr("src", "./assets/images/explore_3.png")
+          }
+        )
+      })
+      $(function () {
+        $("#help-1").hover(
+          function () {
+            $(this).attr("src", "./assets/images/step1.gif")
+          },
+          function () {
+            $(this).attr("src", "./assets/images/explore_1.png")
+          }
+        )
+      })
 
-		$(function() {
-			$("#help-2").hover(
-				function() {
-					$(this).attr("src", "./assets/images/step2.gif");
-				},
-				function() {
-					$(this).attr("src", "./assets/images/explore_2.png");
-				}                         
-			); 
-		});
-		$(function() {
-			$("#help-3").hover(
-				function() {
-					$(this).attr("src", "./assets/images/step3.gif");
-				},
-				function() {
-					$(this).attr("src", "./assets/images/explore_3.png");
-				}                         
-			);  
-		});
-		
-		$("#open-drop").click(function(){
-  			$("#f-expand").toggle();
-		});
-		_floor = 31
-		function choose_floor(fl){
-			$("#floor-choosen").html(fl);
-			_floor = fl
-			getFile(fl)
-		}
+      $(function () {
+        $("#help-2").hover(
+          function () {
+            $(this).attr("src", "./assets/images/step2.gif")
+          },
+          function () {
+            $(this).attr("src", "./assets/images/explore_2.png")
+          }
+        )
+      })
+      $(function () {
+        $("#help-3").hover(
+          function () {
+            $(this).attr("src", "./assets/images/step3.gif")
+          },
+          function () {
+            $(this).attr("src", "./assets/images/explore_3.png")
+          }
+        )
+      })
 
-		 
-	</script>
+      $("#open-drop").click(function () {
+        $("#f-expand").toggle()
+      })
+      _floor = 31
+      function choose_floor(fl) {
+        $("#floor-choosen").html(fl)
+        _floor = fl
+        getFile(fl)
+      }
+    </script>
   </body>
 </html>
