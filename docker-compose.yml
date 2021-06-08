@@ -1,0 +1,11 @@
+version: '2'
+services:
+ nginx:
+  image: nginx:1.15.5
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./:/usr/share/nginx/html
+    - ./data/certs:/etc/nginx/certs:rw
+    - ./nginx.conf:/etc/nginx/conf.d/nginx.conf:rw
