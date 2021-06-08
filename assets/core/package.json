@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "qwerty",
-    "compile:sass": "node-sass sass/style.scss ../css/style.css -w --output-style compressed"
+    "compile:sass-core": "node-sass sass/style.scss ../css/style.css -w --output-style compressed",
+    "compile:sass-ciputra": "node-sass sass/tower-ciputra-scss/tower.scss ../../dbs-tower-ciputra-world/assets/css/tower.css -w --output-style compressed"
   },
   "keywords": [
     "Salt",
