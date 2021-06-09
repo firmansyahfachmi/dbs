@@ -272,7 +272,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                     success:function(data) {
                         let bon_point = bonusPoint != null  || bonusPoint != 0 ? '<span style="color:green;font-size:28px;margin-bottom:20px;">+ ' + bonusPoint +' Point</span>' : ''
                         let e = data.data == null ? 0 : data.data
-                        if(localStorage.getItem('language', lang) == 'en'){
+                        if(localStorage.getItem('language') == 'en'){
                             
                             n =
                                 '<div id="finish-name"><div class="finish-wrap"><h5>CONGRATULATIONS</h5><p>MY POINTS<span>' +
@@ -286,7 +286,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                                 '<input type="text" name="ipt-id" onkeypress="clsAlphaNoOnly(event)" placeholder="INSERT YOUR ID" /><br />'+
                                 
                                 '<input type="submit" class="btn btn-red" value="SUBMIT" /></form></div></div>';
-                        } else if(localStorage.getItem('language', lang) == 'id'){
+                        } else if(localStorage.getItem('language') == 'id'){
                             n =
                                 '<div id="finish-name"><div class="finish-wrap"><h5>SELAMAT</h5><p>POIN SAYA<span>' +
                                 e +
@@ -338,12 +338,12 @@ var baseAPIUrl = inputBaseAPIUrl,
                     case "west":
                         finishAt = "WEST";
                 }
-                if(localStorage.getItem('language', lang) == 'en'){
+                if(localStorage.getItem('language') == 'en'){
                     var t =
                     '<div id="finish-message"><div class="finish-wrap"><h5 key="arrived">CONGRATULATIONS! YOU HAVE ARRIVED AT</h5><h2 key="assembly">ASSEMBLY POINT</h2><h3>' +
                     finishAt +
                     " EXIT</h3><p key='safe'>NOW YOU ARE SAFE, KEEP CALM AND WAIT FOR DIRECTION FROM OFFICER.</p></div></div>";
-                } else if(localStorage.getItem('language', lang) == 'id') {
+                } else if(localStorage.getItem('language') == 'id') {
                     var t =
                     '<div id="finish-message"><div class="finish-wrap"><h5 key="arrived">SELAMAT! ANDA TELAH TIBA DI</h5><h2 key="assembly">TITIK BERKUMPUL</h2><h3>' +
                     finishAt +
