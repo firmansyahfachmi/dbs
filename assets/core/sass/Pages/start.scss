@@ -442,7 +442,8 @@
         }
 
         .part-location__img-box > img {
-          filter: invert(8%) sepia(98%) saturate(7491%) hue-rotate(4deg) brightness(93%) contrast(108%);
+          filter: invert(8%) sepia(98%) saturate(7491%) hue-rotate(4deg)
+            brightness(93%) contrast(108%);
         }
 
         h4 {
@@ -471,6 +472,7 @@
           }
           @include breakpoint(mobile) {
             height: max-content;
+
           }
 
           &:hover {
@@ -500,7 +502,19 @@
           & > img {
             width: 100%;
             height: 80%;
-            filter: invert(100%) sepia(1%) saturate(93%) hue-rotate(276deg) brightness(115%) contrast(80%);
+            filter: invert(100%) sepia(1%) saturate(93%) hue-rotate(276deg)
+              brightness(115%) contrast(80%);
+
+                @include breakpoint(tablet) {
+                  height: 40%;
+                  width: auto;
+                  margin: 20px;
+                }
+                @include breakpoint(mobile) {
+                  height: 50%;
+                  width: auto;
+                  margin: 20px;
+                }
           }
         }
 
@@ -1320,6 +1334,61 @@
             margin-left: -12%;
           }
         }
+      }
+    }
+  }
+}
+
+//// Leader Board
+
+.section-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100% !important;
+  max-width: auto !important;
+  @include breakpoint(tablet) {
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+  }
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    background-color: black;
+    padding: 12px;
+    min-width: 500px;
+
+    @include breakpoint(tablet) {
+      width: 40% !important;
+      min-width: auto;
+    }
+    @include breakpoint(mobile) {
+      margin-bottom: 20px;
+      max-width: 100% !important;
+      min-width: auto;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h4 {
+      margin-left: 20px;
+      color: #fff;
+    }
+
+    li {
+      a {
+        font-size: 25px !important;
       }
     }
   }
