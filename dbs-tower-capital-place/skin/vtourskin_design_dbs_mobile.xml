@@ -32,12 +32,12 @@
 	<action name="startup" autorun="onstart">
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
 
-		def(activeMap, string, floor32); 
+		def(activeMap, string, floor12); 
 		//loadscene(get(startscene), null, MERGE);
 		
 		//loadscene('scene_33_49', null, MERGE);
 		
-		loadscene('scene_31_01', null, MERGE); 
+		loadscene('scene_11_01', null, MERGE); 
 		if(startactions !== null, startactions() );
 	</action>
 
@@ -103,158 +103,82 @@
 	<style name="mapspot" keep="true" url="%SWFPATH%/media/pinmap.png" parent="map" align="center" edge="center" zorder="1" scale.mobile="0.7"/>
 	<style name="floorspot" keep="true" visible="false" handcursor="false" capture="false" align="lefttop" scale="0.50" scalechildren="true" zorder="5" onclick="openmap();"/>	
 
-	<layer name="floor31" url="%SWFPATH%/media/landscape/31.png" style="floorspot">
-		<layer name="floor31-01" style="mapspot" x="-38" y="20"/>
-		<layer name="floor31-02" style="mapspot" x="-55" y="175"/>
-		<layer name="floor31-03" style="mapspot" x="-55" y="-120"/>
-		<layer name="floor31-04" style="mapspot" x="-38" y="-120"/>
-		<layer name="floor31-05" style="mapspot" x="58" y="-120"/>
-		<layer name="floor31-06" style="mapspot" x="58" y="20"/>
-		<layer name="floor31-07" style="mapspot" x="58" y="175"/>
-		<layer name="floor31-08" style="mapspot" x="38" y="175"/>
-		<layer name="floor31-09" style="mapspot" x="-38" y="175"/>
-		<layer name="floor31-10" style="mapspot" x="38" y="20"/>
-		<layer name="floor31-11" style="mapspot" x="38" y="-100"/>
-		<layer name="floor31-12" style="mapspot" x="0" y="95"/>
-		<layer name="floor31-13" style="mapspot" x="0" y="70"/>
-		<layer name="floor31-wx" style="mapspot" x="20" y="-100"/>
+	<layer name="floor11" url="%SWFPATH%/media/landscape/11.png" style="floorspot">
+		<layer name="floor11-01" style="mapspot" x="42" y="73"/>
+		<layer name="floor11-02" style="mapspot" x="42" y="128"/>
+		<layer name="floor11-03" style="mapspot" x="-10" y="128"/>
+		<layer name="floor11-04" style="mapspot" x="-60" y="128"/>
+		<layer name="floor11-05" style="mapspot" x="-60" y="73"/>
+		<layer name="floor11-06" style="mapspot" x="-60" y="30"/>
+		<layer name="floor11-07" style="mapspot" x="-10" y="30"/>
+		<layer name="floor11-08" style="mapspot" x="42" y="30"/>
+		<layer name="floor11-09" style="mapspot" x="-60" y="-10"/>
+		<layer name="floor11-10" style="mapspot" x="-60" y="-50"/>
+		<layer name="floor11-11" style="mapspot" x="-60" y="-88"/>
+		<layer name="floor11-12" style="mapspot" x="61" y="-88"/>
+		<layer name="floor11-13" style="mapspot" x="61" y="-65"/>
+		<layer name="floor11-14" style="mapspot" x="42" y="-65"/>
+		<layer name="floor11-15" style="mapspot" x="61" y="-10"/>
+		<layer name="floor11-16" style="mapspot" x="61" y="45"/>
+		<layer name="floor11-17" style="mapspot" x="42" y="-42"/>
+		<layer name="floor11-18" style="mapspot" x="5" y="-42"/>
+		<layer name="floor11-19" style="mapspot" x="15" y="-25"/>
+		<layer name="floor11-20" style="mapspot" x="-15" y="10"/>
 	</layer>
-	<layer name="floor32" url="%SWFPATH%/media/landscape/32.png" style="floorspot">
-		<layer name="floor32-09" style="mapspot" x="-66" y="100"/>
-		<layer name="floor32-08" style="mapspot" x="-66" y="180"/>
-		<layer name="floor32-07" style="mapspot" x="-44" y="180"/>
-		<layer name="floor32-04" style="mapspot" x="-44" y="100"/>
-		<layer name="floor32-05" style="mapspot" x="0" y="100"/>
-		<layer name="floor32-06" style="mapspot" x="-5" y="75"/>
-		<layer name="floor32-01" style="mapspot" x="-44" y="40"/>
-		<layer name="floor32-02" style="mapspot" x="-66" y="40"/>
-		<layer name="floor32-03" style="mapspot" x="-66" y="-25"/>
-		<layer name="floor32-10" style="mapspot" x="-44" y="-25"/>
-		<layer name="floor32-16" style="mapspot" x="45" y="-25"/>
-		<layer name="floor32-19" style="mapspot" x="45" y="-45"/>
-		<layer name="floor32-18" style="mapspot" x="65" y="-45"/>
-		<layer name="floor32-17" style="mapspot" x="45" y="-110"/>
-		<layer name="floor32-wx" style="mapspot" x="0" y="-90"/>
-		<layer name="floor32-11" style="mapspot" x="45" y="40"/>
-		<layer name="floor32-12" style="mapspot" x="65" y="40"/>
-		<layer name="floor32-13" style="mapspot" x="45" y="100"/>
-		<layer name="floor32-14" style="mapspot" x="45" y="180"/>
-		<layer name="floor32-15" style="mapspot" x="66" y="180"/>
+	<layer name="floor12" url="%SWFPATH%/media/landscape/12.png" style="floorspot">
+		<layer name="floor12-01" style="mapspot" x="42" y="73"/>
+		<layer name="floor12-02" style="mapspot" x="42" y="128"/>
+		<layer name="floor12-03" style="mapspot" x="42" y="30"/>
+		<layer name="floor12-04" style="mapspot" x="-10" y="30"/>
+		<layer name="floor12-05" style="mapspot" x="-15" y="10"/>
+		<layer name="floor12-06" style="mapspot" x="-60" y="30"/>
+		<layer name="floor12-07" style="mapspot" x="42" y="-42"/>
+		<layer name="floor12-08" style="mapspot" x="5" y="-42"/>
+		<layer name="floor12-09" style="mapspot" x="15" y="-25"/>
+		<layer name="floor12-10" style="mapspot" x="42" y="-65"/>
+		<layer name="floor12-11" style="mapspot" x="61" y="-65"/>
+		<layer name="floor12-12" style="mapspot" x="61" y="-88"/>
+		<layer name="floor12-13" style="mapspot" x="-60" y="-88"/>
+		<layer name="floor12-14" style="mapspot" x="-60" y="-50"/>
+		<layer name="floor12-15" style="mapspot" x="-60" y="-10"/>
+		<layer name="floor12-16" style="mapspot" x="-60" y="73"/>
+		<layer name="floor12-17" style="mapspot" x="-60" y="128"/>
+		<layer name="floor12-18" style="mapspot" x="61" y="45"/>
+
 	</layer>
 
-	<layer name="floor33" url="%SWFPATH%/media/landscape/33.png" style="floorspot">
-		<layer name="floor33-42" style="mapspot" x="59" y="135" />
-		<layer name="floor33-43" style="mapspot" x="59" y="44" />
-		<layer name="floor33-44" style="mapspot" x="59" y="-33" />
-		<layer name="floor33-45" style="mapspot" x="59" y="-88" />
-		<layer name="floor33-46" style="mapspot" x="-20" y="-88" />
-		<layer name="floor33-47" style="mapspot" x="-38" y="122" />
-		<layer name="floor33-48" style="mapspot" x="-38" y="175" />
-		<layer name="floor33-49" style="mapspot" x="59" y="175" />
-		<layer name="floor33-50" style="mapspot" x="-38" y="-16" />
-		<layer name="floor33-ex" style="mapspot" x="0" y="108" />
-		<layer name="floor33-wx" style="mapspot" x="33" y="-55" />
-	</layer>
-
-	<layer name="floor34" url="%SWFPATH%/media/landscape/34.png" style="floorspot">
-		<layer name="floor34-01" style="mapspot" x="45" y="36" />
-		<layer name="floor34-02" style="mapspot" x="45" y="5" />
-		<layer name="floor34-03" style="mapspot" x="45" y="-25" />
-		<layer name="floor34-04" style="mapspot" x="45" y="-66" />
-		<layer name="floor34-05" style="mapspot" x="45" y="-96" />
-		<layer name="floor34-06" style="mapspot" x="65" y="-96" />
-		<layer name="floor34-21" style="mapspot" x="45" y="-116" />
-		<layer name="floor34-20" style="mapspot" x="-66" y="-116" />
-		<layer name="floor34-19" style="mapspot" x="-66" y="-37" />
-		<layer name="floor34-18" style="mapspot" x="-66" y="40" />
-		<layer name="floor34-17" style="mapspot" x="-66" y="180" />
-		<layer name="floor34-16" style="mapspot" x="-43" y="180" />
-		<layer name="floor34-15" style="mapspot" x="-43" y="100" />
-		<layer name="floor34-13" style="mapspot" x="-43" y="40" />
-		<layer name="floor34-14" style="mapspot" x="-43" y="-25" />
-		<layer name="floor34-wx" style="mapspot" x="15" y="-66" />
-		<layer name="floor34-10" style="mapspot" x="45" y="100" />
-		<layer name="floor34-12" style="mapspot" x="45" y="180" />
-		<layer name="floor34-11" style="mapspot" x="68" y="160" />
-		<layer name="floor34-09" style="mapspot" x="68" y="100" />
-		<layer name="floor34-08" style="mapspot" x="68" y="5" />
-		<layer name="floor34-07" style="mapspot" x="68" y="-66" />
-		<layer name="floor34-23" style="mapspot" x="0" y="100" />
-		<layer name="floor34-ex" style="mapspot" x="0" y="80" />
-	</layer>
-
-	<layer name="floor35" url="%SWFPATH%/media/landscape/35.png" style="floorspot">
-		<layer name="floor35-22" style="mapspot" x="56" y="140" />
-		<layer name="floor35-23" style="mapspot" x="56" y="33" />
-		<layer name="floor35-24" style="mapspot" x="56" y="-55" />
-		<layer name="floor35-25" style="mapspot" x="56" y="-120" />
-		<layer name="floor35-26" style="mapspot" x="-55" y="-120" />
-		<layer name="floor35-27" style="mapspot" x="-55" y="35" />
-		<layer name="floor35-28" style="mapspot" x="-55" y="120" />
-		<layer name="floor35-29" style="mapspot" x="-55" y="175" />
-		<layer name="floor35-30" style="mapspot" x="56" y="175" />
-		<layer name="floor35-ex" style="mapspot" x="-10" y="100" />
-		<layer name="floor35-wx" style="mapspot" x="20" y="-65" />
-	</layer>
-	
-	<layer name="floor36" url="%SWFPATH%/media/landscape/36.png" style="floorspot">
-		<layer name="floor36-12" style="mapspot" x="46" y="138" />
-		<layer name="floor36-13" style="mapspot" x="46" y="34" />
-		<layer name="floor36-14" style="mapspot" x="46" y="-55" />
-		<layer name="floor36-16" style="mapspot" x="46" y="175" />
-		<layer name="floor36-17" style="mapspot" x="-50" y="175" />
-		<layer name="floor36-18" style="mapspot" x="-50" y="34" />
-		<layer name="floor36-19" style="mapspot" x="-50" y="-120" />
-		<layer name="floor36-20" style="mapspot" x="61" y="-120" />
-		<layer name="floor36-21" style="mapspot" x="61" y="-55" />
-		<layer name="floor36-ex" style="mapspot" x="-8" y="100" />
-		<layer name="floor36-wx" style="mapspot" x="25" y="-60" />
+	<layer name="floor15" url="%SWFPATH%/media/landscape/15.png" style="floorspot">
+		<layer name="floor15-01" style="mapspot" x="60" y="65" />
+		<layer name="floor15-02" style="mapspot" x="60" y="108" />
+		<layer name="floor15-03" style="mapspot" x="30" y="120" />
+		<layer name="floor15-04" style="mapspot" x="-58" y="120" />
+		<layer name="floor15-05" style="mapspot" x="-58" y="65" />
+		<layer name="floor15-06" style="mapspot" x="-58" y="23" />
+		<layer name="floor15-06" style="mapspot" x="-58" y="23" />
+		<layer name="floor15-07" style="mapspot" x="0" y="23" />
+		<layer name="floor15-08" style="mapspot" x="-10" y="5" />
+		<layer name="floor15-09" style="mapspot" x="60" y="23" />
+		<layer name="floor15-10" style="mapspot" x="60" y="-48" />
+		<layer name="floor15-11" style="mapspot" x="15" y="-48" />
+		<layer name="floor15-12" style="mapspot" x="20" y="-35" />
+		<layer name="floor15-13" style="mapspot" x="60" y="-70" />
+		<layer name="floor15-14" style="mapspot" x="60" y="-90" />
+		<layer name="floor15-15" style="mapspot" x="-58" y="-90" />
+		<layer name="floor15-16" style="mapspot" x="-58" y="-50" />
+		<layer name="floor15-17" style="mapspot" x="-58" y="-10" />
+		
 	</layer>
 
 	
-	<layer name="floor37" url="%SWFPATH%/media/landscape/37.png" style="floorspot">
-		<layer name="floor37-01" style="mapspot" x="-27" y="40" />
-		<layer name="floor37-02" style="mapspot" x="-27" y="-27" />
-		<layer name="floor37-05" style="mapspot" x="-27" y="-90" />
-		<layer name="floor37-04" style="mapspot" x="-27" y="-120" />
-		<layer name="floor37-08" style="mapspot" x="-54" y="-90" />
-		<layer name="floor37-07" style="mapspot" x="-54" y="-120" />
-		<layer name="floor37-06" style="mapspot" x="-66" y="-90" />
-		<layer name="floor37-09" style="mapspot" x="-27" y="100" />
-		<layer name="floor37-10" style="mapspot" x="-66" y="100" />
-		<layer name="floor37-11" style="mapspot" x="-66" y="180" />
-		<layer name="floor37-12" style="mapspot" x="46" y="180" />
-		<layer name="floor37-13" style="mapspot" x="-66" y="40" />
-		<layer name="floor37-14" style="mapspot" x="-66" y="-27" />
-		<layer name="floor37-15" style="mapspot" x="46" y="40" />
-		<layer name="floor37-16" style="mapspot" x="46" y="100" />
-		<layer name="floor37-17" style="mapspot" x="46" y="-27" />
-		<layer name="floor37-18" style="mapspot" x="46" y="-90" />
-		<layer name="floor37-19" style="mapspot" x="66" y="-90" />
-		<layer name="floor37-20" style="mapspot" x="66" y="-115" />
-		<layer name="floor37-21" style="mapspot" x="20" y="-115" />
-		<layer name="floor37-wx" style="mapspot" x="20" y="-90" />
-		<layer name="floor37-22" style="mapspot" x="10" y="100" />
-		<layer name="floor37-ex" style="mapspot" x="10" y="80" />
-	</layer>
 	
-	<layer name="floorre" url="%SWFPATH%/media/landscape/re.png" style="floorspot">
-		<layer name="floorre-ex" style="mapspot" x="61" y="-70" />
-		<layer name="floorre-wx" style="mapspot" x="61" y="140" />
-	</layer>
 	
-	<layer name="floorex" url="%SWFPATH%/media/landscape/ex.png" style="floorspot">
-		<layer name="floorex-0" style="mapspot" x="5" y="-100" />
-		<layer name="floorex-1" style="mapspot" x="35" y="-120" />
-		<layer name="floorex-2" style="mapspot" x="-10" y="-120" />
-	</layer>
-	
-	<layer name="floorwx" url="%SWFPATH%/media/landscape/wx.png" style="floorspot">
-		<layer name="floorwx-0" style="mapspot" x="10" y="70" />
-		<layer name="floorwx-1" style="mapspot" x="3" y="103" />
-		<layer name="floorwx-2" style="mapspot" x="50" y="103" />
-		<layer name="floorwx-3" style="mapspot" x="50" y="143" />
-		<layer name="floorwx-4" style="mapspot" x="10" y="158" />
+	<layer name="floor1" url="%SWFPATH%/media/landscape/1.png" style="floorspot">
+		<layer name="floor1-1" style="mapspot" x="-50" y="20" />
+		<layer name="floor1-2" style="mapspot" x="-25" y="20" />
+		<layer name="floor1-3" style="mapspot" x="-25" y="5" />
+		<layer name="floor1-4" style="mapspot" x="-25" y="-5" />
+		<layer name="floor1-5" style="mapspot" x="34" y="-5" />
+		<layer name="floor1-6" style="mapspot" x="44" y="-18" />
 	</layer>
 	<!--
 	 action for loading the scene when clicking on the map spots 

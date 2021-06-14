@@ -69,13 +69,6 @@
 	<include url="skin/vtourskin_design_dbs_mobile.xml" if="device.mobile"   />
 
 
-	<!-- startup action - load the first scene -->
-	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
-	</action>
-
 
 	
 	<scene name="scene_16_01" title="16_01" onstart="" thumburl="panos/16_01.tiles/thumb.jpg" lat="" lng="" heading="">

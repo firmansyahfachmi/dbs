@@ -69,16 +69,11 @@
 	<include url="skin/vtourskin_design_dbs_mobile.xml" if="device.mobile"   />
 
 
-	<!-- startup action - load the first scene -->
-	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
-	</action>
+
 
 
 	
-	<scene name="scene_15_01" title="15_01" onstart="" thumburl="panos/15_01.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_01" title="15_01" onstart="setmap(15, 01, 0)" thumburl="panos/15_01.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -93,7 +88,7 @@
 
 	</scene>
 
-	<scene name="scene_15_01_a" title="15_01_a" onstart="" thumburl="panos/15_01.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_01_a" title="15_01_a" onstart="setmap(15, 01, 0)" thumburl="panos/15_01.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -108,7 +103,7 @@
 
 	</scene>
 
-	<scene name="scene_15_01_b" title="15_01_b" onstart="" thumburl="panos/15_01.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_01_b" title="15_01_b" onstart="setmap(15, 01, 0)" thumburl="panos/15_01.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -123,7 +118,7 @@
 
 	</scene>
 
-	<scene name="scene_15_02" title="15_02" onstart="" thumburl="panos/15_02.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_02" title="15_02" onstart="setmap(15, 02, 160)" thumburl="panos/15_02.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-50.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -137,7 +132,7 @@
 
 	</scene>
 
-	<scene name="scene_15_02_a" title="15_02_a" onstart="" thumburl="panos/15_02.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_02_a" title="15_02_a" onstart="setmap(15, 02, 160)" thumburl="panos/15_02.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-190.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -151,7 +146,7 @@
 
 	</scene>
 
-	<scene name="scene_15_03" title="15_03" onstart="" thumburl="panos/15_03.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_03" title="15_03" onstart="setmap(15, 03, 160)" thumburl="panos/15_03.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-30.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -165,7 +160,7 @@
 
 	</scene>
 
-	<scene name="scene_15_03_a" title="15_03_a" onstart="" thumburl="panos/15_03.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_03_a" title="15_03_a" onstart="setmap(15, 03, 160)" thumburl="panos/15_03.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -179,7 +174,7 @@
 
 	</scene>
 
-	<scene name="scene_15_04" title="15_04" onstart="" thumburl="panos/15_04.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_04" title="15_04" onstart="setmap(15, 04, -30)" thumburl="panos/15_04.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-160.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -193,7 +188,7 @@
 
 	</scene>
 
-	<scene name="scene_15_04_a" title="15_04_a" onstart="" thumburl="panos/15_04.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_04_a" title="15_04_a" onstart="setmap(15, 04, -30)" thumburl="panos/15_04.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="120.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -207,7 +202,7 @@
 
 	</scene>
 
-	<scene name="scene_15_05" title="15_05" onstart="" thumburl="panos/15_05.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_05" title="15_05" onstart="setmap(15, 05, 0)" thumburl="panos/15_05.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-95.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -222,7 +217,7 @@
 
 	</scene>
 
-	<scene name="scene_15_05_a" title="15_05_a" onstart="" thumburl="panos/15_05.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_05_a" title="15_05_a" onstart="setmap(15, 05, 0)" thumburl="panos/15_05.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -237,7 +232,7 @@
 
 	</scene>
 
-	<scene name="scene_15_05_b" title="15_05_b" onstart="" thumburl="panos/15_05.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_05_b" title="15_05_b" onstart="setmap(15, 05, 0)" thumburl="panos/15_05.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="85.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -252,7 +247,7 @@
 
 	</scene>
 
-	<scene name="scene_15_06" title="15_06" onstart="" thumburl="panos/15_06.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_06" title="15_06" onstart="setmap(15, 06, 0)" thumburl="panos/15_06.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-85.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -267,7 +262,7 @@
 
 	</scene>
 
-	<scene name="scene_15_06_a" title="15_06_a" onstart="" thumburl="panos/15_06.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_06_a" title="15_06_a" onstart="setmap(15, 06, 0)" thumburl="panos/15_06.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -282,7 +277,7 @@
 
 	</scene>
 
-	<scene name="scene_15_06_b" title="15_06_b" onstart="" thumburl="panos/15_06.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_06_b" title="15_06_b" onstart="setmap(15, 06, 0)" thumburl="panos/15_06.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -297,7 +292,7 @@
 
 	</scene>
 
-	<scene name="scene_15_07" title="15_07" onstart="" thumburl="panos/15_07.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_07" title="15_07" onstart="setmap(15, 07, 180)" thumburl="panos/15_07.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="185.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -312,7 +307,7 @@
 
 	</scene>
 
-	<scene name="scene_15_07_a" title="15_07_a" onstart="" thumburl="panos/15_07.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_07_a" title="15_07_a" onstart="setmap(15, 07, 180)" thumburl="panos/15_07.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -327,7 +322,7 @@
 
 	</scene>
 
-	<scene name="scene_15_08" title="15_08" onstart="" thumburl="panos/15_08.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_08" title="15_08" onstart="setmap(15, 08, -180)" thumburl="panos/15_08.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -339,7 +334,7 @@
 
 	</scene>
 
-	<scene name="scene_15_09" title="15_09" onstart="" thumburl="panos/15_09.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_09" title="15_09" onstart="setmap(15, 09, -90)" thumburl="panos/15_09.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -354,7 +349,7 @@
 
 	</scene>
 
-	<scene name="scene_15_09_a" title="15_09_a" onstart="" thumburl="panos/15_09.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_09_a" title="15_09_a" onstart="setmap(15, 09, -90)" thumburl="panos/15_09.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -369,7 +364,7 @@
 
 	</scene>
 
-	<scene name="scene_15_09_b" title="15_09_b" onstart="" thumburl="panos/15_09.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_09_b" title="15_09_b" onstart="setmap(15, 09, -90)" thumburl="panos/15_09.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -384,7 +379,7 @@
 
 	</scene>
 
-	<scene name="scene_15_10" title="15_10" onstart="" thumburl="panos/15_10.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_10" title="15_10" onstart="setmap(15, 10, 180)" thumburl="panos/15_10.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="99.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -399,7 +394,7 @@
 
 	</scene>
 
-	<scene name="scene_15_10_a" title="15_10_a" onstart="" thumburl="panos/15_10.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_10_a" title="15_10_a" onstart="setmap(15, 10, 180)" thumburl="panos/15_10.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="190.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -414,7 +409,7 @@
 
 	</scene>
 
-	<scene name="scene_15_10_b" title="15_10_b" onstart="" thumburl="panos/15_10.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_10_b" title="15_10_b" onstart="setmap(15, 10, 180)" thumburl="panos/15_10.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-80.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -429,7 +424,7 @@
 
 	</scene>
 
-	<scene name="scene_15_11" title="15_11" onstart="" thumburl="panos/15_11.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_11" title="15_11" onstart="setmap(15, 11, 90)" thumburl="panos/15_11.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -443,7 +438,7 @@
 
 	</scene>
 
-	<scene name="scene_15_12" title="15_12" onstart="" thumburl="panos/15_12.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_12" title="15_12" onstart="setmap(15, 12, 90)" thumburl="panos/15_12.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -456,7 +451,7 @@
 
 	</scene>
 
-	<scene name="scene_15_13" title="15_13" onstart="" thumburl="panos/15_13.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_13" title="15_13" onstart="setmap(15, 13, -90)" thumburl="panos/15_13.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-5.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -470,7 +465,7 @@
 
 	</scene>
 
-	<scene name="scene_15_13_a" title="15_13_a" onstart="" thumburl="panos/15_13.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_13_a" title="15_13_a" onstart="setmap(15, 13, -90)" thumburl="panos/15_13.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -484,7 +479,7 @@
 
 	</scene>
 
-	<scene name="scene_15_14" title="15_14" onstart="" thumburl="panos/15_14.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_14" title="15_14" onstart="setmap(15, 14, 90)" thumburl="panos/15_14.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="185.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -498,7 +493,7 @@
 
 	</scene>
 
-	<scene name="scene_15_14_a" title="15_14_a" onstart="" thumburl="panos/15_14.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_14_a" title="15_14_a" onstart="setmap(15, 14, 90)" thumburl="panos/15_14.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -512,7 +507,7 @@
 
 	</scene>
 
-	<scene name="scene_15_15" title="15_15" onstart="" thumburl="panos/15_15.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_15" title="15_15" onstart="setmap(15, 15, 0)" thumburl="panos/15_15.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -526,7 +521,7 @@
 
 	</scene>
 
-	<scene name="scene_15_15_a" title="15_15_a" onstart="" thumburl="panos/15_15.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_15_a" title="15_15_a" onstart="setmap(15, 15, 0)" thumburl="panos/15_15.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -540,7 +535,7 @@
 
 	</scene>
 
-	<scene name="scene_15_16" title="15_16" onstart="" thumburl="panos/15_16.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_16" title="15_16" onstart="setmap(15, 16, 0)" thumburl="panos/15_16.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -554,7 +549,7 @@
 
 	</scene>
 
-	<scene name="scene_15_16_a" title="15_16_a" onstart="" thumburl="panos/15_16.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_16_a" title="15_16_a" onstart="setmap(15, 16, 0)" thumburl="panos/15_16.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -568,7 +563,7 @@
 
 	</scene>
 
-	<scene name="scene_15_17" title="15_17" onstart="" thumburl="panos/15_17.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_17" title="15_17" onstart="setmap(15, 17, -60)" thumburl="panos/15_17.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-30.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -582,7 +577,7 @@
 
 	</scene>
 
-	<scene name="scene_15_17_a" title="15_17_a" onstart="" thumburl="panos/15_17.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_17_a" title="15_17_a" onstart="setmap(15, 17, -60)" thumburl="panos/15_17.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="145.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -596,7 +591,7 @@
 
 	</scene>
 
-	<scene name="scene_15_18" title="15_18" onstart="" thumburl="panos/15_18.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_18" title="15_18" onstart="setmap(1, 1, -90)" thumburl="panos/15_18.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -609,7 +604,7 @@
 
 	</scene>
 
-	<scene name="scene_15_19" title="15_19" onstart="" thumburl="panos/15_19.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_19" title="15_19" onstart="setmap(1, 2, -180)" thumburl="panos/15_19.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -622,7 +617,7 @@
 
 	</scene>
 
-	<scene name="scene_15_20" title="15_20" onstart="" thumburl="panos/15_20.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_20" title="15_20" onstart="setmap(1, 3, -90)" thumburl="panos/15_20.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-10.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -635,7 +630,7 @@
 
 	</scene>
 
-	<scene name="scene_15_21" title="15_21" onstart="" thumburl="panos/15_21.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_21" title="15_21" onstart="setmap(1, 4, 0)" thumburl="panos/15_21.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -648,7 +643,7 @@
 
 	</scene>
 
-	<scene name="scene_15_22" title="15_22" onstart="" thumburl="panos/15_22.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_22" title="15_22" onstart="setmap(1, 5, 0)" thumburl="panos/15_22.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -661,7 +656,7 @@
 
 	</scene>
 
-	<scene name="scene_15_23" title="15_23" onstart="" thumburl="panos/15_23.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_15_23" title="15_23" onstart="setmap(1, 6, 0)" thumburl="panos/15_23.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 

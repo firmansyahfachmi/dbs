@@ -32,7 +32,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 closePopup(s);
                 var t = getSpot(parseInt(_floor));
                 krpano.call("loadscene('scene_" + _floor + "_" + t + "', null, MERGE);"), startTimer();
-                krpano.call("playsound(bgsnd, '%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3', 0);")
+                // krpano.call("playsound(bgsnd, '%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3', 0);")
                 }
             },
             alarm = function (t) {
@@ -108,17 +108,17 @@ var baseAPIUrl = inputBaseAPIUrl,
                 var e = 0;
                 switch (t) {
                     case 11:
-                        (e = "11"), (qtTot = 8);
+                        (e = "01"), (qtTot = 8);
                         break;
                     case 12:
-                        (e = "13"), (qtTot = 8);
+                        (e = "01"), (qtTot = 8);
                         break;
                     
                     case 15:
-                        (e = "15"), (qtTot = 9);
+                        (e = "01"), (qtTot = 9);
                         break;
                     case 16:
-                        (e = "04"), (qtTot = 10);
+                        (e = "01"), (qtTot = 10);
                 }
                 return e;
             },
