@@ -38,7 +38,7 @@
 		
 		//loadscene('scene_33_49', null, MERGE);
 		
-		loadscene('scene_11_01	', null, MERGE); 
+		loadscene('scene_11_01', null, MERGE); 
 		if(startactions !== null, startactions() );
 	</action>
 
@@ -170,20 +170,29 @@
 		<layer name="floor15-17" style="mapspot" x="-58" y="-10" />
 		
 	</layer>
-	<!-- 
+	
 	<layer name="floor16" url="%SWFPATH%/media/landscape/16.png" style="floorspot">
-		<layer name="floor36-12" style="mapspot" x="46" y="138" />
-		<layer name="floor36-13" style="mapspot" x="46" y="34" />
-		<layer name="floor36-14" style="mapspot" x="46" y="-55" />
-		<layer name="floor36-16" style="mapspot" x="46" y="175" />
-		<layer name="floor36-17" style="mapspot" x="-50" y="175" />
-		<layer name="floor36-18" style="mapspot" x="-50" y="34" />
-		<layer name="floor36-19" style="mapspot" x="-50" y="-120" />
-		<layer name="floor36-20" style="mapspot" x="61" y="-120" />
-		<layer name="floor36-21" style="mapspot" x="61" y="-55" />
-		<layer name="floor36-ex" style="mapspot" x="-8" y="100" />
-		<layer name="floor36-wx" style="mapspot" x="25" y="-60" />
-	</layer> -->
+		<layer name="floor16-01" style="mapspot" x="43" y="75" />
+		<layer name="floor16-02" style="mapspot" x="43" y="120	" />
+		<layer name="floor16-03" style="mapspot" x="15" y="135" />
+		<layer name="floor16-04" style="mapspot" x="-60" y="135" />
+		<layer name="floor16-05" style="mapspot" x="-60" y="75" />
+		<layer name="floor16-06" style="mapspot" x="-60" y="30" />
+		<layer name="floor16-07" style="mapspot" x="-10" y="30" />
+		<layer name="floor16-08" style="mapspot" x="-15" y="10" />
+		<layer name="floor16-09" style="mapspot" x="43" y="30" />
+		<layer name="floor16-10" style="mapspot" x="-60" y="-10" />
+		<layer name="floor16-11" style="mapspot" x="-60" y="-50" />
+		<layer name="floor16-12" style="mapspot" x="-60" y="-85" />
+		<layer name="floor16-13" style="mapspot" x="23" y="-85" />
+		<layer name="floor16-14" style="mapspot" x="43" y="-80" />
+		<layer name="floor16-15" style="mapspot" x="43" y="-63" />
+		<layer name="floor16-16" style="mapspot" x="43" y="-45" />
+		<layer name="floor16-17" style="mapspot" x="5" y="-45" />
+		<layer name="floor16-18" style="mapspot" x="10" y="-35" />
+		<layer name="floor16-19" style="mapspot" x="73" y="-70" />
+		<layer name="floor16-20" style="mapspot" x="73" y="-35" />
+	</layer>
 
 	
 	

@@ -694,6 +694,8 @@
 
 	<scene name="scene_12_24" title="12_24" onstart="setmap(1, 6, 0)" thumburl="panos/12_24.tiles/thumb.jpg" lat="" lng="" heading="">
 
+		<events onloadcomplete="lastScene()"/>
+
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12_24.tiles/preview.jpg" />

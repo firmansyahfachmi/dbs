@@ -778,6 +778,8 @@
 	</scene>
 
 	<scene name="scene_11_26" title="11_26" onstart="setmap(1, 6, 0)" thumburl="panos/11_26.tiles/thumb.jpg" lat="" lng="" heading="">
+	
+		<events onloadcomplete="lastScene()"/>
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
