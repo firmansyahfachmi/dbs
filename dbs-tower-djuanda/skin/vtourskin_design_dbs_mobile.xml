@@ -1,0 +1,381 @@
+<krpano>
+
+	<!-- load the soundinterface plugin ss -->
+
+
+	<plugin name="soundinterface"
+        url.flash="%SWFPATH%/plugins/soundinterface.swf"
+        url.html5="%SWFPATH%/plugins/soundinterface.js"
+        rootpath=""
+        preload="true"
+        keep="true"
+		volume="0.5"
+        />
+
+    <!-- Pin Point -->
+    <style name="pin-point" keep="true" url="%SWFPATH%/media/pin/pin-icon.png" width="45" height="45" crop=  "0|0|45|45" onovercrop=  "0|45|45|45" zorder="1" scale.mobile="2"/>
+
+    <!-- skin_hotspotstyle - style for the hotspots 
+	<style name="skin_hotspotstyle" url="../media/path-arrow.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="tween(scale,0.5);"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );"
+	       />
+	-->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+
+		def(activeMap, string, floor12); 
+		//loadscene(get(startscene), null, MERGE);
+		
+		//loadscene('scene_33_49', null, MERGE);
+		
+		loadscene('scene_11_01', null, MERGE); 
+		if(startactions !== null, startactions() );
+	</action>
+
+    <style name="loc-topleft" keep="false" x="0" y="0"/>
+    <style name="loc-topright" keep="false" x="108" y="0"/>
+    <style name="loc-bottomleft" keep="false" x="0" y="48"/>
+    <style name="loc-bottomright" keep="false" x="108" y="48"/>
+
+    <style name="pin-topleft" distorted="true" width="153" height="93" handcursor="false" url="%SWFPATH%/media/pin/line-top-left.png" align="center" edge="center" zorder="1" scale.mobile="1"/>
+    <style name="pin-topright" distorted="true" width="153" height="93" handcursor="false" url="%SWFPATH%/media/pin/line-top-right.png" align="center" edge="center" zorder="1" scale.mobile="1"/>
+    <style name="pin-bottomleft" distorted="true" width="153" height="93" handcursor="false" url="%SWFPATH%/media/pin/line-bottom-left.png" align="center" edge="center" zorder="1" scale.mobile="1"/>
+    <style name="pin-bottomright" distorted="true" width="153" height="93" handcursor="false" url="%SWFPATH%/media/pin/line-bottom-right.png" align="center" edge="center" zorder="1" scale.mobile="1"/>
+
+
+
+
+    <!-- Pin Point -->
+
+	<action name="setmap">
+		updateradar(%1, %2, %3);
+		if(%4 !== null, lookat(%4,0));
+	</action>
+	
+	<action name="lastScene">
+		js($.toend());
+	</action>
+	
+	<action name="markone" type="Javascript">
+		<![CDATA[
+			var name = krpano.get("xml.scene");
+			$.markScene(name);
+		]]>
+	</action>
+	
+	<action name="updateradar">
+		set(layer[get(activeMap)].visible, false);
+		set(activeMap, floor%1);
+		set(layer[floor%1].visible, true);
+		set(layer[floor%1].url, %SWFPATH%/media/landscape/%1.png);
+		set(layer[activespot].parent, floor%1-%2); 
+		set(layer[radar].parent, floor%1-%2); 
+		set(layer[radar].heading, %3);
+	</action>
+
+	<action name="openmap">
+		set(layer[get(activeMap)].onclick, closemap(); ); 
+		layer[get(activeMap)].changeorigin(top,top); 
+		set(bigscale,1); 
+		if(layer[get(activeMap)].imagewidth GT stagewidth, div(bigscale, stagewidth, layer[get(activeMap)].imagewidth); ); 
+		tween(layer[get(activeMap)].x, 0); 
+		tween(layer[get(activeMap)].y, 130); 
+		tween(layer[get(activeMap)].scale, get(bigscale));
+	</action>
+	<!--  map closing - scale the map back to 25%  -->
+	<action name="closemap">
+		set(layer[get(activeMap)].onclick, openmap(); ); 
+		layer[get(activeMap)].changeorigin(lefttop,lefttop); 
+		tween(layer[get(activeMap)].x, 0); 
+		tween(layer[get(activeMap)].y, 0); 
+		tween(layer[get(activeMap)].scale, 0.50);
+	</action>
+	
+	<style name="mapspot" keep="true" url="%SWFPATH%/media/pinmap.png" parent="map" align="center" edge="center" zorder="1" scale.mobile="0.7"/>
+	<style name="floorspot" keep="true" visible="false" handcursor="false" capture="false" align="lefttop" scale="0.50" scalechildren="true" zorder="5" onclick="openmap();"/>	
+
+	<!-- <layer name="floor11" url="%SWFPATH%/media/landscape/11.png" style="floorspot">
+		<layer name="floor11-01" style="mapspot" x="42" y="73"/>
+		<layer name="floor11-02" style="mapspot" x="42" y="128"/>
+		<layer name="floor11-03" style="mapspot" x="-10" y="128"/>
+		<layer name="floor11-04" style="mapspot" x="-60" y="128"/>
+		<layer name="floor11-05" style="mapspot" x="-60" y="73"/>
+		<layer name="floor11-06" style="mapspot" x="-60" y="30"/>
+		<layer name="floor11-07" style="mapspot" x="-10" y="30"/>
+		<layer name="floor11-08" style="mapspot" x="42" y="30"/>
+		<layer name="floor11-09" style="mapspot" x="-60" y="-10"/>
+		<layer name="floor11-10" style="mapspot" x="-60" y="-50"/>
+		<layer name="floor11-11" style="mapspot" x="-60" y="-88"/>
+		<layer name="floor11-12" style="mapspot" x="61" y="-88"/>
+		<layer name="floor11-13" style="mapspot" x="61" y="-65"/>
+		<layer name="floor11-14" style="mapspot" x="42" y="-65"/>
+		<layer name="floor11-15" style="mapspot" x="61" y="-10"/>
+		<layer name="floor11-16" style="mapspot" x="61" y="45"/>
+		<layer name="floor11-17" style="mapspot" x="42" y="-42"/>
+		<layer name="floor11-18" style="mapspot" x="5" y="-42"/>
+		<layer name="floor11-19" style="mapspot" x="15" y="-25"/>
+		<layer name="floor11-20" style="mapspot" x="-15" y="10"/>
+	</layer>
+	<layer name="floor12" url="%SWFPATH%/media/landscape/12.png" style="floorspot">
+		<layer name="floor12-01" style="mapspot" x="42" y="73"/>
+		<layer name="floor12-02" style="mapspot" x="42" y="128"/>
+		<layer name="floor12-03" style="mapspot" x="42" y="30"/>
+		<layer name="floor12-04" style="mapspot" x="-10" y="30"/>
+		<layer name="floor12-05" style="mapspot" x="-15" y="10"/>
+		<layer name="floor12-06" style="mapspot" x="-60" y="30"/>
+		<layer name="floor12-07" style="mapspot" x="42" y="-42"/>
+		<layer name="floor12-08" style="mapspot" x="5" y="-42"/>
+		<layer name="floor12-09" style="mapspot" x="15" y="-25"/>
+		<layer name="floor12-10" style="mapspot" x="42" y="-65"/>
+		<layer name="floor12-11" style="mapspot" x="61" y="-65"/>
+		<layer name="floor12-12" style="mapspot" x="61" y="-88"/>
+		<layer name="floor12-13" style="mapspot" x="-60" y="-88"/>
+		<layer name="floor12-14" style="mapspot" x="-60" y="-50"/>
+		<layer name="floor12-15" style="mapspot" x="-60" y="-10"/>
+		<layer name="floor12-16" style="mapspot" x="-60" y="73"/>
+		<layer name="floor12-17" style="mapspot" x="-60" y="128"/>
+		<layer name="floor12-18" style="mapspot" x="61" y="45"/>
+
+	</layer>
+
+	<layer name="floor15" url="%SWFPATH%/media/landscape/15.png" style="floorspot">
+		<layer name="floor15-01" style="mapspot" x="60" y="65" />
+		<layer name="floor15-02" style="mapspot" x="60" y="108" />
+		<layer name="floor15-03" style="mapspot" x="30" y="120" />
+		<layer name="floor15-04" style="mapspot" x="-58" y="120" />
+		<layer name="floor15-05" style="mapspot" x="-58" y="65" />
+		<layer name="floor15-06" style="mapspot" x="-58" y="23" />
+		<layer name="floor15-06" style="mapspot" x="-58" y="23" />
+		<layer name="floor15-07" style="mapspot" x="0" y="23" />
+		<layer name="floor15-08" style="mapspot" x="-10" y="5" />
+		<layer name="floor15-09" style="mapspot" x="60" y="23" />
+		<layer name="floor15-10" style="mapspot" x="60" y="-48" />
+		<layer name="floor15-11" style="mapspot" x="15" y="-48" />
+		<layer name="floor15-12" style="mapspot" x="20" y="-35" />
+		<layer name="floor15-13" style="mapspot" x="60" y="-70" />
+		<layer name="floor15-14" style="mapspot" x="60" y="-90" />
+		<layer name="floor15-15" style="mapspot" x="-58" y="-90" />
+		<layer name="floor15-16" style="mapspot" x="-58" y="-50" />
+		<layer name="floor15-17" style="mapspot" x="-58" y="-10" />
+		
+	</layer>
+
+	<layer name="floor16" url="%SWFPATH%/media/landscape/16.png" style="floorspot">
+		<layer name="floor16-01" style="mapspot" x="43" y="75" />
+		<layer name="floor16-02" style="mapspot" x="43" y="120	" />
+		<layer name="floor16-03" style="mapspot" x="15" y="135" />
+		<layer name="floor16-04" style="mapspot" x="-60" y="135" />
+		<layer name="floor16-05" style="mapspot" x="-60" y="75" />
+		<layer name="floor16-06" style="mapspot" x="-60" y="30" />
+		<layer name="floor16-07" style="mapspot" x="-10" y="30" />
+		<layer name="floor16-08" style="mapspot" x="-15" y="10" />
+		<layer name="floor16-09" style="mapspot" x="43" y="30" />
+		<layer name="floor16-10" style="mapspot" x="-60" y="-10" />
+		<layer name="floor16-11" style="mapspot" x="-60" y="-50" />
+		<layer name="floor16-12" style="mapspot" x="-60" y="-85" />
+		<layer name="floor16-13" style="mapspot" x="23" y="-85" />
+		<layer name="floor16-14" style="mapspot" x="43" y="-80" />
+		<layer name="floor16-15" style="mapspot" x="43" y="-63" />
+		<layer name="floor16-16" style="mapspot" x="43" y="-45" />
+		<layer name="floor16-17" style="mapspot" x="5" y="-45" />
+		<layer name="floor16-18" style="mapspot" x="10" y="-35" />
+		<layer name="floor16-19" style="mapspot" x="73" y="-70" />
+		<layer name="floor16-20" style="mapspot" x="73" y="-35" />
+	</layer>
+	
+	
+	<layer name="floor1" url="%SWFPATH%/media/landscape/1.png" style="floorspot">
+		<layer name="floor1-1" style="mapspot" x="-50" y="20" />
+		<layer name="floor1-2" style="mapspot" x="-25" y="20" />
+		<layer name="floor1-3" style="mapspot" x="-25" y="5" />
+		<layer name="floor1-4" style="mapspot" x="-25" y="-5" />
+		<layer name="floor1-5" style="mapspot" x="34" y="-5" />
+		<layer name="floor1-6" style="mapspot" x="44" y="-18" />
+	</layer> -->
+	<!--
+	 action for loading the scene when clicking on the map spots 
+	-->
+	<action name="mapspot_loadscene">
+		if(layer[map].scale GT 0.85,
+		<!--
+		 special mode for zoomed map: hide big map, loadscene, show small map 
+		-->
+		set(layer[map].enabled, false); tween(layer[map].alpha, 0.0, 0.85, default, loadscene(%1, null, MERGE, BLEND(1)); set(layer[map].onclick, openmap(); ); layer[map].changeorigin(rightbottom,rightbottom); set(layer[map].x, 0); set(layer[map].y, 0); set(layer[map].scale, 0.85); set(events[sceneload].onloadcomplete, delayedcall(1, tween(layer[map].alpha, 1.0, 0.5, default, set(layer[map].enabled, true); ); ); ); ); ,
+		<!--  small map: just load the scene  -->
+		loadscene(%1, null, MERGE, BLEND(1)); );
+	</action>
+	
+	<layer name="radar" keep="true" url.flash="%SWFPATH%/plugins/radar.swf" url.html5="%SWFPATH%/plugins/radar.js" align="center" zorder="1" scale="0.5" fillalpha="0.5" fillcolor="0x7F5F3F" linewidth="1.0" linecolor="0xE0E0A0" linealpha="0.5" editmode="true"/>
+
+
+
+	<!-- some example buttons for the tooltip testing -->
+	<style name="button" url="%SWFPATH%/media/button-ico.png" width="40" height="40"  zorder="1"  align="center" />
+	<style name="navig" url="%SWFPATH%/media/nav-bg.png" width="168" height="168" x="0" y="-2" zorder="0" />
+
+	<action name="soundOff">
+	  pausesound(bgsnd); 
+	  pausesound(alarm);
+	  set(layer[bgsound-on].visible,false); 
+	  set(layer[bgsound-off].visible,true);
+	</action>
+
+	<action name="soundOn">
+	  resumesound(bgsnd); 
+	  pausesound(alarm);
+	  set(layer[bgsound-on].visible,true); 
+	  set(layer[bgsound-off].visible,false);
+	</action>
+
+	<!-- a container layer with the default navigation buttons -->
+	<layer name="buttons" keep="true" type="container" align="centerbottom" width="168" height="168" y="20">
+		
+		<layer name="help"     style="button | tooltip" tooltip="Help"  x="-125" y="0"  crop=  "55|5|40|40" onovercrop=  "55|45|40|40" onclick="help_show();" />
+		<layer name="bgsound-on" style="button | tooltip" tooltip="Music On" x="125" y="0" crop= "105|95|40|40" onovercrop= "105|135|40|40" onclick="soundOff()" />
+		<layer name="bgsound-off" visible="false" style="button | tooltip" tooltip="Music On" x="125" y="0" crop= "55|95|40|40" onovercrop= "55|135|40|40" onclick="soundOn()" />
+
+		<layer name="background"     style="navig" />
+		<layer name="left"     style="button" tooltip="Look Left"  x="-40" y="0"  crop=  "105|5|40|40" onovercrop=  "105|45|40|40" ondown="set(hlookat_moveforce,-1);"  onup="set(hlookat_moveforce,0);" />
+		<layer name="right"    style="button" tooltip="Look Right" x="40" y="0" crop= "155|5|40|40" onovercrop= "155|45|40|40" ondown="set(hlookat_moveforce,+1);"  onup="set(hlookat_moveforce,0);" />
+		<layer name="up"       style="button" tooltip="Look Up"    x="0" y="-40" crop= "5|95|40|40" onovercrop= "5|135|40|40" ondown="set(vlookat_moveforce,-1);"  onup="set(vlookat_moveforce,0);" />
+		<layer name="down"     style="button" tooltip="Look Down"  x="0" y="+40" crop="5|5|40|40" onovercrop="5|45|40|40" ondown="set(vlookat_moveforce,+1);"  onup="set(vlookat_moveforce,0);" />
+	</layer>
+
+
+	<!-- the 'tooltip' style - show the tooltip textfield and update its position as long as hovering -->
+	<style name="tooltip"
+	       onover="copy(layer[tooltip].html, tooltip);
+	               set(layer[tooltip].visible, true);
+	               tween(layer[tooltip].alpha, 1.0, 0.5);
+	               asyncloop(hovering, copy(layer[tooltip].x,mouse.stagex); copy(layer[tooltip].y,mouse.stagey); );"
+	       onout="tween(layer[tooltip].alpha, 0.0, 0.25, default, set(layer[tooltip].visible,false), copy(layer[tooltip].x,mouse.stagex); copy(layer[tooltip].y,mouse.stagey); );"
+	       />
+
+
+	<!-- the 'tooltip' textfield -->
+	<layer name="tooltip" keep="true"
+	       url="%SWFPATH%/plugins/textfield.swf"
+	       parent="STAGE"
+	       visible="false" alpha="0"
+	       enabled="false"
+	       align="lefttop"
+	       edge="bottom"
+	       oy="-2"
+	       background="false" backgroundcolor="0xFFFFFF" backgroundalpha="1.0"
+	       border="false" bordercolor="0x000000" borderalpha="1.0"
+	       borderwidth="1.0" roundedge="0"
+	       shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1.0"
+	       textshadow="1" textshadowrange="6.0" textshadowangle="90" textshadowcolor="0x000000" textshadowalpha="1.0"
+	       css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:14px;"
+	       html=""
+	       />
+
+
+	<action name="animate">
+	  if(hotspot[%1].loaded,
+	    tween(hotspot[%1].scale, 0.55, 0.5, default, tween(hotspot[%1].scale, 0.5, 0.5, default, animate(%1) ) );
+	  );
+	</action>
+
+	<!-- skin_hotspotstyle - style for the hotspots -->
+	<style name="skin_hotspotstyle" url="../media/path-arrow.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="animate(get(name))"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );animate(get(name))" 
+	       />
+	       
+	<style name="skin_hotspotstyle_left" url="../media/path-left-arrow.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="animate(get(name))"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );animate(get(name))" 
+	       />
+	       
+	<style name="skin_hotspotstyle_right" url="../media/path-right-arrow.png" scale="0.5" edge="top" distorted="true"
+	       tooltip=""
+	       linkedscene=""
+	       linkedscene_lookat=""
+	       onclick="skin_hotspotstyle_click();"
+	       onover="tween(scale,0.55);"
+	       onout="animate(get(name))"
+	       onloaded="if(linkedscene AND skin_settings.tooltips_hotspots, copy(tooltip,scene[get(linkedscene)].title); loadstyle(skin_tooltips); );animate(get(name))" 
+	       />
+
+	<action name="skin_hotspotstyle_click">
+		if(linkedscene,
+			if(linkedscene_lookat,
+				txtsplit(linkedscene_lookat, ',', hs_lookat_h, hs_lookat_v, hs_lookat_fov);
+			  );
+			set(enabled, false);
+			skin_hidetooltips();
+			tween(depth|alpha|oy|rx, 4000|0.0|-50|-60, 0.5, default,
+				skin_loadscene(get(linkedscene), get(skin_settings.loadscene_blend));
+				if(hs_lookat_h !== null,
+					skin_lookat(get(hs_lookat_h), get(hs_lookat_v), get(hs_lookat_fov));
+					delete(hs_lookat_h, hs_lookat_v, hs_lookat_fov);
+				  );
+				skin_updatescroll();
+			  );
+		  );
+	</action>
+	
+
+	<!-- skin_tooltip - style for the thumb, hotspot and mapspot tooltips -->
+	<style name="skin_tooltips"
+	       onover.mouse="copy(layer[skin_tooltip].html, tooltip);
+	                     set(layer[skin_tooltip].visible, true);
+	                     tween(layer[skin_tooltip].alpha, 1.0, 0.1);
+	                     asyncloop(hovering, copy(layer[skin_tooltip].x,mouse.stagex); copy(layer[skin_tooltip].y,mouse.stagey); );"
+	       onout.mouse="tween(layer[skin_tooltip].alpha, 0.0, 0.1, default, set(layer[skin_tooltip].visible,false), copy(layer[skin_tooltip].x,mouse.stagex); copy(layer[skin_tooltip].y,mouse.stagey); );"
+	       />
+
+
+	<!-- the tooltip textfield -->
+	<layer name="skin_tooltip" keep="true"
+	       url="%SWFPATH%/plugins/textfield.swf"
+	       parent="STAGE"
+	       visible="false" alpha="0" enabled="false" zorder="2"
+	       align="lefttop" edge="bottom" oy="-2" width="200" autoheight="true"
+	       background="false" backgroundcolor="0xFFFFFF" backgroundalpha="1.0"
+	       border="false" bordercolor="0x000000" borderalpha="1.0" borderwidth="1.0" roundedge="0"
+	       shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1.0"
+	       textshadow="get:skin_settings.design_text_shadow" textshadowrange="6.0" textshadowangle="90" textshadowcolor="0x000000" textshadowalpha="1.0"
+	       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:16px;'"
+	       html=""
+	       />
+
+	<!-- skin_loadscene(scenenameorindex, blendmode) -->
+	<action name="skin_loadscene">
+		if(webvr.isenabled AND scene.count GT 1,
+			set(hotspot[webvr_prev_scene].visible, false);
+			set(hotspot[webvr_next_scene].visible, false);
+		  );
+
+		txtadd(layer[skin_thumbborder].parent, 'skin_thumb_', get(scene[%1].index));
+		layer[skin_thumbs].scrolltocenter(get(scene[%1].thumbx), get(scene[%1].thumby));
+		loadscene(get(scene[%1].name), null, get(skin_settings.loadscene_flags), %2);
+	</action>
+
+	<action name="help_show" type="Javascript">
+		<![CDATA[
+			showHelp();
+		]]>
+	</action>
+
+</krpano>
