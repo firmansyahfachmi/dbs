@@ -38,7 +38,7 @@
 		
 		//loadscene('scene_33_49', null, MERGE);
 		
-		loadscene('scene_03_07', null, MERGE); 
+		loadscene('scene_01_01', null, MERGE); 
 		if(startactions !== null, startactions() );
 	</action>
 
@@ -168,62 +168,32 @@
 	
 	</layer>
 
-	<!--<layer name="floor15" url="%SWFPATH%/media/landscape/15.png" style="floorspot">
-		<layer name="floor15-01" style="mapspot" x="60" y="65" />
-		<layer name="floor15-02" style="mapspot" x="60" y="108" />
-		<layer name="floor15-03" style="mapspot" x="30" y="120" />
-		<layer name="floor15-04" style="mapspot" x="-58" y="120" />
-		<layer name="floor15-05" style="mapspot" x="-58" y="65" />
-		<layer name="floor15-06" style="mapspot" x="-58" y="23" />
-		<layer name="floor15-06" style="mapspot" x="-58" y="23" />
-		<layer name="floor15-07" style="mapspot" x="0" y="23" />
-		<layer name="floor15-08" style="mapspot" x="-10" y="5" />
-		<layer name="floor15-09" style="mapspot" x="60" y="23" />
-		<layer name="floor15-10" style="mapspot" x="60" y="-48" />
-		<layer name="floor15-11" style="mapspot" x="15" y="-48" />
-		<layer name="floor15-12" style="mapspot" x="20" y="-35" />
-		<layer name="floor15-13" style="mapspot" x="60" y="-70" />
-		<layer name="floor15-14" style="mapspot" x="60" y="-90" />
-		<layer name="floor15-15" style="mapspot" x="-58" y="-90" />
-		<layer name="floor15-16" style="mapspot" x="-58" y="-50" />
-		<layer name="floor15-17" style="mapspot" x="-58" y="-10" />
+	<layer name="floor1_2" url="%SWFPATH%/media/landscape/1_2.png" style="floorspot">
+		<layer name="floor1_2-01" style="mapspot" x="-35" y="25" />
+		<layer name="floor1_2-02" style="mapspot" x="5" y="25" />
+		<layer name="floor1_2-03" style="mapspot" x="13" y="8" />
+		<layer name="floor1_2-04" style="mapspot" x="5" y="50" />
+		<layer name="floor1_2-05" style="mapspot" x="5" y="75" />
+		<layer name="floor1_2-06" style="mapspot" x="13" y="-15" />
+		<layer name="floor1_2-07" style="mapspot" x="26" y="-15" />
+		<layer name="floor1_2-08" style="mapspot" x="-18" y="-45" />
 		
 	</layer>
 	
-	<layer name="floor16" url="%SWFPATH%/media/landscape/16.png" style="floorspot">
-		<layer name="floor16-01" style="mapspot" x="43" y="75" />
-		<layer name="floor16-02" style="mapspot" x="43" y="120	" />
-		<layer name="floor16-03" style="mapspot" x="15" y="135" />
-		<layer name="floor16-04" style="mapspot" x="-60" y="135" />
-		<layer name="floor16-05" style="mapspot" x="-60" y="75" />
-		<layer name="floor16-06" style="mapspot" x="-60" y="30" />
-		<layer name="floor16-07" style="mapspot" x="-10" y="30" />
-		<layer name="floor16-08" style="mapspot" x="-15" y="10" />
-		<layer name="floor16-09" style="mapspot" x="43" y="30" />
-		<layer name="floor16-10" style="mapspot" x="-60" y="-10" />
-		<layer name="floor16-11" style="mapspot" x="-60" y="-50" />
-		<layer name="floor16-12" style="mapspot" x="-60" y="-85" />
-		<layer name="floor16-13" style="mapspot" x="23" y="-85" />
-		<layer name="floor16-14" style="mapspot" x="43" y="-80" />
-		<layer name="floor16-15" style="mapspot" x="43" y="-63" />
-		<layer name="floor16-16" style="mapspot" x="43" y="-45" />
-		<layer name="floor16-17" style="mapspot" x="5" y="-45" />
-		<layer name="floor16-18" style="mapspot" x="10" y="-35" />
-		<layer name="floor16-19" style="mapspot" x="73" y="-70" />
-		<layer name="floor16-20" style="mapspot" x="73" y="-35" />
+	<layer name="floor2_2" url="%SWFPATH%/media/landscape/2_2.png" style="floorspot">
+		<layer name="floor2_2-01" style="mapspot" x="-35" y="63" />
+		<layer name="floor2_2-02" style="mapspot" x="-15" y="63" />
+		<layer name="floor2_2-03" style="mapspot" x="5" y="63" />
+		<layer name="floor2_2-04" style="mapspot" x="5" y="28" />
+		<layer name="floor2_2-05" style="mapspot" x="5" y="-3" />
+		<layer name="floor2_2-06" style="mapspot" x="40" y="-3" />
+		<layer name="floor2_2-07" style="mapspot" x="40" y="28" />
+		<layer name="floor2_2-08" style="mapspot" x="40" y="-48" />
+		<layer name="floor2_2-09" style="mapspot" x="-38" y="-48" />
 	</layer>
 
 	
-	
-	
-	<layer name="floor1" url="%SWFPATH%/media/landscape/1.png" style="floorspot">
-		<layer name="floor1-1" style="mapspot" x="-50" y="20" />
-		<layer name="floor1-2" style="mapspot" x="-25" y="20" />
-		<layer name="floor1-3" style="mapspot" x="-25" y="5" />
-		<layer name="floor1-4" style="mapspot" x="-25" y="-5" />
-		<layer name="floor1-5" style="mapspot" x="34" y="-5" />
-		<layer name="floor1-6" style="mapspot" x="44" y="-18" />
-	</layer> -->
+
 
 	<!--
 	 action for loading the scene when clicking on the map spots 

@@ -71,7 +71,7 @@
 
 
 	
-	<scene name="scene_02_01" title="02_01" onstart="" thumburl="panos/gd2/02_01.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_01" title="02_01" onstart="setmap(2_2, 01, 0)" thumburl="panos/gd2/02_01.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -83,7 +83,7 @@
 
 	</scene>
 
-	<scene name="scene_02_02" title="02_02" onstart="" thumburl="panos/gd2/02_02.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_02" title="02_02" onstart="setmap(2_2, 02, 0)" thumburl="panos/gd2/02_02.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="170.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -96,7 +96,7 @@
 
 	</scene>
 
-	<scene name="scene_02_03" title="02_03" onstart="" thumburl="panos/gd2/02_03.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_03" title="02_03" onstart="setmap(2_2, 03, -90)" thumburl="panos/gd2/02_03.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="10.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -109,7 +109,7 @@
 
 	</scene>
 
-	<scene name="scene_02_04" title="02_04" onstart="" thumburl="panos/gd2/02_04.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_04" title="02_04" onstart="setmap(2_2, 04, -90)" thumburl="panos/gd2/02_04.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -124,7 +124,7 @@
 
 	</scene>
 
-	<scene name="scene_02_04_a" title="02_04_a" onstart="" thumburl="panos/gd2/02_04.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_04_a" title="02_04_a" onstart="setmap(2_2, 04, -90)" thumburl="panos/gd2/02_04.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -139,7 +139,7 @@
 
 	</scene>
 
-	<scene name="scene_02_05" title="02_05" onstart="" thumburl="panos/gd2/02_05.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_05" title="02_05" onstart="setmap(2_2, 05, 90)" thumburl="panos/gd2/02_05.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -153,7 +153,7 @@
 
 	</scene>
 
-	<scene name="scene_02_05_a" title="02_05_a" onstart="" thumburl="panos/gd2/02_05.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_05_a" title="02_05_a" onstart="setmap(2_2, 05, 90)" thumburl="panos/gd2/02_05.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -167,7 +167,7 @@
 
 	</scene>
 
-	<scene name="scene_02_06" title="02_06" onstart="" thumburl="panos/gd2/02_06.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_06" title="02_06" onstart="setmap(2_2, 06, 0)" thumburl="panos/gd2/02_06.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -182,7 +182,7 @@
 
 	</scene>
 
-	<scene name="scene_02_06_a" title="02_06_a" onstart="" thumburl="panos/gd2/02_06.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_06_a" title="02_06_a" onstart="setmap(2_2, 06, 0)" thumburl="panos/gd2/02_06.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -197,7 +197,7 @@
 
 	</scene>
 
-	<scene name="scene_02_07" title="02_07" onstart="" thumburl="panos/gd2/02_07.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_07" title="02_07" onstart="setmap(2_2, 07, -90)" thumburl="panos/gd2/02_07.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -211,7 +211,7 @@
 
 	</scene>
 
-	<scene name="scene_02_07_a" title="02_07_a" onstart="" thumburl="panos/gd2/02_07.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_07_a" title="02_07_a" onstart="setmap(2_2, 07, -90)" thumburl="panos/gd2/02_07.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -225,7 +225,7 @@
 
 	</scene>
 
-	<scene name="scene_02_08" title="02_08" onstart="" thumburl="panos/gd2/02_08.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_08" title="02_08" onstart="setmap(2_2, 08, 0)" thumburl="panos/gd2/02_08.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -238,7 +238,7 @@
 
 	</scene>
 
-	<scene name="scene_02_09" title="02_09" onstart="" thumburl="panos/gd2/02_09.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_09" title="02_09" onstart="setmap(2_2, 09, 0)" thumburl="panos/gd2/02_09.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
