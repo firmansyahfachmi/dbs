@@ -329,6 +329,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/16_08.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-4.811" atv="32.735" linkedscene="scene_16_21" />
 
 	</scene>
 
@@ -634,6 +635,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/16_18.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.313" atv="39.740" linkedscene="scene_16_21" />
 
 	</scene>
 

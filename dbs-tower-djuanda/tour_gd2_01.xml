@@ -72,6 +72,8 @@
 	
 	<scene name="scene_01_01" title="01_01" onstart="setmap(1_2, 01, 0)" thumburl="panos/gd2/01_01.tiles/thumb.jpg" lat="" lng="" heading="">
 
+		<events onloadcomplete="lastScene()"/>
+
 		<view hlookat="170.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/gd2/01_01.tiles/preview.jpg" />
@@ -224,6 +226,8 @@
 	</scene>
 
 	<scene name="scene_01_08" title="01_08" onstart="setmap(1_2, 08, 0)" thumburl="panos/gd2/01_08.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<events onloadcomplete="lastScene()"/>
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 

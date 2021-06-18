@@ -149,15 +149,27 @@
 		<layer name="floor3_1-07" style="mapspot" x="-64" y="48"/>
 		<layer name="floor3_1-08" style="mapspot" x="-64" y="23"/>
 		<layer name="floor3_1-09" style="mapspot" x="-49" y="23"/>
-		<layer name="floor3_1-10" style="mapspot" x="-69" y="23"/>
+		<layer name="floor3_1-10" style="mapspot" x="-15" y="23"/>
+		<layer name="floor3_1-11" style="mapspot" x="28" y="23"/>
+		<layer name="floor3_1-12" style="mapspot" x="66" y="23"/>
+		<layer name="floor3_1-13" style="mapspot" x="66" y="48"/>
+		<layer name="floor3_1-14" style="mapspot" x="-49" y="-13"/>
+		<layer name="floor3_1-15" style="mapspot" x="-15" y="-13"/>
+		<layer name="floor3_1-16" style="mapspot" x="28" y="-13"/>
+		<layer name="floor3_1-17" style="mapspot" x="66" y="-13"/>
+		<layer name="floor3_1-18" style="mapspot" x="-49" y="-48"/>
+		<layer name="floor3_1-19" style="mapspot" x="-15" y="-48"/>
+		<layer name="floor3_1-20" style="mapspot" x="28" y="-48"/>
+		<layer name="floor3_1-21" style="mapspot" x="66" y="-48"/>
 	
 	</layer>
 	<layer name="floor3_A2" url="%SWFPATH%/media/landscape/3_A2.png" style="floorspot">
-		<layer name="floor3_A2-01" style="mapspot" x="-45" y="48"/>
-		<layer name="floor3_A2-02" style="mapspot" x="-3" y="48"/>
-		<layer name="floor3_A2-03" style="mapspot" x="-3" y="8"/>
-		<layer name="floor3_A2-04" style="mapspot" x="30" y="-8"/>
-		<layer name="floor3_A2-05" style="mapspot" x="-3" y="-8"/>
+		<layer name="floor3_A2-01" style="mapspot" x="5" y="18"/>
+		<layer name="floor3_A2-02" style="mapspot" x="5" y="-15"/>
+		<layer name="floor3_A2-03" style="mapspot" x="46" y="-15"/>
+		<layer name="floor3_A2-04" style="mapspot" x="-18" y="-48"/>
+		<layer name="floor3_A2-05" style="mapspot" x="-35" y="-48"/>
+		<layer name="floor3_A2-06" style="mapspot" x="-35" y="38"/>
 	
 	</layer>
 

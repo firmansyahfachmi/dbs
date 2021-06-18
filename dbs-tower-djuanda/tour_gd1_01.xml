@@ -369,7 +369,8 @@
 	</scene>
 
 	<scene name="scene_01_12" title="01_12" onstart="setmap(1_1, 12, 90)" thumburl="panos/gd1/01_12.tiles/thumb.jpg" lat="" lng="" heading="">
-
+		
+		<events onloadcomplete="lastScene()"/>
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/gd1/01_12.tiles/preview.jpg" />

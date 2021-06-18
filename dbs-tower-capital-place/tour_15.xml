@@ -331,6 +331,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/15_08.tiles/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-6.821" atv="37.241" linkedscene="scene_15_18" />
 
 	</scene>
 
