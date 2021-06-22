@@ -111,11 +111,11 @@ var baseAPIUrl = inputBaseAPIUrl,
                         (e = "02_b"), (qtTot = 8);
                         break;
                     case 12:
-                        (e = "01"), (qtTot = 8);
+                        (e = "17_a"), (qtTot = 8);
                         break;
                     
                     case 15:
-                        (e = "01"), (qtTot = 9);
+                        (e = "03"), (qtTot = 9);
                         break;
                     case 16:
                         (e = "01"), (qtTot = 10);
