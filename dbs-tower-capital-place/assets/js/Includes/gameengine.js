@@ -118,7 +118,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                         (e = "03"), (qtTot = 9);
                         break;
                     case 16:
-                        (e = "01"), (qtTot = 10);
+                        (e = "03"), (qtTot = 10);
                 }
                 return e;
             },

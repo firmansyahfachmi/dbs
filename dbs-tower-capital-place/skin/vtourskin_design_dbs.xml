@@ -38,7 +38,7 @@
 		
 		//loadscene('scene_33_49', null, MERGE);
 		
-		loadscene('scene_16_01', null, MERGE); 
+		loadscene('scene_11_01', null, MERGE); 
 		if(startactions !== null, startactions() );
 	</action>
 
