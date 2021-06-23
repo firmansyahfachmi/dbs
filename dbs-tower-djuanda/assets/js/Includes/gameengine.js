@@ -109,7 +109,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 var e = 0;
                 switch (t) {
                     case 1:
-                        (e = "01"), (qtTot = 8);
+                        (e = "06_a"), (qtTot = 8);
                         break;
                         
                     case 2:
