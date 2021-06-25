@@ -514,7 +514,7 @@
 		<hotspot name="q-2" style="pin-bottomleft" ath="83" atv="-2"/>
 		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomleft" triggerdata="{type:'question', sceneId: '2_13', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
-	<scene name="scene_02_13_b" title="02_13_a" onstart="setmap(2_1, 13, 90)" thumburl="panos/gd1/02_13.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_02_13_b" title="02_13_b" onstart="setmap(2_1, 13, 90)" thumburl="panos/gd1/02_13.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 

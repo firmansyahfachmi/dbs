@@ -96,6 +96,8 @@
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="168.419" atv="24.123" linkedscene="scene_02_01" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="-210" atv="-21"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_02', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_03" title="02_03" onstart="setmap(2_2, 03, -90)" thumburl="panos/gd2/02_03.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -109,6 +111,8 @@
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-109.484" atv="38.408" linkedscene="scene_02_02" />
 
+		<hotspot name="q-1" style="pin-topright" ath="-90" atv="31"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_03', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_04" title="02_04" onstart="setmap(2_2, 04, -90)" thumburl="panos/gd2/02_04.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -124,6 +128,14 @@
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-7.588" atv="6.843" linkedscene="scene_02_05" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="86.398" atv="19.015" linkedscene="scene_02_07" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="196" atv="-7"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_02', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-bottomright" ath="-30" atv="-7"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_02', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topleft" ath="-73" atv="13"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_02', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-4" style="pin-bottomleft" ath="163" atv="-10"/>
+		<layer parent="hotspot[q-4]" style="pin-point | loc-bottomleft" triggerdata="{type:'question', sceneId: '2_2_02', id:4}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_04_a" title="02_04_a" onstart="setmap(2_2, 04, -90)" thumburl="panos/gd2/02_04.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -139,6 +151,14 @@
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-7.588" atv="6.843" linkedscene="scene_02_05" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="86.398" atv="19.015" linkedscene="scene_02_07" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="196" atv="-7"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_02', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-bottomright" ath="-30" atv="-7"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_02', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topleft" ath="-73" atv="13"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_02', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-4" style="pin-bottomleft" ath="163" atv="-10"/>
+		<layer parent="hotspot[q-4]" style="pin-point | loc-bottomleft" triggerdata="{type:'question', sceneId: '2_2_02', id:4}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_05" title="02_05" onstart="setmap(2_2, 05, 90)" thumburl="panos/gd2/02_05.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -182,6 +202,15 @@
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.826" atv="10.040" linkedscene="scene_02_07_a" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-78.109" atv="22.322" linkedscene="scene_02_08" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="93" atv="-31"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_06', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-topright" ath="-53" atv="-1"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_06', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topleft" ath="15" atv="44"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_06', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-4" style="pin-topleft" ath="-110" atv="-1"/>
+		<layer parent="hotspot[q-4]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_06', id:4}" onclick="js(triggerPin(get(triggerdata)))" />
+		
 	</scene>
 
 	<scene name="scene_02_06_a" title="02_06_a" onstart="setmap(2_2, 06, 0)" thumburl="panos/gd2/02_06.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -197,6 +226,14 @@
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.826" atv="10.040" linkedscene="scene_02_07_a" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-78.109" atv="22.322" linkedscene="scene_02_08" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="93" atv="-31"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_06', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-topright" ath="-53" atv="-1"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_06', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topleft" ath="15" atv="44"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_06', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-4" style="pin-topleft" ath="-110" atv="-1"/>
+		<layer parent="hotspot[q-4]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_06', id:4}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_07" title="02_07" onstart="setmap(2_2, 07, -90)" thumburl="panos/gd2/02_07.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -211,6 +248,16 @@
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.153" atv="8.956" linkedscene="scene_02_06_a" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-97.153" atv="20.750" linkedscene="scene_02_04_a" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="-46" atv="-7"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_07', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-bottomright" ath="8" atv="-5"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_07', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-bottomright" ath="-18" atv="-12"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_07', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-4" style="pin-topleft" ath="48" atv="24"/>
+		<layer parent="hotspot[q-4]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_07', id:4}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-5" style="pin-topright" ath="78" atv="14"/>
+		<layer parent="hotspot[q-5]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_07', id:5}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_07_a" title="02_07_a" onstart="setmap(2_2, 07, -90)" thumburl="panos/gd2/02_07.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -225,6 +272,16 @@
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.153" atv="8.956" linkedscene="scene_02_06_a" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-97.153" atv="20.750" linkedscene="scene_02_04_a" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="-46" atv="-7"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_07', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-bottomright" ath="8" atv="-5"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_07', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-bottomright" ath="-18" atv="-12"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_07', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-4" style="pin-topleft" ath="48" atv="24"/>
+		<layer parent="hotspot[q-4]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_07', id:4}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-5" style="pin-topright" ath="78" atv="14"/>
+		<layer parent="hotspot[q-5]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_07', id:5}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_08" title="02_08" onstart="setmap(2_2, 08, 0)" thumburl="panos/gd2/02_08.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -238,6 +295,10 @@
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="170.628" atv="13.407" linkedscene="scene_02_09" />
 
+		<hotspot name="q-1" style="pin-topleft" ath="-210" atv="-1"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_02', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-topleft" ath="-160" atv="-1"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topleft" triggerdata="{type:'question', sceneId: '2_2_03', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_09" title="02_09" onstart="setmap(2_2, 09, 0)" thumburl="panos/gd2/02_09.tiles/thumb.jpg" lat="" lng="" heading="">
