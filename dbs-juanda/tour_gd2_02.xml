@@ -173,6 +173,12 @@
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="5.301" atv="6.733" linkedscene="scene_02_04" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-86.729" atv="21.194" linkedscene="scene_02_06" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="-7" atv="-4"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_05', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-topright" ath="34" atv="-8"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_05', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topright" ath="54" atv="-5"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_05', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_05_a" title="02_05_a" onstart="setmap(2_2, 05, 90)" thumburl="panos/gd2/02_05.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -187,6 +193,12 @@
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="5.301" atv="6.733" linkedscene="scene_02_04" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-86.729" atv="21.194" linkedscene="scene_02_06" />
 
+		<hotspot name="q-1" style="pin-bottomright" ath="-7" atv="-4"/>
+		<layer parent="hotspot[q-1]" style="pin-point | loc-bottomright" triggerdata="{type:'question', sceneId: '2_2_05', id:1}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-2" style="pin-topright" ath="34" atv="-8"/>
+		<layer parent="hotspot[q-2]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_05', id:2}" onclick="js(triggerPin(get(triggerdata)))" />
+		<hotspot name="q-3" style="pin-topright" ath="54" atv="-5"/>
+		<layer parent="hotspot[q-3]" style="pin-point | loc-topright" triggerdata="{type:'question', sceneId: '2_2_05', id:3}" onclick="js(triggerPin(get(triggerdata)))" />
 	</scene>
 
 	<scene name="scene_02_06" title="02_06" onstart="setmap(2_2, 06, 0)" thumburl="panos/gd2/02_06.tiles/thumb.jpg" lat="" lng="" heading="">

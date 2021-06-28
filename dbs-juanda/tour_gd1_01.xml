@@ -139,7 +139,7 @@
 			<cube url="panos/gd1/01_03.tiles/pano_%s.jpg" />
 		</image>
 		
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="78.506" atv="13.463" linkedscene="scene_01_04" />
+		<hotspot name="spot2" style="skin_hotspotstyle_right" ath="78.506" atv="13.463" linkedscene="scene_01_04" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-92.509" atv="15.068" linkedscene="scene_01_07_a" />
 
 		<hotspot name="q-1" style="pin-topleft" ath="-68" atv="6"/>
@@ -162,7 +162,7 @@
 			<cube url="panos/gd1/01_03.tiles/pano_%s.jpg" />
 		</image>
 		
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="78.506" atv="13.463" linkedscene="scene_01_04" />
+		<hotspot name="spot2" style="skin_hotspotstyle_right" ath="78.506" atv="13.463" linkedscene="scene_01_04" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="-92.509" atv="15.068" linkedscene="scene_01_07_a" />
 
 		<hotspot name="q-1" style="pin-topleft" ath="-68" atv="6"/>
@@ -183,7 +183,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/gd1/01_04.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="70.073" atv="15.398" linkedscene="scene_01_03_a" />
+		<hotspot name="spot1" style="skin_hotspotstyle_left" ath="70.073" atv="15.398" linkedscene="scene_01_03_a" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-103.794" atv="12.579" linkedscene="scene_01_05" />
 
 		<hotspot name="q-1" style="pin-bottomleft" ath="45" atv="-6"/>
@@ -202,7 +202,7 @@
 		<image prealign="0|0.0|0">
 			<cube url="panos/gd1/01_04.tiles/pano_%s.jpg" />
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="70.073" atv="15.398" linkedscene="scene_01_03_a" />
+		<hotspot name="spot1" style="skin_hotspotstyle_left" ath="70.073" atv="15.398" linkedscene="scene_01_03_a" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-103.794" atv="12.579" linkedscene="scene_01_05" />
 
 		<hotspot name="q-1" style="pin-bottomleft" ath="45" atv="-6"/>
