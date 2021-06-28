@@ -125,7 +125,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                         break;
                         
                     case 5:
-                        (e = "07"), (qtTot = 8);
+                        (e = "07_b"), (qtTot = 8);
                         
                 }
                 return e;
