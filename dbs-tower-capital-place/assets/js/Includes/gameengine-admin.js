@@ -95,26 +95,18 @@ var baseAPIUrl = inputBaseAPIUrl,
             getSpot = function (t) {
                 var e = 0;
                 switch (t) {
-                    case 31:
-                        (e = "07_b"), (qtTot = 8);
+                    case 11:
+                        (e = "02_b"), (qtTot = 8);
                         break;
-                    case 32:
-                        (e = "09"), (qtTot = 8);
+                    case 12:
+                        (e = "17_a"), (qtTot = 8);
                         break;
-                    case 33:
-                        (e = "50"), (qtTot = 9);
+                    
+                    case 15:
+                        (e = "03"), (qtTot = 9);
                         break;
-                    case 34:
-                        (e = "20_b"), (qtTot = 10);
-                        break;
-                    case 35:
-                        (e = "26"), (qtTot = 9);
-                        break;
-                    case 36:
-                        (e = "19_b"), (qtTot = 10);
-                        break;
-                    case 37:
-                        (e = "14_b"), (qtTot = 10);
+                    case 16:
+                        (e = "03_b"), (qtTot = 10);
                 }
                 return e;
             },
