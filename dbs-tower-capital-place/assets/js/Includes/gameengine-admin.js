@@ -394,7 +394,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 alarm(t);
             });
     })(jQuery);
-showIntro(), embedpano({ swf: "tour.swf", xml: "tour.xml", target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
+showIntro(), embedpano({ swf: "tour.swf", xml: "tour-admin.xml", target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
 var krpano = document.getElementById("krpanoSWFObject");
 krpano.set("events.onloadcomplete", "markone()"),
     krpano.set("events.keep", !0),
