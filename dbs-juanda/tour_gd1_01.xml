@@ -1,4 +1,4 @@
-﻿<krpano version="1.20.7" title="Virtual Tour" logkey="false" showerrors="true">
+﻿<krpano version="1.20.7" title="Virtual Tour" logkey="false" showerrors="false">
 
 	<!-- <include url="skin/vtourskin.xml" /> -->
 	<!-- <include url="%SWFPATH%/plugins/fps.xml" /> -->

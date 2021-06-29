@@ -95,26 +95,25 @@ var baseAPIUrl = inputBaseAPIUrl,
             getSpot = function (t) {
                 var e = 0;
                 switch (t) {
-                    case 31:
+                    case 1:
+                        (e = "06_a"), (qtTot = 8);
+                        break;
+                        
+                    case 2:
+                        (e = "13_b"), (qtTot = 8);
+                        break;
+                    
+                    case 3:
+                        (e = "21_b"), (qtTot = 9);
+                        break;
+
+                    case 4:
+                        (e = "05"), (qtTot = 8);
+                        break;
+                        
+                    case 5:
                         (e = "07_b"), (qtTot = 8);
-                        break;
-                    case 32:
-                        (e = "09"), (qtTot = 8);
-                        break;
-                    case 33:
-                        (e = "50"), (qtTot = 9);
-                        break;
-                    case 34:
-                        (e = "20_b"), (qtTot = 10);
-                        break;
-                    case 35:
-                        (e = "26"), (qtTot = 9);
-                        break;
-                    case 36:
-                        (e = "19_b"), (qtTot = 10);
-                        break;
-                    case 37:
-                        (e = "14_b"), (qtTot = 10);
+                        
                 }
                 return e;
             },
@@ -402,7 +401,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 alarm(t);
             });
     })(jQuery);
-showIntro(), embedpano({ swf: "tour.swf", xml: "tour.xml", target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
+showIntro(), embedpano({ swf: "tour.swf", xml: "tour-admin.xml", target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
 var krpano = document.getElementById("krpanoSWFObject");
 krpano.set("events.onloadcomplete", "markone()"),
     krpano.set("events.keep", !0),

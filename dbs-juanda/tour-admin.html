@@ -221,25 +221,29 @@
               <div class="dropdown-floor" id="open-drop">
                 <h3 id="choosed">
                   <span key="lantai" style="color: #1a1a1a">Floor</span>
-                  <span id="floor-choosen">11</span>
+                  <span id="floor-choosen">1 GD 1</span>
                 </h3>
                 <div class="dropdown-floor__expand" id="f-expand">
-                  <button onclick="choose_floor(11)" class="f-translate">
+                  <button onclick="choose_floor(1)" class="f-translate">
                     <span key="lantai" style="color: #000">Floor</span>
-                    <span>11</span>
+                    <span>1 GD 1</span>
                   </button>
-                  <button onclick="choose_floor(12)" class="f-translate">
+                  <button onclick="choose_floor(2)" class="f-translate">
                     <span key="lantai" style="color: #000">Floor</span>
-                    <span>12</span>
+                    <span>2 GD 1</span>
                   </button>
                   
-                  <button onclick="choose_floor(15)" class="f-translate">
+                  <button onclick="choose_floor(3)" class="f-translate">
                     <span key="lantai" style="color: #000">Floor</span>
-                    <span>15</span>
+                    <span>3 GD 1</span>
                   </button>
-                  <button onclick="choose_floor(16)" class="f-translate">
+                  <button onclick="choose_floor(4)" class="f-translate">
                     <span key="lantai" style="color: #000">Floor</span>
-                    <span>16</span>
+                    <span>1 GD 2</span>
+                  </button>
+                  <button onclick="choose_floor(5)" class="f-translate">
+                    <span key="lantai" style="color: #000">Floor</span>
+                    <span>2 GD 2</span>
                   </button>
                 </div>
               </div>
@@ -509,11 +513,32 @@
       $("#open-drop").click(function () {
         $("#f-expand").toggle()
       })
-      _floor = 11
+      _floor = 1
       function choose_floor(fl) {
-        $("#floor-choosen").html(fl)
+        let theFile
         _floor = fl
-        getFile(fl)
+        if(fl == 1){
+          $("#floor-choosen").html('1 GD 1')
+          theFile = 'gd1_01'
+          _gd = '01'
+        } else if(fl == 2){
+          $("#floor-choosen").html('2 GD 1')
+          theFile = 'gd1_02'
+          _gd = '02'
+        } else if(fl == 3){
+          $("#floor-choosen").html('3 GD 1')
+          theFile = 'gd1_03'
+          _gd = '03'
+        } else if(fl == 4){
+          $("#floor-choosen").html('1 GD 2')
+          theFile = 'gd2_01'
+          _gd = '01'
+        } else if(fl == 5){
+          $("#floor-choosen").html('2 GD 2')
+          theFile = 'gd2_02'
+          _gd = '02'
+        }
+        getFile(theFile)
       }
     </script>
   </body>
