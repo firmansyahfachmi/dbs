@@ -216,7 +216,6 @@ function pilihData(e) {
 	htmlData += '<br>Questionnaire<textarea id="str_quis" style="width:100%;border:1px solid #ccc;padding:10px;height:200px;"></textarea>';
 	htmlData += '<a onclick="simpanData(this)" class="btn btn-red font-size-18" style="margin:20px 0 0 0;">Simpan</a></div>';
 	// htmlData += e;
-  console.log('ss')
 	inputPopupQuestion('data questionnaire','','');
 	$('.popup-global-q .popup-body-q .body-quisioner').html(htmlData);
 	// showPopup();
