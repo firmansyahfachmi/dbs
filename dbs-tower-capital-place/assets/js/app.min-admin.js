@@ -183,6 +183,7 @@ function pilihData(e) {
         dataType: "json",
         beforeSend: function(xhr) {
         	$('.loadingpopup').show();
+          console.log('jiahsw')
 	    },
 	    // success: function(results) {
 	    // 	alert(1)
