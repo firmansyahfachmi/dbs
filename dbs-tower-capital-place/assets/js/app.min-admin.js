@@ -164,7 +164,6 @@ function triggerPin(e) {
   )
   $('.popup-global-q .popup-body-q').attr('style', 'min-height:300px;')
   pilihData(e)
-  console.log('ji3')
 }
 
 function pilihData(e) {
@@ -211,6 +210,8 @@ function pilihData(e) {
         console.log( "Request Failed: " + err );
     });
 
+    console.log('ji4')
+
 	htmlData += '<div class="">Info<input id="str_id" type="text" disabled style="display:block;margin-bottom:10px;width:100%;border:1px solid #ccc;padding:10px;" value="'+e+'">';
 	htmlData += '<br><table><tr><td>Nilai Plus<input id="str_nilai" type="number" style="display:block;margin-bottom:10px;width:150px;border:1px solid #ccc;padding:10px;" value=""></td><td style="vertical-align:top;padding-left:20px;">';
 	htmlData += 'Jawaban<div style="clear:both;height:10px;"></div><input type="radio" name="radio_data" value="1" id="radio_data_1"> <label for="radio_data_1">True</label>&nbsp;';
@@ -220,6 +221,7 @@ function pilihData(e) {
 	htmlData += '<br>Questionnaire<textarea id="str_quis" style="width:100%;border:1px solid #ccc;padding:10px;height:200px;"></textarea>';
 	htmlData += '<a onclick="simpanData(this)" class="btn btn-red font-size-18" style="margin:20px 0 0 0;">Simpan</a></div>';
 	// htmlData += e;
+  console.log('ji5')
 	inputPopupQuestion('data questionnaire','','');
 	$('.popup-global-q .popup-body-q .body-quisioner').html(htmlData);
 	// showPopup();
