@@ -184,7 +184,7 @@ function pilihData(e) {
         dataType: "json",
         beforeSend: function(xhr) {
         	$('.loadingpopup').show();
-          console.log('jiahsw')
+          console.log('jiahsw', e)
 	    },
 	    // success: function(results) {
 	    // 	alert(1)
