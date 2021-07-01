@@ -175,7 +175,7 @@ function pilihData(e) {
 	var str_quis = '';
 	$.ajax({
         method:'POST',
-        url: baseUrl+'/backend/api/user/getFloor',
+        url: baseUrl+'/backend/api/user/getFloor?location=ciputra',
         data: 'info_lantai='+e,
         dataType: "json",
         beforeSend: function(xhr) {
