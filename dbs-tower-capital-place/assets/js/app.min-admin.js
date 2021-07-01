@@ -85,6 +85,7 @@ function inputPopup(e, t, n) {
   i.parent().addClass('in'), o.html(e), s.html(t), r.html(n)
 }
 function inputPopupQuestion(e, t, n) {
+  console.log('ji')
   var i = $('.popup-global-q'),
     o = i.find('.popup-title h3'),
     s = i.find('.noted span'),
