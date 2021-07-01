@@ -178,7 +178,7 @@ function pilihData(e) {
 	var str_quis = '';
 	$.ajax({
         method:'POST',
-        url: baseUrl+'/backend/api/user/getFloor?location=capital',
+        url: baseUrlCms+'/backend/api/user/getFloor?location=capital',
         data: 'info_lantai='+e,
         dataType: "json",
         beforeSend: function(xhr) {
@@ -189,6 +189,7 @@ function pilihData(e) {
 	    // });
     })
     .success(function( results ) {
+      console.log('jiah')
 		$('.loadingpopup').hide();
 		str_nilai = results.str_nilai;
 		str_jawaban = results.str_jawaban;
