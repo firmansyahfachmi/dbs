@@ -181,7 +181,6 @@ function pilihData(e) {
         method:'POST',
         url: baseUrlCms+'/backend/api/user/getFloor?location=capital',
         data: 'info_lantai='+e,
-        dataType: "json",
         beforeSend: function(xhr) {
         	$('.loadingpopup').show();
           console.log('jiahsw', e)
