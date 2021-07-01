@@ -186,6 +186,7 @@ function pilihData(e) {
 	    // });
     })
     .success(function( results ) {
+      console.log('ss')
 		$('.loadingpopup').hide();
 		str_nilai = results.str_nilai;
 		str_jawaban = results.str_jawaban;
