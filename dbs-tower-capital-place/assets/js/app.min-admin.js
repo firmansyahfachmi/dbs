@@ -164,9 +164,12 @@ function triggerPin(e) {
   )
   $('.popup-global-q .popup-body-q').attr('style', 'min-height:300px;')
   pilihData(e)
+  console.log('ji3')
 }
 
 function pilihData(e) {
+
+  console.log('ji2')
 
 	let htmlData = '';
 
