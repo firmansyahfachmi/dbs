@@ -19,8 +19,9 @@ var baseAPIUrl = inputBaseAPIUrl,
     qtTot = 0,
     _refuge = 0,
     _floor = 0,
+    _gd = '01'
     currAlarm = 0;
-(myArray = [31, 32, 33, 34, 35, 36, 37]),
+(myArray = [1, 2, 3]),
     (function () {
         var init = function (s) {
                 getAuth();
@@ -31,7 +32,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 $('.warn-label').css('visibility', 'hidden');
                 closePopup(s);
                 var t = getSpot(parseInt(_floor));
-                krpano.call("loadscene('scene_" + _floor + "_" + t + "', null, MERGE);"), startTimer();
+                krpano.call("loadscene('scene_" + _gd + "_" + t + "', null, MERGE);"), startTimer();
                 
                 }
             },
@@ -402,6 +403,12 @@ var baseAPIUrl = inputBaseAPIUrl,
             });
     })(jQuery);
 showIntro(), embedpano({ swf: "tour.swf", xml: "tour-admin.xml", target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
+
+function getFile(f){
+    let floored = 'tour-admin.xml';
+    krpano.call("loadpano("+ floored +",keepbase);")
+}
+
 var krpano = document.getElementById("krpanoSWFObject");
 krpano.set("events.onloadcomplete", "markone()"),
     krpano.set("events.keep", !0),

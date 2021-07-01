@@ -20,7 +20,7 @@ var baseAPIUrl = inputBaseAPIUrl,
     _refuge = 0,
     _floor = 0,
     currAlarm = 0;
-(myArray = [31, 32, 33, 34, 35, 36, 37]),
+(myArray = [11, 12, 15, 16]),
     (function () {
         var init = function (s) {
                 getAuth();
