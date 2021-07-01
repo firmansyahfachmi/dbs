@@ -188,7 +188,7 @@ function pilihData(e) {
     .success(function( results ) {
 		$('.loadingpopup').hide();
 		str_nilai = results.str_nilai;
-		str_jawaban = results.str_jawaban;
+	  str_jawaban = parseInt(results.str_jawaban);
 		str_quis = results.str_quis;
 		str_pengurangan = results.str_pengurangan;
 		$('#str_nilai').val(str_nilai);
