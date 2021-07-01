@@ -163,6 +163,7 @@ function triggerPin(e) {
     'max-width:600px;height:auto;bottom:auto;top:30px;'
   )
   $('.popup-global-q .popup-body-q').attr('style', 'min-height:300px;')
+  console.log('jqwe')
   pilihData(e)
 }
 
