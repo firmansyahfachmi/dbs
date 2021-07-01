@@ -175,7 +175,7 @@ function pilihData(e) {
 	var str_quis = '';
 	$.ajax({
         method:'POST',
-        url: baseUrlCms+'/backend/api/user/getFloor?location=capital',
+        url: baseUrlCms+'/backend/api/user/getFloor',
         data: 'info_lantai='+e,
         dataType: "json",
         beforeSend: function(xhr) {
