@@ -217,7 +217,7 @@ function pilihData(e) {
 	htmlData += '<a onclick="simpanData(this)" class="btn btn-red font-size-18" style="margin:20px 0 0 0;">Simpan</a></div>';
 	// htmlData += e;
 	inputPopupQuestion('data questionnaire','','');
-	$('.popup-global-q .popup-body-q .body-quisioner').html(htmlData);
+	$('.t1 .t1-1 .body-quisioner').html(htmlData);
 	// showPopup();
 }
 

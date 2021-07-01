@@ -896,7 +896,7 @@
 
 	<scene name="scene_11_26" title="11_26" onstart="setmap(1, 6, 0)" thumburl="panos/11_26.tiles/thumb.jpg" lat="" lng="" heading="">
 	
-		<events onloadcomplete="lastScene()"/>
+		
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -1639,7 +1639,7 @@
 
 	<scene name="scene_12_24" title="12_24" onstart="setmap(1, 6, 0)" thumburl="panos/12_24.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<events onloadcomplete="lastScene()"/>
+		
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -2336,7 +2336,7 @@
 
 	<scene name="scene_15_23" title="15_23" onstart="setmap(1, 6, 0)" thumburl="panos/15_23.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<events onloadcomplete="lastScene()"/>
+		
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -3155,7 +3155,7 @@
 
 	<scene name="scene_16_26" title="16_26" onstart="setmap(1, 6, 0)" thumburl="panos/16_26.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<events onloadcomplete="lastScene()"/>
+		
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
