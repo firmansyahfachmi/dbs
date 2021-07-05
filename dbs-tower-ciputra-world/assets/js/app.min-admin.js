@@ -229,7 +229,7 @@ function simpanData(e){
   var str_pengurangan = $('#str_pengurangan').val();
 	$.ajax({
         method:'POST',
-        url: baseUrl+'/backend/api/user/saveFloor',
+        url: baseUrl+'/backend/api/user/saveFloor?location=ciputra',
         data: 'str_id='+str_id+'&str_nilai='+str_nilai+'&str_jawab='+str_jawab+'&str_quis='+str_quis+'&str_pengurangan='+str_pengurangan,
         beforeSend: function(xhr) {
         	$('.loadingpopup').show();
