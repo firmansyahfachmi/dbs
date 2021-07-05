@@ -237,6 +237,7 @@ function simpanData(e){
     })
     .done(function( results ) {
 		$('.loadingpopup').hide();
+    console.log(results)
 		closePopup(e)
     })
     .fail(function( jqxhr, textStatus, error ) {
