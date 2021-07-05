@@ -185,7 +185,7 @@ function pilihData(e) {
 	    // 	alert(1)
 	    // });
     })
-    .success(function( results ) {
+    .done(function( results ) {
 		$('.loadingpopup').hide();
 		str_nilai = results.str_nilai;
 	  str_jawaban = results.str_jawaban;
