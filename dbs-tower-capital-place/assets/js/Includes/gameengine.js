@@ -363,7 +363,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                     $('.warn-submit').css('visibility', 'hidden');
                     $.ajax({
                         dataType : 'json',
-                        url : baseUrlCms+"/backend/api/user/submitname",
+                        url : baseUrlCms+"/backend/api/user/submitname?location=capital",
                         data : 'session_ids='+session_ids+'&name='+t+'&staffID='+e,
                         type : 'POST',
                         success:function(data) {
