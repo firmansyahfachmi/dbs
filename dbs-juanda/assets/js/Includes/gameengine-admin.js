@@ -402,10 +402,11 @@ var baseAPIUrl = inputBaseAPIUrl,
                 alarm(t);
             });
     })(jQuery);
-showIntro(), embedpano({ swf: "tour.swf", xml: "tour-admin.xml", target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
+    var tour_file = 'gd1'
+showIntro(), embedpano({ swf: "tour.swf", xml: 'tour_'+ tour_file+ '_01' +'.xml', target: "pano", html5: "only", mobilescale: 1, passQueryParameters: !1 });
 
 function getFile(f){
-    let floored = 'tour-admin.xml';
+    let floored = 'tour_'+ f +'.xml';
     krpano.call("loadpano("+ floored +",keepbase);")
 }
 
