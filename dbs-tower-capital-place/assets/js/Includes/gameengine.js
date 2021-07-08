@@ -241,7 +241,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 var session_id = localStorage.getItem('session_id')
                 $.ajax({
                   dataType: 'json',
-                  url: baseUrlCms + '/backend/api/user/sendAnswer',
+                  url: baseUrlCms + '/backend/api/user/sendAnswer?location=capital',
                   data:
                     'data_id=' + '' +
                     '&info_time=' +  timeInfo +
