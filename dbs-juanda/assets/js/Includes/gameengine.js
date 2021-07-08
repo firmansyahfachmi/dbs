@@ -33,7 +33,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 closePopup(s);
                 var t = getSpot(parseInt(_floor));
                 krpano.call("loadscene('scene_" + _gd + "_" + t + "', null, MERGE);"), startTimer();
-                // krpano.call("playsound(bgsnd, '%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3', 0);")
+                krpano.call("playsound(bgsnd, '%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3|%SWFPATH%/media/Pengumuman Kebakaran.mp3', 0);")
                 }
             },
             alarm = function (t) {
@@ -380,7 +380,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                                 $("#finish-name").fadeOut("normal", function () {
                                     $(this).remove(),
                                     setTimeout(function () {
-                                        window.location.assign("http://www.evacuationdrill.id/leader-board.html");
+                                        window.location.assign("http://139.59.254.53/dbs-vr-website/leader-board.html");
                                     }, 1e3);
                                 })
                             }else{

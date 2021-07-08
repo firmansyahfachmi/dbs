@@ -380,7 +380,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                                 $("#finish-name").fadeOut("normal", function () {
                                     $(this).remove(),
                                     setTimeout(function () {
-                                        window.location.assign("http://www.evacuationdrill.id/leader-board.html");
+                                        window.location.assign("http://139.59.254.53/dbs-vr-website/leader-board.html");
                                     }, 1e3);
                                 })
                             }else{
