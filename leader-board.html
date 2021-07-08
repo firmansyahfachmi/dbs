@@ -36,7 +36,7 @@
     <input
       type="hidden"
       id="baseUrlCms"
-      value="https://www.evacuationdrill.id:8001"
+      value="http://139.59.254.53:8001"
     />
 
     <div class="db-header">
@@ -60,7 +60,7 @@
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active tab-board">
                   <a
-                    onclick=""
+                    onclick="changeLocation('all')"
                     aria-controls="all"
                     role="tab"
                     data-toggle="tab"
@@ -70,7 +70,7 @@
                 </li>
                 <li role="presentation" class="tab-board">
                   <a
-                    onclick=""
+                    onclick="changeLocation('ciputra')"
                     aria-controls="weekly"
                     role="tab"
                     data-toggle="tab"
@@ -80,7 +80,7 @@
                 </li>
                 <li role="presentation" class="tab-board">
                   <a
-                    onclick=""
+                    onclick="changeLocation('capital')"
                     aria-controls="main"
                     role="tab"
                     data-toggle="tab"
@@ -90,7 +90,7 @@
                 </li>
                 <li role="presentation" class="tab-board">
                   <a
-                    onclick=""
+                    onclick="changeLocation('juanda')"
                     aria-controls="main"
                     role="tab"
                     data-toggle="tab"
@@ -106,7 +106,7 @@
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active tab-board">
                   <a
-                    onclick="getResponse('all')"
+                    onclick="changeType('all')"
                     aria-controls="all"
                     role="tab"
                     data-toggle="tab"
@@ -116,7 +116,7 @@
                 </li>
                 <li role="presentation" class="tab-board">
                   <a
-                    onclick="getResponse('week')"
+                    onclick="changeType('week')"
                     aria-controls="weekly"
                     role="tab"
                     data-toggle="tab"
@@ -126,7 +126,7 @@
                 </li>
                 <li role="presentation" class="tab-board">
                   <a
-                    onclick="getResponse('month')"
+                    onclick="changeType('month')"
                     aria-controls="main"
                     role="tab"
                     data-toggle="tab"
@@ -253,6 +253,6 @@
 
 <script>
   $(function () {
-    getResponse("all")
+    getResponse("all", 'all')
   })
 </script>
