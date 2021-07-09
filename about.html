@@ -17,6 +17,7 @@
     <link href="assets/css/vendor.min.css" rel="stylesheet"> 
     <link href="assets/css/plugins.min.css" rel="stylesheet"> 
     <link href="assets/css/main.css?v=1" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -500,7 +501,107 @@
 		</div>
 	</div>
 
+
 	<div class="popup-wrapper">
+		<div class="popup-global start">
+		  <a
+			href="javascript:void(0);"
+			onclick="closePopup(this);"
+			class="btn popup-close"
+		  ></a>
+		  <div class="box-content">
+			<div class="title-popup" key="title-choose-location">
+			  CHOOSE LOCATION
+			</div>
+			<div class="location-box">
+			  <div class="location-box__content">
+				<div
+				  class="part-location location-active"
+				  onclick="chooseLocation('ciputra')"
+				>
+				  <div class="part-location__img-box">
+					<div class="location-number">
+					  <img src="./assets/images/icon-check.svg" alt="" />
+					</div>
+					<img
+					  src="./assets/images/pin-round.svg"
+					  id="guide-1"
+					  alt=""
+					/>
+				  </div>
+				  <div class="part-location__bottom">
+					<h4 key="head-1">DBS Tower Ciputra World</h4>
+					<p key="desc-1">
+					  Jl. Prof. DR. Satrio No.18, RT.18/RW.4, Kuningan, Karet
+					  Kuningan, Setiabudi, Jakarta Selatan
+					</p>
+				  </div>
+				</div>
+				<div class="part-location" onclick="chooseLocation('juanda')">
+				  <div class="part-location__img-box">
+					<div class="location-number">
+					  <img src="./assets/images/icon-check.svg" alt="" />
+					</div>
+					<img
+					  src="./assets/images/pin-round.svg"
+					  id="guide-2"
+					  alt=""
+					/>
+				  </div>
+				  <div class="part-location__bottom">
+					<h4 key="head-2">Bank DBS Juanda</h4>
+					<p key="desc-2">
+					  Jl. Prof. DR. Satrio No.18, RT.18/RW.4, Kuningan, Karet
+					  Kuningan, Setiabudi, Jakarta Selatan
+					</p>
+				  </div>
+				</div>
+				<div class="part-location" onclick="chooseLocation('capital')">
+				  <div class="part-location__img-box">
+					<div class="location-number">
+					  <img src="./assets/images/icon-check.svg" alt="" />
+					</div>
+					<img
+					  src="./assets/images/pin-round.svg"
+					  id="guide-3"
+					  alt=""
+					/>
+				  </div>
+				  <div class="part-location__bottom">
+					<h4 key="head-3">DBS Tower Capital Place</h4>
+					<p key="desc-3">
+					  Jl. Prof. DR. Satrio No.18, RT.18/RW.4, Kuningan, Karet
+					  Kuningan, Setiabudi, Jakarta Selatan
+					</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="box-content__bottom">
+			  <a
+				class="box-btn-location__btn"
+				href="tour.html"
+				key="Lanjut"
+				id="next-location"
+			  >
+				NEXT
+			  </a>
+			</div>
+		  </div>
+		  <!-- <div class="popup-title"><h3></h3></div>
+			<div class="popup-body">
+				
+				<div class="noted"><span></span></div>
+				<div class="body-quisioner">
+				</div>
+				<div class="body-content">
+				</div>
+  
+			</div> -->
+		</div>
+	  </div>
+
+	<!-- <div class="popup-wrapper">
 		<div class="popup-global">
 			<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
 			<div class="popup-title"><h3></h3></div>
@@ -512,7 +613,7 @@
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="popup-wrapper solid">
 		<div class="popup-help">

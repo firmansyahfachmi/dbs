@@ -88,8 +88,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                         : ''
                     $.ajax({
                         dataType: 'json',
-                        url: baseUrlCms + '/backend/api/user/userPointTotal',
-                        data: 'session_id=' + session_ids,
+                        url: baseUrlCms + "/backend/api/user/userPointTotal?session_id="+session_ids+"&location=capital",
                         type: 'POST',
                         success: function (data) {
                             var n = data.data != null ? data.data : 0,
@@ -258,8 +257,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                 var session_ids = localStorage.getItem("session_id") != null ? localStorage.getItem("session_id") : '';
                 $.ajax({
                     dataType : 'json',
-                    url : baseUrlCms+"/backend/api/user/userPointTotal",
-                    data : 'session_id='+ session_ids,
+                    url : baseUrlCms+"/backend/api/user/userPointTotal?session_id="+session_ids+"&location=capital",
                     type : 'POST',
                     success:function(data) {
                         let bon_point = bonusPoint != null  || bonusPoint != 0 ? '<span style="color:green;font-size:28px;margin-bottom:20px;">+ ' + bonusPoint +' Point</span>' : ''
