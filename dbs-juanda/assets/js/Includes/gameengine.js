@@ -299,7 +299,7 @@ var baseAPIUrl = inputBaseAPIUrl,
                                 '<input type="submit" class="btn btn-red" value="SUBMIT" /></form></div></div>';
                         }
                         
-                        $("body").append(n), score(e), animateName();
+                        $("body").append(n), animateName();
                     }
                 });
             },
