@@ -220,30 +220,30 @@
               </div>
               <div class="dropdown-floor" id="open-drop">
                 <h3 id="choosed">
-                  <span key="lantai" style="color: #1a1a1a">Floor</span>
-                  <span id="floor-choosen">1 GD 1</span>
+                  <span key="lantai" id="lantaid" style="color: #1a1a1a">Banking Area -</span>
+                  <span id="floor-choosen"> Main Building</span>
                 </h3>
                 <div class="dropdown-floor__expand" id="f-expand">
                   <button onclick="choose_floor(1)" class="f-translate">
-                    <span key="lantai" style="color: #000">Floor</span>
-                    <span>1 GD 1</span>
+                    <span key="lantai" style="color: #000">Banking Area -</span>
+                    <span> Main Building</span>
                   </button>
                   <button onclick="choose_floor(2)" class="f-translate">
-                    <span key="lantai" style="color: #000">Floor</span>
-                    <span>2 GD 1</span>
+                    <span key="lantai" style="color: #000">Collection Floor 1 -</span>
+                    <span> Main Building</span>
                   </button>
                   
                   <button onclick="choose_floor(3)" class="f-translate">
-                    <span key="lantai" style="color: #000">Floor</span>
-                    <span>3 GD 1</span>
+                    <span key="lantai" style="color: #000">Collection Floor 2 -</span>
+                    <span> Main Building</span>
                   </button>
                   <button onclick="choose_floor(4)" class="f-translate">
-                    <span key="lantai" style="color: #000">Floor</span>
-                    <span>1 GD 2</span>
+                    <span key="lantai" style="color: #000">Collection -</span>
+                    <span> C-zone</span>
                   </button>
                   <button onclick="choose_floor(5)" class="f-translate">
-                    <span key="lantai" style="color: #000">Floor</span>
-                    <span>2 GD 2</span>
+                    <span key="lantai" style="color: #000">CCTR -</span>
+                    <span> C-zone</span>
                   </button>
                 </div>
               </div>
@@ -518,23 +518,28 @@
         let theFile
         _floor = fl
         if(fl == 1){
-          $("#floor-choosen").html('1 GD 1')
+          $("#lantaid").html('Banking Area -')
+          $("#floor-choosen").html(' Main Building')
           theFile = 'gd1_01'
           _gd = '01'
         } else if(fl == 2){
-          $("#floor-choosen").html('2 GD 1')
+          $("#lantaid").html('Collection Floor 1 -')
+          $("#floor-choosen").html(' Main Building')
           theFile = 'gd1_02'
           _gd = '02'
         } else if(fl == 3){
-          $("#floor-choosen").html('3 GD 1')
+          $("#lantaid").html('Collection Floor 2 -')
+          $("#floor-choosen").html(' Main Building')
           theFile = 'gd1_03'
           _gd = '03'
         } else if(fl == 4){
-          $("#floor-choosen").html('1 GD 2')
+          $("#lantaid").html('Collection -')
+          $("#floor-choosen").html(' C-zone')
           theFile = 'gd2_01'
           _gd = '01'
         } else if(fl == 5){
-          $("#floor-choosen").html('2 GD 2')
+          $("#lantaid").html('CCTR -')
+          $("#floor-choosen").html(' C-zone')
           theFile = 'gd2_02'
           _gd = '02'
         }

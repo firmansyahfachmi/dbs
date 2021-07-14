@@ -9,7 +9,7 @@
     "compile:sass-core": "node-sass sass/style.scss ../css/style.css -w --output-style compressed",
     "compile:sass-ciputra": "node-sass sass/tower-ciputra-scss/tower.scss ../../dbs-tower-ciputra-world/assets/css/tower.css -w --output-style compressed",
     "compile:sass-capital": "node-sass sass/tower-capital-scss/tower.scss ../../dbs-tower-capital-place/assets/css/tower.css -w --output-style compressed",
-    "compile:sass-djuanda": "node-sass sass/tower-juanda-scss/tower.scss ../../dbs-tower-djuanda/assets/css/tower.css -w --output-style compressed"
+    "compile:sass-djuanda": "node-sass sass/tower-juanda-scss/tower.scss ../../dbs-juanda/assets/css/tower.css -w --output-style compressed"
   },
   "keywords": [
     "Salt",
