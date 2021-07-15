@@ -1,16 +1,39 @@
+$media-query:
+    (fourk, (min-width: 2560px)),
+    (twok, (min-width: 1920px) and (max-width: 2559px)),
+    (laptop, (min-width: 1366px)),
+    (desktop, (min-width: 1200px)),
+    (wide, (min-width: 992px) and (max-width: 1919px)),
+    (tablet, (min-width: 768px) and (max-width: 991px)),
+    (mobile, (max-width: 767px)),
+    (small-mobile, (max-width: 360px));
+
+    @mixin breakpoint($value) {
+      @each $screen, $width in $media-query {
+          @if ($value == $screen) {
+              @media #{$width} {
+                  @content;
+              } 
+          }
+      }
+  }
+
 .dropdown-floor {
   width: 75% !important;
 
   
   &__expand {
     width: 100%;
-
+    @include breakpoint(mobile){
+      width:333px !important;
+      left: -15px !important;
+    }
     button {
       text-align: left;
     }
   }
   h3 {
     font-size: 20px !important;
-    width: 80%;
+    width: 70%;
   }
 }

@@ -11,13 +11,19 @@
 .leaderboard .leaderboard-content ul.nav-tabs li a:focus,
 .leaderboard .leaderboard-content ul.nav-tabs li a:visited {
   @include breakpoint(mobile) {
-    font-size: 1.5em !important;
+    font-size: 18px !important;
   }
 }
 .leaderboard-content {
   width: max-content !important;
   @include breakpoint(mobile) {
     width: max-content !important;
+  }
+}
+.rank-board {
+  @include breakpoint(mobile) {
+    height: 160px !important;
+    width: 100% !important;
   }
 }
 .leaderboard .leaderboard-content .tab-content {
@@ -1371,9 +1377,11 @@
     }
     @include breakpoint(mobile) {
       margin-bottom: 20px;
-      max-width: 100% !important;
+      width: 100% !important;
       min-width: auto;
       margin-right: 0;
+      padding: 6px;
+      margin-bottom: 12px;
     }
 
     &:last-child {
@@ -1383,12 +1391,50 @@
     h4 {
       margin-left: 20px;
       color: #fff;
+
+      @include breakpoint(mobile) {
+        font-size: 14px;
+      }
     }
 
     li {
       a {
         font-size: 25px !important;
+
+        @include breakpoint(mobile) {
+          padding: 12px;
+        }
       }
     }
   }
+}
+
+
+.about-us{
+  .floor{
+    // display: none;
+  }
+
+  .scroll{
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .column-content{
+    @include breakpoint(mobile) {
+      width: 100% !important;
+    }
+  }
+  p{
+    @include breakpoint(mobile) {
+      padding-right: 0 !important;
+    }
+  }
+
+  h2{
+    @include breakpoint(mobile) {
+      width: 100% !important;
+    }
+  }
+  
 }
