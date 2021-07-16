@@ -23,9 +23,10 @@
 .rank-board {
   @include breakpoint(mobile) {
     height: 160px !important;
-    width: 100% !important;
+    width: 90% !important;
   }
 }
+
 .leaderboard .leaderboard-content .tab-content {
   // @include breakpoint(mobile) {
   //   width: max-content !important;
@@ -52,11 +53,9 @@
   .list-row
   .list-cell {
   &:first-child {
-    width: auto !important;
     background-color: transparent;
   }
   &:last-child {
-    width: auto !important;
     background-color: transparent;
   }
   max-width: 250px !important;
@@ -1377,7 +1376,7 @@
     }
     @include breakpoint(mobile) {
       margin-bottom: 20px;
-      width: 100% !important;
+      width: 90% !important;
       min-width: auto;
       margin-right: 0;
       padding: 6px;
@@ -1409,32 +1408,30 @@
   }
 }
 
-
-.about-us{
-  .floor{
+.about-us {
+  .floor {
     // display: none;
   }
 
-  .scroll{
+  .scroll {
     @include breakpoint(mobile) {
       display: none;
     }
   }
-  .column-content{
+  .column-content {
     @include breakpoint(mobile) {
       width: 100% !important;
     }
   }
-  p{
+  p {
     @include breakpoint(mobile) {
       padding-right: 0 !important;
     }
   }
 
-  h2{
+  h2 {
     @include breakpoint(mobile) {
       width: 100% !important;
     }
   }
-  
 }
