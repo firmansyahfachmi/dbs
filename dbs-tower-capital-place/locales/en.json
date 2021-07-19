@@ -1,0 +1,116 @@
+{
+    "head": {
+      "title": "Multiple Language"
+    },
+    "#landing-desc": {
+      "desc1": "building emergency evacuation",
+      "desc2": "with 360° experience"
+    },
+    "#btn-experience": {
+        "experience": "Experience Now"
+    },
+    "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "experience-now": "EXPERIENCE NOW",
+        "escape-guide": "ESCAPE GUIDE",
+        "leader-board": "LEADER BOARD"
+    },
+    "#begin-section-top": {
+        "desc-navigate": "NAVIGATE THE BUILDING, ANSWER QUIZZES & EARN POINTS!"
+    },
+    "#begin-section-btn": {
+        "begin": "BEGIN"
+    },
+    ".box-content": {
+      "title": "LET'S TEST YOUR KNOWLEDGE"
+    },
+    ".instruction-box": {
+        "slug": "Instructions"
+    },
+    ".part-instruction__img-box":{
+      "arahkan": "Hover Me!"
+    },
+    ".part-instruction__bottom":{
+      "head-1": "Explore Each Room",
+      "desc-1": "Experience Virtual 360° Space",
+      "head-2": "Look for DBS Pin",
+      "desc-2": "Answer Quiz to collect Points",
+      "head-3": "Exit the Building",
+      "desc-3": "Find the route to the outside of the building"
+      
+    },
+    ".guide-instruction": {
+      "guide-1": "Click and Drag to look around" ,
+      "guide-2": "Click at the DBS Pin to see more" ,
+      "guide-3": "Click at the Arrow Pin to move" 
+    },
+    ".labels" : {
+      "title-choose" : "CHOOS FLOOR",
+      "choose-warn" : "*choose your floor"
+    },
+    "#choosed": {
+      "lantai": "Floor"
+    },
+    ".f-translate": {
+      "lantai" : "Floor"
+    },
+    ".box-btn-start": {
+      "mulai-sekarang": "START NOW"
+    },
+    ".btn-resume": {
+      "resume": "RESUME"
+    },
+    ".div-scroll" : {
+      "about-p": "This website is designed to introduce a system of safeguards against disasters and early warning emergency in DBS INDONESIA. It also explains the procedures to be followed by the employees and guests when they had to vacate the building in the event of a disaster. With the 360° method, we expected that the employees understand and able to keep the safety of human lives and properties in DBS INDONESIA, by applying the correct building evacuation procedures, systematically, and orderly in case of emergency situations."
+    },
+    ".column-content": {
+      "h1": "how to do self-evacuation correctly",
+      "p1": "Evacuation will only be necessary when the alarm rings and accompanied by a siren and public announcement to evacuate the building. Everybody should listen carefully and immediately follow the instruction which may be given. Things that need to be considered:",
+      "h2": "floor warden Introduction",
+      "p2": "Floor warden is floor supervisors who responsible for emptying the floor and the safety of employees in emergency state. Floor warden has several responsibilities such as:",
+      "p2_2": "Get to know your floor warden on your floor to respond to emergencies. ",
+      "h3": "Fire Disaster",
+      "p3": "Fire disasters can be avoided quickly when you are idle.  If you see fire, do not panic and activated the alarm located at hydrant boxes. Alert people in the surrounding area and notify your floor warden. Floor warden will assist you in the evacuation and extinguishing the fire if it safe to do so. When fire alarm goes off, check whether the fire alarm is real due to fire or false alarm. Secure all valuable documents and lock all filling cabinets. Lock the office doors and ensure all personnel have already approached emergency stairs, immediately search and follow floor warden instruction.",
+      "h4": "Earthquake",
+      "p4": "If you feel an earthquake, do not panic. When you happened to be outside the building, move quickly away from buildings, tress, electrical power lines, heavy machinery or equipment, to an assembly area. But if you're in the building, stay inside. Move away from glass windows or glass objects, shelves, heavy equipment and take cover under the desk or table. If you are at the corridor, lie and face down. If you are in the elevator, drop to the floor, protect your head & neck. Stay calm, maintain voice contact with the Control Room by pushing the emergency button, If possible exit to the nearest floor. Do not force the doors to open."
+    },
+    "#poin1" : {
+      "poin1_1": "Identify &amp; follow floor warden instruction",
+      "poin1_2": "Do not Panic &amp; stay calm",
+      "poin1_3": "Swift and calmly use the emergency stairs",
+      "poin1_4": "Do not use the evelator",
+      "poin1_5": "Inform if anyone is injured, and do not be left alone",
+      "poin1_6": "Call 021-29884567 in case of emergency state"
+    },
+    "#poin2" : {
+      "poin2_1": "Provide instruction and guiding employees to follow safety procedures when evacuating them to the safety point",
+      "poin2_2": "To ensure total number of employees are correct, and all successfully evacuated and arrived safely at safety points"
+    },
+    ".content-wrapper": {
+      "papan-skor": "LEADER BOARD"
+    },
+    ".tab-board": {
+      "all": "All",
+      "week": "Weekly Winner",
+      "month": "Monthly Winner"
+    },
+    ".list-row": {
+      "rank": "Rank",
+      "name": "Name",
+      "skor": "Score"
+    },
+    ".popup-help": {
+      "okgot":"OK, GOT IT"
+    },
+    ".text-center": {
+      "escape-guide":"ESCAPE GUIDE"
+    },
+    ".body-content" : {
+      "title-rest": "You are entering rest area",
+      "desc-rest": "This area is used as a temporary resting place. Whereby senior citizen, pregnant, impaired / handicapped persons can wait for floor warden assistance to be evacuated toward exit way from the building."
+    },
+    ".info-poin" : {
+      "poin-saya": "MY POINTS"
+    }
+  }

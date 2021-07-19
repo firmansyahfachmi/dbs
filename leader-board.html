@@ -1,12 +1,16 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
   <head>
     <title>DBS - Escape Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -14,10 +18,10 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     <!-- Bootstrap -->
-    <link href="assets/css/vendor.min.css" rel="stylesheet"> 
-    <link href="assets/css/plugins.min.css" rel="stylesheet"> 
-	<link href="assets/css/main.css?v=1" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/vendor.min.css" rel="stylesheet" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css?v=1" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,147 +32,324 @@
     <![endif]-->
   </head>
   <body>
-<link href="assets/css/Pages/leaderboard.css" rel="stylesheet">
-<input type="hidden" id="baseUrlCms" value="https://www.evacuationdrill.id:8001">
+    <link href="assets/css/Pages/leaderboard.css" rel="stylesheet" />
+    <input
+      type="hidden"
+      id="baseUrlCms"
+      value="http://139.59.254.53:8001"
+    />
 
-<div class="db-header">
-	<a href="/" class="dbs-logo"><img src="assets/images/dbs-logo.png" alt="DBS" /></a>
-	<a href="javascript:void(0);" class="site-menu" onclick="showMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
-</div>
+    <div class="db-header">
+      <a href="http://139.59.254.53/dbs-vr-website/" class="dbs-logo"
+        ><img src="assets/images/dbs-logo.png" alt="DBS"
+      /></a>
+      <a href="javascript:void(0);" class="site-menu" onclick="showMenu()"
+        ><i class="fa fa-bars" aria-hidden="true"></i
+      ></a>
+    </div>
 
-<div class="leaderboard"> 
-	<div class="content-wrapper">
-		
-		<h1>LEADER BOARD</h1>
+    <div class="leaderboard">
+      <div class="content-wrapper">
+        <h1 key="papan-skor">LEADER BOARD</h1>
 
-		<div class="leaderboard-content">
+        <div class="leaderboard-content">
+          <div class="section-filter">
+            <!-- Nav tabs -->
+            <div class="section-filter__box">
+              <h4>Location</h4>
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active tab-board">
+                  <a
+                    onclick="changeLocation('all')"
+                    aria-controls="all"
+                    role="tab"
+                    data-toggle="tab"
+                    key="all"
+                    >All</a
+                  >
+                </li>
+                <li role="presentation" class="tab-board">
+                  <a
+                    onclick="changeLocation('ciputra')"
+                    aria-controls="weekly"
+                    role="tab"
+                    data-toggle="tab"
+                    key="week"
+                    >Ciputra World</a
+                  >
+                </li>
+                <li role="presentation" class="tab-board">
+                  <a
+                    onclick="changeLocation('capital')"
+                    aria-controls="main"
+                    role="tab"
+                    data-toggle="tab"
+                    key="month"
+                    >Capital Place</a
+                  >
+                </li>
+                <li role="presentation" class="tab-board">
+                  <a
+                    onclick="changeLocation('juanda')"
+                    aria-controls="main"
+                    role="tab"
+                    data-toggle="tab"
+                    key="month"
+                    >Djuanda</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-		  <!-- Nav tabs -->
-		  <ul class="nav nav-tabs" role="tablist">
-		    <li role="presentation" class="active">
-		    	<a onclick="getResponse('all')" aria-controls="all" role="tab" data-toggle="tab">All</a>
-		    </li>
-		    <li role="presentation">
-		    	<a onclick="getResponse('week')" aria-controls="weekly" role="tab" data-toggle="tab">Weekly Winner</a>
-		    </li>
-		    <li role="presentation">
-		    	<a onclick="getResponse('month')" aria-controls="main" role="tab" data-toggle="tab">Monthly Winner</a>
-		    </li>
-		  </ul>
-		  
+            <div class="section-filter__box">
+              <h4>Winner</h4>
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active tab-board">
+                  <a
+                    onclick="changeType('all')"
+                    aria-controls="all"
+                    role="tab"
+                    data-toggle="tab"
+                    key="all"
+                    >All</a
+                  >
+                </li>
+                <li role="presentation" class="tab-board">
+                  <a
+                    onclick="changeType('week')"
+                    aria-controls="weekly"
+                    role="tab"
+                    data-toggle="tab"
+                    key="week"
+                    >Weekly Winner</a
+                  >
+                </li>
+                <li role="presentation" class="tab-board">
+                  <a
+                    onclick="changeType('month')"
+                    aria-controls="main"
+                    role="tab"
+                    data-toggle="tab"
+                    key="month"
+                    >Monthly Winner</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
 
-		  <div class="lb-banner">
-		  	<!-- <img src="assets/images/leaderboard-banner.jpg" alt="" /> -->
-		  </div>
+          <div class="lb-banner">
+            <!-- <img src="assets/images/leaderboard-banner.jpg" alt="" /> -->
+          </div>
 
-		  <!-- TAB PANELS -->
-		  <div class="tab-content">
-		  	<div id="loader"></div>
-		  	<!-- ALL -->
-		    <div class="tab-pane scrollbar active" id="all">
-				
-				<div class="board-head">
-					<div class="winner-list">
-						<div class="list-row">
-							<div class="list-cell">RANK</div>
-							<div class="list-cell">NAME</div>
-							<div class="list-cell">SCORE</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="board-body">
-					<div class="winner-list">
-					</div>
-				</div>
+          <!-- TAB PANELS -->
+          <div class="tab-content rank-board">
+            <div id="loader"></div>
+            <!-- ALL -->
+            <div class="tab-pane scrollbar active" id="all">
+              <div class="board-head">
+                <div class="winner-list">
+                  <div class="list-row">
+                    <div class="list-cell" key="rank">RANK</div>
+                    <div class="list-cell" key="name">NAME</div>
+                    <div class="list-cell" key="skor">SCORE</div>
+                  </div>
+                </div>
+              </div>
 
-		    </div>
+              <div class="board-body">
+                <div class="winner-list"></div>
+              </div>
+            </div>
+          </div>
+          <!-- TAB PANELS -->
+        </div>
+      </div>
+    </div>
 
+    <!-- <a href="javascript:void(0);" class="footer-btn footer-sound" onclick="setLanguage()">EN</a> -->
+    <!-- <a href="javascript:void(0);" class="footer-btn footer-help" onclick="showHelp()"><i class="fa fa-question" aria-hidden="true"></i></a> -->
 
-		  </div>
-		  <!-- TAB PANELS -->
+    <div class="copyright">&copy;2021 Copyright PT Bank DBS Indonesia</div>
 
-		</div> 
+    <div class="popup-wrapper">
+      <div class="popup-menu">
+        <a
+          href="javascript:void(0);"
+          onclick="closeMenu();"
+          class="btn popup-close"
+        ></a>
+        <div class="popup-body">
+          <div class="body-content">
+            <nav>
+              <a key="home" href="http://139.59.254.53/dbs-vr-website/" class="active">HOME</a>
+              <a key="about" href="about.html">ABOUT</a>
+              <a key="experience-now" onclick="selectBuilding()">EXPERIENCE NOW</a>
+              <a
+                key="escape-guide"
+                href="javascript:void(0);"
+                onclick="showHelp()"
+                >ESCAPE GUIDE</a
+              >
+              <a key="leader-board" href="leader-board.html">LEADER BOARD</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	</div>
-</div>
+    <div class="popup-wrapper">
+      <div class="popup-global start">
+        <a
+          href="javascript:void(0);"
+          onclick="closePopup(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="box-content">
+          <div class="title-popup" key="title-choose-location">
+            CHOOSE LOCATION
+          </div>
+          <div class="location-box">
+            <div class="location-box__content">
+              <div
+                class="part-location location-active"
+                onclick="chooseLocation('ciputra')"
+              >
+                <div class="part-location__img-box">
+                  <div class="location-number">
+                    <img src="./assets/images/icon-check.svg" alt="" />
+                  </div>
+                  <img
+                    src="./assets/images/pin-round.svg"
+                    id="guide-1"
+                    alt=""
+                  />
+                </div>
+                <div class="part-location__bottom">
+                  <h4 key="head-1">DBS Tower Ciputra World</h4>
+                  <p key="desc-1">
+                    Jl. Prof. DR. Satrio No.18, RT.18/RW.4, Kuningan, Karet
+                    Kuningan, Setiabudi, Jakarta Selatan
+                  </p>
+                </div>
+              </div>
+              <div class="part-location" onclick="chooseLocation('juanda')">
+                <div class="part-location__img-box">
+                  <div class="location-number">
+                    <img src="./assets/images/icon-check.svg" alt="" />
+                  </div>
+                  <img
+                    src="./assets/images/pin-round.svg"
+                    id="guide-2"
+                    alt=""
+                  />
+                </div>
+                <div class="part-location__bottom">
+                  <h4 key="head-2">Bank DBS Juanda</h4>
+                  <p key="desc-2">
+                    Jl. Ir. H Juanda No. 23-24 Kebon Kelapa, Gambir, Jakarta Pusat, 10029
+                  </p>
+                </div>
+              </div>
+              <div class="part-location" onclick="chooseLocation('capital')">
+                <div class="part-location__img-box">
+                  <div class="location-number">
+                    <img src="./assets/images/icon-check.svg" alt="" />
+                  </div>
+                  <img
+                    src="./assets/images/pin-round.svg"
+                    id="guide-3"
+                    alt=""
+                  />
+                </div>
+                <div class="part-location__bottom">
+                  <h4 key="head-3">DBS Capital Place</h4>
+                  <p key="desc-3">
+                    Jl. Jend. Gatot Subroto Kav 18, Jakarta, 12710
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-content__bottom">
+            <a
+              class="box-btn-location__btn"
+              href="tour.html"
+              key="Lanjut"
+              id="next-location"
+            >
+              NEXT
+            </a>
+          </div>
+        </div>
+        <!-- <div class="popup-title"><h3></h3></div>
+		  <div class="popup-body">
+			  
+			  <div class="noted"><span></span></div>
+			  <div class="body-quisioner">
+			  </div>
+			  <div class="body-content">
+			  </div>
 
-<a href="javascript:void(0);" class="footer-btn footer-sound"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
-<a href="javascript:void(0);" class="footer-btn footer-help" onclick="showHelp()"><i class="fa fa-question" aria-hidden="true"></i></a>
+		  </div> -->
+      </div>
+    </div>
 
-<div class="copyright">&copy;2020 Copyright PT Bank DBS Indonesia</div>
+    <!-- <div class="popup-wrapper">
+      <div class="popup-global">
+        <a
+          href="javascript:void(0);"
+          onclick="closePopup(this);"
+          class="btn popup-close"
+        ></a>
+        <div class="popup-title"><h3></h3></div>
+        <div class="popup-body">
+          <div class="noted"><span></span></div>
+          <div class="body-content"></div>
+        </div>
+      </div>
+    </div> -->
 
-
-
-	<div class="popup-wrapper">
-		<div class="popup-menu">
-			<a href="javascript:void(0);" onclick="closeMenu();" class="btn popup-close"></a>
-			<div class="popup-body">
-				<div class="body-content">
-
-					<nav>
-						<a href="/" class="active">HOME</a>
-						<a href="about.html">ABOUT</a>
-						<a href="tour.html">EXPERIENCE NOW</a>
-						<a href="javascript:void(0);"  onclick="showHelp()">ESCAPE GUIDE</a>
-						<a href="leader-board.html">LEADER BOARD</a>
-					</nav>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup-wrapper">
-		<div class="popup-global">
-			<a href="javascript:void(0);" onclick="closePopup(this);" class="btn popup-close"></a>
-			<div class="popup-title"><h3></h3></div>
-			<div class="popup-body">
-				
-				<div class="noted"><span></span></div>
-				<div class="body-content">
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="popup-wrapper solid">
-		<div class="popup-help">
-			<a href="javascript:void(0);" onclick="closeHelp();" class="btn help-close">OK, GOT IT</a>
-			<div class="popup-body">
-				
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h3 class="red-title">ESCAPE GUIDE</h3>
-							<br><br><br>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6">
-							<img src="media/guide-move.png" alt="MOVE" />
-						</div>
-						<div class="col-sm-6">
-							<img src="media/guide-navigation.png" alt="NAVIGATION" />
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
+    <div class="popup-wrapper solid">
+      <div class="popup-help">
+        <a
+          href="javascript:void(0);"
+          onclick="closeHelp();"
+          class="btn help-close"
+          >OK, GOT IT</a
+        >
+        <div class="popup-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h3 class="red-title">ESCAPE GUIDE</h3>
+                <br /><br /><br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <img src="media/guide-move.png" alt="MOVE" />
+              </div>
+              <div class="col-sm-6">
+                <img src="media/guide-navigation.png" alt="NAVIGATION" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js?v=9"></script>
+    <script src="assets/js/jquery.MultiLanguage.js"></script>
   </body>
 </html>
 
 <script>
-$(function(){
-	getResponse('all');
-});
+  $(function () {
+    getResponse("all", 'all')
+  })
 </script>

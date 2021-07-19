@@ -1,0 +1,117 @@
+{
+    "head": {
+      "title": "Multiple Language"
+    },
+    "#landing-desc": {
+      "desc1": "evakuasi darurat gedung",
+      "desc2": "dengan pengalaman 360°"
+    },
+    "#btn-experience": {
+        "experience": "Mulai Pengalaman"
+    },
+    "nav": {
+      "home": "HOME",
+      "about": "TENTANG",
+      "experience-now": "MULAI PENGALAMAN",
+      "escape-guide": "PANDUAN",
+      "leader-board": "PAPAN SKOR"
+    },
+    "#begin-section-top": {
+      "desc-navigate": "JELAJAHI BANGUNAN, JAWAB KUIS & DAPATKAN POIN!"
+    },
+    "#begin-section-btn": {
+      "begin": "MULAI"
+    },
+    ".box-content": {
+      "title": "AYO UJI PENGETAHUAN ANDA"
+    },
+    ".instruction-box": {
+      "slug": "Instruksi"
+    },
+    ".part-instruction__img-box":{
+      "arahkan": "Arahkan!"
+    },
+    ".part-instruction__bottom":{
+      "head-1": "Jelajahi Setiap Ruangan",
+      "desc-1": "Rasakan Virtual 360 ° Space",
+      "head-2": "Cari Pin DBS",
+      "desc-2": "Jawab Kuis untuk mengumpulkan Poin",
+      "head-3": "Keluar dari Gedung",
+      "desc-3": "Temukan rute ke luar gedung"
+      
+    },
+    ".guide-instruction": {
+      "guide-1": "Klik dan Tarik untuk melihat sekeliling" ,
+      "guide-2": "Klik di Pin DBS untuk melihat lebih banyak" ,
+      "guide-3": "Klik di Pin Panah untuk memindahkan" 
+    },
+    ".labels" : {
+      "title-choose" : "PILIH LANTAI",
+      "choose-warn" : "*pilih lantai anda"
+    },
+    "#choosed": {
+      "lantai": "Lantai"
+    },
+    ".f-translate": {
+      "lantai" : "Lantai"
+    },
+    ".box-btn-start": {
+      "mulai-sekarang": "MULAI SEKARANG"
+    },
+    ".btn-resume": {
+      "resume": "LANJUTKAN"
+    },
+    ".div-scroll" : {
+      "about-p": "Website ini dirancang untuk memperkenalkan sistem pengamanan terhadap bencana dan peringatan dini darurat di DBS INDONESIA. Selain itu juga dijelaskan prosedur yang harus diikuti oleh karyawan dan tamu ketika mereka harus mengosongkan gedung jika terjadi bencana. Dengan metode 360° diharapkan karyawan memahami dan mampu menjaga keselamatan jiwa dan harta benda manusia di DBS INDONESIA, dengan menerapkan prosedur evakuasi gedung yang benar, sistematis, dan tertib dalam keadaan darurat. situasi."
+    },
+    ".column-content": {
+      "h1": "bagaimana melakukan evakuasi diri dengan benar",
+      "p1": "Evakuasi hanya akan diperlukan saat alarm berbunyi dan disertai sirene serta pengumuman publik untuk mengevakuasi gedung. Setiap orang harus mendengarkan dengan seksama dan segera mengikuti instruksi yang mungkin diberikan. Hal-hal yang perlu diperhatikan:",
+      "h2": "Pengenalan Floor Warden",
+      "p2": "Floor warden adalah pengawas lantai yang bertanggung jawab untuk mengosongkan lantai dan keselamatan karyawan dalam keadaan darurat. Pengawas lantai memiliki beberapa tanggung jawab seperti:",
+      "p2_2": "Kenali floor warden di lantai Anda untuk menanggapi keadaan darurat.",
+      "h3": "Bencana Kebakaran",
+      "p3": "Bencana kebakaran dapat dihindari dengan cepat saat Anda menganggur. Jika Anda melihat kebakaran, jangan panik dan aktifkan alarm yang terletak di kotak hidran. Beri tahu orang-orang di area sekitar dan beri tahu penjaga lantai Anda. Penjaga lantai akan membantu Anda dalam evakuasi dan memadamkan api jika aman untuk dilakukan. Saat alarm kebakaran berbunyi, periksa apakah alarm kebakaran itu nyata karena kebakaran atau alarm palsu. Amankan semua dokumen berharga dan kunci semua lemari pengisi. Kunci pintu office dan pastikan semua personel sudah mendekati tangga darurat, segera cari dan ikuti instruksi floor warden.",
+      "h4": "Gempa bumi",
+      "p4": "Jika Anda merasakan gempa bumi, jangan panik. Ketika Anda kebetulan berada di luar gedung, segera menjauh dari gedung, pohon, saluran listrik, mesin atau alat berat, ke area perakitan. Tetapi jika Anda berada di dalam gedung, tetaplah di dalam. Menjauhlah dari jendela kaca atau benda kaca, rak, alat berat dan berlindung di bawah meja atau meja. Jika Anda berada di koridor, berbaring dan telungkup. Jika Anda berada di lift, jatuhkan diri ke lantai, lindungi kepala & leher Anda. Tetap tenang, pertahankan kontak suara dengan Ruang Kontrol dengan menekan tombol darurat, Jika memungkinkan keluar ke lantai terdekat. Jangan paksa membuka pintu."
+    },
+    "#poin1" : {
+      "poin1_1": "Identifikasi & ikuti instruksi penjaga lantai",
+      "poin1_2": "Jangan Panik & tetap tenang",
+      "poin1_3": "Gunakan tangga darurat dengan cepat dan tenang",
+      "poin1_4": "Jangan gunakan lift",
+      "poin1_5": "Beri tahu jika ada yang terluka, dan jangan ditinggal sendirian",
+      "poin1_6": "Hubungi 021-29884567 jika terjadi keadaan darurat"
+    },
+    "#poin2" : {
+      "poin2_1": "Memberikan instruksi dan membimbing karyawan untuk mengikuti prosedur keselamatan saat mengevakuasi mereka ke titik aman",
+      "poin2_2": "Untuk memastikan jumlah karyawan benar, dan semua berhasil dievakuasi dan tiba dengan selamat di titik aman"
+    },
+    ".content-wrapper": {
+      "papan-skor": "PAPAN SKOR"
+    },
+    ".tab-board": {
+      "all": "Semua",
+      "week": "Pemenang Mingguan",
+      "month": "Pemenang Bulanan"
+    },
+    ".list-row": {
+      "rank": "Ranking",
+      "name": "Nama",
+      "skor": "Skor"
+    },
+    ".popup-help": {
+      "okgot":"OK, SAYA PAHAM"
+    },
+    ".text-center": {
+      "escape-guide":"PANDUAN"
+    },
+    ".body-content" : {
+      "title-rest": "Anda memasuki rest area",
+      "desc-rest": "Area ini digunakan sebagai tempat peristirahatan sementara. Dimana warga lanjut usia, hamil, penyandang cacat / cacat bisa menunggu bantuan penjaga lantai dievakuasi menuju jalan keluar dari gedung."
+    },
+    ".info-poin" : {
+      "poin-saya": "POIN SAYA"
+    }
+
+  }
